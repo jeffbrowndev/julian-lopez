@@ -1,0 +1,92 @@
+@import 'mixins';
+
+#work {
+  padding: $sectMargin $horzPadding;
+  text-align: center;
+  background-color: $work-blue;
+  @include mQ(500px) {
+    padding: $mobileMargin $horzPadding;
+  }
+  .projects {
+    width: $wrapperWidth;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include mQ($wrapperWidth) {
+      width: 100%;
+    }
+    .project {
+      overflow: hidden;
+      position: relative;
+      flex-basis: 20%;
+      box-sizing: border-box;
+      @include mQ(960px) {
+        flex-basis: calc(100% / 3);
+      }
+      @include mQ(750px) {
+        flex-basis: 50%;
+      }
+      @include mQ(500px) {
+        flex-basis: 100%;
+      }
+      .content {
+        cursor: pointer;
+        transition: 0.2s;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        .overlay {
+          display: table;
+          padding: 5px;
+          color: $grey;
+          transition: 0.3s;
+          width: 100%;
+          height: 100%;
+          background-color: $white;
+          opacity: 0;
+          .inner-text {
+            display: table-cell;
+            vertical-align: middle;
+          }
+          &:hover {
+            opacity: 0.9;
+          }
+        }
+      }
+    }
+    .project::before {
+      content: '';
+      display: block;
+      padding-top: 100%;
+    }
+    #bsm {
+      background-image: url("backgrounds/BSM Cover Box.jpg");
+    }
+    #nalac {
+      background-image: url("backgrounds/Nalac Cover Box.jpg");
+    }
+    #jcc {
+      background-image: url("backgrounds/JCC Cover Box.jpg");
+    }
+    #prolific {
+      background-image: url("backgrounds/Prolific Cover Box.jpg");
+    }
+    #hawaiian {
+      background-image: url("backgrounds/Hawaiin Cover Box.jpg");
+    }
+    #roman {
+      background-image: url("backgrounds/Roman Magazine Cover Box.jpg");
+    }
+    #asian {
+      background-image: url("backgrounds/Asian Magazine Cover Box.jpg");
+    }
+    #motion {
+      background-image: url("backgrounds/Motion Graphics Cover Box.jpg");
+    }
+  }
+}

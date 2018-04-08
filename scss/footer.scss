@@ -1,0 +1,45 @@
+#contact {
+  text-align: center;
+  padding: $sectMargin 0 0;
+  background-color: $footer-blue;
+  @include mQ(500px) {
+    padding: $mobileMargin 0 0;
+  }
+  #contact-form {
+    padding: 0 $horzPadding 25px;
+
+  }
+  input, textarea {
+    color: $grey;
+    border: none;
+    width: $wrapperWidth;
+    padding: 10px;
+    font-size: 21px;
+    display: block;
+    margin: 0 auto 25px;
+    border-radius: 5px;
+    @include mQ(1000px) {
+      width: 100%;
+    }
+  }
+  input {
+    height: 50px;
+  }
+  textarea {
+    font-family: $global-font;
+  }
+}
+.credits {
+  width: 100%;
+  text-align: center;
+  background-color: $light-blue;
+  p {
+    padding: 27px 0;
+    color: $grey;
+    font-size: 18px;
+    @include mQ(500px) {
+      padding: 14px 0;
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "julian-lopez",
+  "version": "1.0.0",
+  "description": "Julian Lopez Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sync": "browser-sync start --server --files '*.html, css/*.css'",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aos": "^2.2.0"
+  }
+}

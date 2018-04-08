@@ -1,0 +1,68 @@
+nav {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  background-color: $nav-blue;
+  text-align: center;
+  position: fixed;
+  height: 76px;
+  @include mQ(500px) {
+    height: 50px;
+  }
+  .nav-links {
+    @include mQ(500px) {
+      display: none;
+      height: 100vh;
+    }
+  }
+  //active hamburger menu
+  .nav-links.active {
+    display: block;
+    background-color: $transparent-blue;
+    position: relative;
+    .links {
+      @include mQ(500px) {
+        position: absolute;
+        top: calc(50% - 152px);
+        left: calc(50% - 70.55px);
+      }
+      .home-link {
+        animation-delay: 0s;
+      }
+      .bio-link {
+        animation-delay: 0.10s;
+      }
+      .work-link {
+        animation-delay: 0.15s;
+      }
+      .contact-link {
+        animation-delay: 0.20s;
+      }
+    }
+  }
+  p {
+    transition: 0.2s;
+    text-align: center;
+    padding: 25px 25px;
+    color: $white;
+    font-size: 21px;
+    display: inline-block;
+    @include mQ(500px) {
+      display: block;
+    }
+    &:hover {
+      color: $bio-blue;
+    }
+  }
+  #hamburger {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: $horzPadding;
+    @include mQ(500px) {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+#bio {
+  background-color: $bio-blue;
+  padding: $sectMargin $horzPadding;
+  text-align: center;
+  @include mQ(500px) {
+    padding: $mobileMargin $horzPadding;
+  }
+  .info-section {
+    margin: 0 auto $sectMargin;
+    max-width: $wrapperWidth;
+    @include mQ(500px) {
+      margin: 0 auto $mobileMargin;
+    }
+    p {
+      color: $white;
+      font-size: 24px;
+      text-align: center;
+      @include mQ(500px) {
+        font-size: 16px;
+      }
+    }
+  }
+}
