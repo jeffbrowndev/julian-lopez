@@ -1,38 +1,73 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
     <title>Julian Lopez Graphics</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
+    <!-- all modals go here -->
+    <div id="animatedModal">
+      <div class="close-animatedModal">
+        <img class='close' src="images/modal-images/close-dark.png" alt="Close Modal">
+      </div>
+      <div class="modal-content">
+        <div class="modal" id='bsm-modal'>
+          <h1>BSM</h1>
+        </div>
+        <div class="modal" id='nalac-modal'>
+          <h1>NALAC</h1>
+        </div>
+        <div class="modal" id='jcc-modal'>
+          <h1>JCC</h1>
+        </div>
+        <div class="modal" id='prolific-modal'>
+          <h1>PROLIFIC</h1>
+        </div>
+        <div class="modal" id='hawaiian-modal'>
+          <h1>HAWAIIAN</h1>
+        </div>
+        <div class="modal" id='roman-modal'>
+          <h1>ROMAN</h1>
+        </div>
+        <div class="modal" id='asian-modal'>
+          <h1>ASIAN</h1>
+        </div>
+        <div class="modal" id='motion-modal'>
+          <h1>MOTION</h1>
+        </div>
+      </div>
+    </div>
     <!-- fixed navigation bar -->
     <nav>
       <div class="nav-links">
         <div class="links">
-          <a href=""><strong><p class='home-link'>HOME</p></strong></a>
-          <a href=""><strong><p class='bio-link'>BIO</p></strong></a>
-          <a href=""><strong><p class='work-link'>WORK</p></strong></a>
-          <a href=""><strong><p class='contact-link'>CONTACT</p></strong></a>
+          <a href="#top"><strong><p class='home-link'>HOME</p></strong></a>
+          <a href="#bio"><strong><p class='bio-link'>BIO</p></strong></a>
+          <a href="#work"><strong><p class='work-link'>WORK</p></strong></a>
+          <a href="#contact"><strong><p class='contact-link'>CONTACT</p></strong></a>
         </div>
       </div>
       <img id='hamburger' src="images/hamburger.png" alt="Hamburger">
     </nav>
     <!-- header & logo banner -->
-    <header>
+    <header id='top'>
       <img id='header-banner' src="images/jl-header.jpg" alt='Julian Lopez Banner'>
       <img id='header-psudo-banner' src="images/jl-psudo-header.png" alt="Psudo Banner">
     </header>
     <!-- bio -->
     <section id='bio'>
-      <div class="info-section">
+      <div class="info-section" data-aos='fade-left'>
         <h2>EDUCATION</h2>
         <p>
           The Art Institute of Philadelphia, Philadelphia PA<br>
           Bachelors of Science in Graphic Design March 2017
         </p>
       </div>
-      <div class="info-section">
+      <div class="info-section" data-aos='fade-right'>
         <h2>ALL ABOUT ME</h2>
         <p>
           I have experience creating work for various mediums,
@@ -49,9 +84,9 @@
     <section id='work'>
       <h2>THE WORK</h2>
       <div class="projects">
-        <div class="project">
+        <div class="project" data-aos='fade'>
           <div class="content" id='bsm'>
-            <div class="overlay">
+            <div class="overlay modal-main" href="#animatedModal">
               <div class="inner-text">
                 <h3>Hello</h3>
                 <p>This is some text</p>
@@ -59,9 +94,9 @@
             </div>
           </div>
         </div>
-        <div class="project">
+        <div class="project" data-aos='fade'>
           <div class="content" id='nalac'>
-            <div class="overlay">
+            <div class="overlay modal-main" href='#animatedModal'>
               <div class="inner-text">
                 <h3>Hello</h3>
                 <p>This is some text</p>
@@ -69,9 +104,9 @@
             </div>
           </div>
         </div>
-        <div class="project">
+        <div class="project" data-aos='fade'>
           <div class="content" id='jcc'>
-            <div class="overlay">
+            <div class="overlay modal-main" href='#animatedModal'>
               <div class="inner-text">
                 <h3>Hello</h3>
                 <p>This is some text</p>
@@ -79,9 +114,9 @@
             </div>
           </div>
         </div>
-        <div class="project">
+        <div class="project" data-aos='fade'>
           <div class="content" id='prolific'>
-            <div class="overlay">
+            <div class="overlay modal-main" href='#animatedModal'>
               <div class="inner-text">
                 <h3>Hello</h3>
                 <p>This is some text</p>
@@ -89,9 +124,9 @@
             </div>
           </div>
         </div>
-        <div class="project">
+        <div class="project" data-aos='fade'>
           <div class="content" id='hawaiian'>
-            <div class="overlay">
+            <div class="overlay modal-main" href='#animatedModal'>
               <div class="inner-text">
                 <h3>Hello</h3>
                 <p>This is some text</p>
@@ -99,9 +134,9 @@
             </div>
           </div>
         </div>
-        <div class="project">
+        <div class="project" data-aos='fade'>
           <div class="content" id='roman'>
-            <div class="overlay">
+            <div class="overlay modal-main" href='#animatedModal'>
               <div class="inner-text">
                 <h3>Hello</h3>
                 <p>This is some text</p>
@@ -109,9 +144,9 @@
             </div>
           </div>
         </div>
-        <div class="project">
+        <div class="project" data-aos='fade'>
           <div class="content" id='asian'>
-            <div class="overlay">
+            <div class="overlay modal-main" href='#animatedModal'>
               <div class="inner-text">
                 <h3>Hello</h3>
                 <p>This is some text</p>
@@ -119,9 +154,9 @@
             </div>
           </div>
         </div>
-        <div class="project">
+        <div class="project" data-aos='fade'>
           <div class="content" id='motion'>
-            <div class="overlay">
+            <div class="overlay modal-main" href='#animatedModal'>
               <div class="inner-text">
                 <h3>Hello</h3>
                 <p>This is some text</p>
@@ -133,12 +168,20 @@
     </section>
     <!-- contact form -->
     <footer id='contact'>
-
+      <h2>LET'S TALK, LEAVE A MESSAGE</h2>
+      <form action="" id='contact-form'>
+        <input required placeholder="Your Name" type="text">
+        <input required placeholder="Your E-Mail" type="text">
+        <textarea required placeholder="Your Message"></textarea>
+        <button>SEND</button>
+      </form>
     </footer>
     <div class="credits">
-      <p>Julian</p>
+      <p>© 2018 Julian Lopez Graphics</p>
     </div>
-    <script src='node_modules\aos\dist\aos.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script src='scripts/hamburger.js'></script>
     <script src='scripts/animatedModal.js'></script>
     <script src='scripts/modalControls.js'></script>
