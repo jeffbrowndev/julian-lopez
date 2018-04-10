@@ -10,33 +10,38 @@ nav {
     height: 50px;
   }
   .nav-links {
+    animation-duration: 0.3s;
     @include mQ(500px) {
       display: none;
       height: 100vh;
     }
   }
   //active hamburger menu
-  .nav-links.active {
+  .nav-links.display {
     display: block;
     background-color: $transparent-blue;
     position: relative;
     .links {
+      animation-duration: 0.1s;
       @include mQ(500px) {
         position: absolute;
         top: calc(50% - 152px);
         left: calc(50% - 70.55px);
       }
+      .link {
+        animation-duration: 0.4s;
+      }
       .home-link {
-        animation-delay: 0s;
+        animation-delay: 0.25s;
       }
       .bio-link {
-        animation-delay: 0.10s;
+        animation-delay: 0.3s;
       }
       .work-link {
-        animation-delay: 0.15s;
+        animation-delay: 0.35s;
       }
       .contact-link {
-        animation-delay: 0.20s;
+        animation-delay: 0.4s;
       }
     }
   }
@@ -52,17 +57,6 @@ nav {
     }
     &:hover {
       color: $bio-blue;
-    }
-  }
-  #hamburger {
-    cursor: pointer;
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-right: $horzPadding;
-    @include mQ(500px) {
-      display: block;
     }
   }
 }

@@ -9,49 +9,27 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <!-- all modals go here -->
-    <div id="animatedModal">
-      <div class="close-animatedModal">
-        <img class='close' src="images/modal-images/close-dark.png" alt="Close Modal">
-      </div>
-      <div class="modal-content">
-        <div class="modal" id='bsm-modal'>
-          <h1>BSM</h1>
-        </div>
-        <div class="modal" id='nalac-modal'>
-          <h1>NALAC</h1>
-        </div>
-        <div class="modal" id='jcc-modal'>
-          <h1>JCC</h1>
-        </div>
-        <div class="modal" id='prolific-modal'>
-          <h1>PROLIFIC</h1>
-        </div>
-        <div class="modal" id='hawaiian-modal'>
-          <h1>HAWAIIAN</h1>
-        </div>
-        <div class="modal" id='roman-modal'>
-          <h1>ROMAN</h1>
-        </div>
-        <div class="modal" id='asian-modal'>
-          <h1>ASIAN</h1>
-        </div>
-        <div class="modal" id='motion-modal'>
-          <h1>MOTION</h1>
-        </div>
-      </div>
-    </div>
     <!-- fixed navigation bar -->
     <nav>
-      <div class="nav-links">
+      <div class="nav-links animated fadeInDown" >
         <div class="links">
-          <a href="#top"><strong><p class='home-link'>HOME</p></strong></a>
-          <a href="#bio"><strong><p class='bio-link'>BIO</p></strong></a>
-          <a href="#work"><strong><p class='work-link'>WORK</p></strong></a>
-          <a href="#contact"><strong><p class='contact-link'>CONTACT</p></strong></a>
+          <a href="#top"><strong><p class='link home-link animated fadeInDown'>HOME</p></strong></a>
+          <a href="#bio"><strong><p class='link bio-link animated fadeInDown'>BIO</p></strong></a>
+          <a href="#work"><strong><p class='link work-link animated fadeInDown'>WORK</p></strong></a>
+          <a href="#contact"><strong><p class='link contact-link animated fadeInDown'>CONTACT</p></strong></a>
         </div>
       </div>
-      <img id='hamburger' src="images/hamburger.png" alt="Hamburger">
+      <div class="menu-button">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="cross">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </nav>
     <!-- header & logo banner -->
     <header id='top'>
@@ -178,6 +156,38 @@
     </footer>
     <div class="credits">
       <p>© 2018 Julian Lopez Graphics</p>
+    </div>
+    <!-- all modals go here -->
+    <div id="animatedModal">
+      <div class="close-animatedModal">
+        <img class='close' src="images/modal-images/close-dark.png" alt="Close Modal">
+      </div>
+      <div class="modal-content">
+        <div class="modal" id='bsm-modal'>
+          <h1>BSM</h1>
+        </div>
+        <div class="modal" id='nalac-modal'>
+          <h1>NALAC</h1>
+        </div>
+        <div class="modal" id='jcc-modal'>
+          <h1>JCC</h1>
+        </div>
+        <div class="modal" id='prolific-modal'>
+          <h1>PROLIFIC</h1>
+        </div>
+        <div class="modal" id='hawaiian-modal'>
+          <h1>HAWAIIAN</h1>
+        </div>
+        <div class="modal" id='roman-modal'>
+          <h1>ROMAN</h1>
+        </div>
+        <div class="modal" id='asian-modal'>
+          <h1>ASIAN</h1>
+        </div>
+        <div class="modal" id='motion-modal'>
+          <h1>MOTION</h1>
+        </div>
+      </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>

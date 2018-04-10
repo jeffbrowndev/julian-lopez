@@ -1,8 +1,7 @@
-//grab hamburger and navigation icons
-const hamburger = document.querySelector('#hamburger');
-const navLinks = document.querySelector('.nav-links');
+const hamburger = document.querySelector('.menu-button');
+const menu = document.querySelector('.nav-links');
 
-//toggle hamburger menu on click
-hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
+hamburger.addEventListener('click', function() {
+  this.classList.toggle('active');
+  menu.classList.toggle('display');
 })

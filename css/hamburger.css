@@ -1,0 +1,64 @@
+.menu-button {
+  float: right;
+  top: 5px;
+  right: 20px;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  box-sizing: border-box; }
+  .menu-button .hamburger {
+    width: 100%;
+    height: 100%;
+    position: absolute; }
+    .menu-button .hamburger span {
+      transition: 0.25s;
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: white;
+      margin: 8px 0;
+      border-radius: 2px; }
+      .menu-button .hamburger span:nth-child(1) {
+        transition-delay: 0.3s; }
+      .menu-button .hamburger span:nth-child(2) {
+        transition-delay: 0.4s; }
+      .menu-button .hamburger span:nth-child(3) {
+        transition-delay: 0.5s; }
+  .menu-button .cross {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: rotate(45deg); }
+    .menu-button .cross span {
+      transition: 0.25s;
+      display: block;
+      background-color: white; }
+      .menu-button .cross span:nth-child(1) {
+        transition-delay: 0s;
+        position: absolute;
+        top: 18px;
+        width: 0;
+        height: 2px; }
+      .menu-button .cross span:nth-child(2) {
+        transition-delay: 0.1s;
+        position: absolute;
+        left: 18px;
+        height: 0;
+        width: 2px; }
+
+.menu-button.active .hamburger span {
+  width: 0%; }
+  .menu-button.active .hamburger span:nth-child(1) {
+    transition-delay: 0s; }
+  .menu-button.active .hamburger span:nth-child(2) {
+    transition-delay: 0.10s; }
+  .menu-button.active .hamburger span:nth-child(3) {
+    transition-delay: 0.20s; }
+
+.menu-button.active .cross span:nth-child(1) {
+  transition-delay: 0.35s;
+  width: 100%; }
+
+.menu-button.active .cross span:nth-child(2) {
+  height: 100%;
+  transition-delay: 0.45s; }

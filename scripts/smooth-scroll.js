@@ -11,6 +11,7 @@ $(document).ready(() => {
       scrollTop: $(dest).offset().top - 75 + 'px'
     }, 800, 'easeInOutExpo');
     //close menu if a page link is clicked
-    $('.nav-links').removeClass('active');
+    $('.nav-links').removeClass('display');
+    $('.menu-button').removeClass('active');
   })
 })
