@@ -2,7 +2,7 @@
   display: none;
   z-index: 9999;
   float: right;
-  top: 5px;
+  top: 10px;
   right: 20px;
   position: absolute;
   height: 40px;
@@ -93,13 +93,25 @@ nav {
   height: 76px; }
   @media screen and (max-width: 500px) {
     nav {
-      height: 50px; } }
+      height: 60px; } }
   nav .nav-links {
     animation-duration: 0.3s; }
     @media screen and (max-width: 500px) {
       nav .nav-links {
         display: none;
         height: 100vh; } }
+  nav p {
+    transition: 0.2s;
+    text-align: center;
+    padding: 25px 25px;
+    color: #FFFFFF;
+    font-size: 21px;
+    display: inline-block; }
+    @media screen and (max-width: 500px) {
+      nav p {
+        display: block; } }
+    nav p:hover {
+      color: #3498D1; }
   nav .nav-links.display {
     display: block;
     background-color: rgba(25, 89, 150, 0.9);
@@ -121,18 +133,6 @@ nav {
         animation-delay: 0.35s; }
       nav .nav-links.display .links .contact-link {
         animation-delay: 0.4s; }
-  nav p {
-    transition: 0.2s;
-    text-align: center;
-    padding: 25px 25px;
-    color: #FFFFFF;
-    font-size: 21px;
-    display: inline-block; }
-    @media screen and (max-width: 500px) {
-      nav p {
-        display: block; } }
-    nav p:hover {
-      color: #3498D1; }
 
 header #header-banner {
   margin-top: 76px;
@@ -159,17 +159,30 @@ header #header-psudo-banner {
       padding: 50px 10px; } }
   #bio .info-section {
     margin: 0 auto 100px;
-    max-width: 1260px; }
+    max-width: 1100px; }
     @media screen and (max-width: 500px) {
       #bio .info-section {
         margin: 0 auto 50px; } }
     #bio .info-section p {
       color: #FFFFFF;
-      font-size: 24px;
+      font-size: 22px;
       text-align: center; }
       @media screen and (max-width: 500px) {
         #bio .info-section p {
           font-size: 16px; } }
+    #bio .info-section #education {
+      width: 350px; }
+      @media screen and (max-width: 350px) {
+        #bio .info-section #education {
+          width: 100%; } }
+    #bio .info-section #all-about-me {
+      width: 600px; }
+      @media screen and (max-width: 600px) {
+        #bio .info-section #all-about-me {
+          width: 100%; } }
+  #bio button:hover {
+    background-color: transparent;
+    color: #195996; }
 
 #work {
   padding: 100px 10px;
@@ -178,13 +191,19 @@ header #header-psudo-banner {
   @media screen and (max-width: 500px) {
     #work {
       padding: 50px 10px; } }
+  #work #the-work {
+    margin-bottom: 50px;
+    width: 400px; }
+    @media screen and (max-width: 500px) {
+      #work #the-work {
+        width: 100%; } }
   #work .projects {
-    width: 1260px;
+    width: 1100px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
-    @media screen and (max-width: 1260px) {
+    @media screen and (max-width: 1100px) {
       #work .projects {
         width: 100%; } }
     #work .projects .project {
@@ -214,6 +233,7 @@ header #header-psudo-banner {
       #work .projects .project .box-background.active {
         transform: scale(1.1); }
       #work .projects .project .overlay {
+        cursor: pointer;
         box-sizing: border-box;
         padding: 15px;
         transition: 0.25s;
@@ -234,7 +254,8 @@ header #header-psudo-banner {
             opacity: 0;
             transition: 0s;
             transition-delay: 0s;
-            transform: translateX(50px); }
+            transform: translateX(50px);
+            padding-bottom: 10px; }
           #work .projects .project .overlay .text p {
             opacity: 0;
             transition: 0s;
@@ -275,25 +296,54 @@ header #header-psudo-banner {
 
 #contact {
   text-align: center;
-  padding: 100px 0 0;
-  background-color: #a8e8ff; }
+  padding: 100px 10px;
+  background-color: #9FDFFA; }
   @media screen and (max-width: 500px) {
     #contact {
-      padding: 50px 0 0; } }
+      padding: 50px 10px; } }
+  #contact h2 {
+    margin-bottom: 50px;
+    width: 960px; }
+    @media screen and (max-width: 960px) {
+      #contact h2 {
+        width: 100%; } }
   #contact #contact-form {
-    padding: 0 10px 25px; }
+    width: 960px;
+    margin: auto; }
+    #contact #contact-form h3 {
+      text-align: left;
+      color: #5A5A5A;
+      font-size: 20px;
+      margin-bottom: 10px; }
+    @media screen and (max-width: 960px) {
+      #contact #contact-form {
+        width: 100%; } }
+    #contact #contact-form button {
+      float: left;
+      background-color: #5A5A5A;
+      border-color: #5A5A5A; }
+      #contact #contact-form button:hover {
+        background-color: #195996;
+        border-color: #195996; }
+      @media screen and (max-width: 500px) {
+        #contact #contact-form button {
+          float: none; } }
   #contact input, #contact textarea {
+    transition: 0.5s;
     color: #5A5A5A;
-    border: none;
-    width: 1260px;
+    border: 1px solid #9FDFFA;
+    width: 100%;
     padding: 10px;
-    font-size: 21px;
+    font-size: 16px;
     display: block;
     margin: 0 auto 25px;
-    border-radius: 5px; }
+    border-radius: 2px; }
     @media screen and (max-width: 1000px) {
       #contact input, #contact textarea {
         width: 100%; } }
+    #contact input:hover, #contact textarea:hover {
+      border: 1px solid #5A5A5A;
+      color: black; }
   #contact input {
     height: 50px; }
   #contact textarea {
@@ -317,9 +367,10 @@ header #header-psudo-banner {
 * {
   box-sizing: border-box; }
 
-html, body, h1, h2, p, a {
+html, body, h1, h2, h3, p, a {
   margin: 0;
   padding: 0;
+  font-weight: 400;
   font-family: "Helvetica", serif;
   position: relative; }
 
@@ -330,8 +381,9 @@ a {
   text-decoration: none; }
 
 h2 {
+  font-weight: bold;
   color: #5A5A5A;
-  font-size: 39px;
+  font-size: 32px;
   border-bottom: 1px solid #FFFFFF;
   display: inline-block;
   padding-bottom: 5px;
@@ -342,15 +394,13 @@ h2 {
       width: 90%; } }
 
 button {
-  transition: 0.2s;
-  font-size: 21px;
+  transition: 0.3s;
+  font-size: 18px;
+  width: 150px;
   padding: 15px 25px;
   border: none;
-  border-radius: 5px;
+  border-radius: 2px;
   background-color: #195996;
   border: 1px solid #195996;
   color: #FFFFFF;
   cursor: pointer; }
-  button:hover {
-    background-color: transparent;
-    color: #195996; }

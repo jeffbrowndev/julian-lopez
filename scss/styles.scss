@@ -11,9 +11,10 @@
 * {
   box-sizing: border-box;
 }
-html, body, h1, h2, p, a {
+html, body, h1, h2, h3, p, a {
   margin: 0;
   padding: 0;
+  font-weight: 400;
   font-family: $global-font;
   position: relative;
 }
@@ -25,8 +26,9 @@ a {
 }
 
 h2 {
+  font-weight: bold;
   color: $grey;
-  font-size: 39px;
+  font-size: 32px;
   border-bottom: 1px solid $white;
   display: inline-block;
   padding-bottom: 5px;
@@ -39,17 +41,14 @@ h2 {
 
 //global button style
 button {
-  transition: 0.2s;
-  font-size: 21px;
+  transition: 0.3s;
+  font-size: 18px;
+  width: 150px;
   padding: 15px 25px;
   border: none;
-  border-radius: 5px;
+  border-radius: 2px;
   background-color: $nav-blue;
   border: 1px solid $nav-blue;
   color: $white;
   cursor: pointer;
-  &:hover {
-    background-color: transparent;
-    color: $nav-blue;
-  }
 }

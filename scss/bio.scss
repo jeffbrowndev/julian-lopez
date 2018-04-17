@@ -13,11 +13,29 @@
     }
     p {
       color: $white;
-      font-size: 24px;
+      font-size: 22px;
       text-align: center;
       @include mQ(500px) {
         font-size: 16px;
       }
+    }
+    #education {
+      width: 350px;
+      @include mQ(350px) {
+        width: 100%;
+      }
+    }
+    #all-about-me {
+      width: 600px;
+      @include mQ(600px) {
+        width: 100%;
+      }
+    }
+  }
+  button {
+    &:hover {
+      background-color: transparent;
+      color: $nav-blue;
     }
   }
 }
