@@ -21,13 +21,13 @@
     }
     #education {
       width: 350px;
-      @include mQ(350px) {
+      @include mQ(385px) {
         width: 100%;
       }
     }
     #all-about-me {
       width: 600px;
-      @include mQ(600px) {
+      @include mQ(630px) {
         width: 100%;
       }
     }

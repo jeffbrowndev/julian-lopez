@@ -25,6 +25,7 @@
       width: 100%;
     }
     button {
+      transition: 0.5s;
       float: left;
       background-color: $grey;
       border-color: $grey;

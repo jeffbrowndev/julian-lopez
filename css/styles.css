@@ -172,12 +172,12 @@ header #header-psudo-banner {
           font-size: 16px; } }
     #bio .info-section #education {
       width: 350px; }
-      @media screen and (max-width: 350px) {
+      @media screen and (max-width: 385px) {
         #bio .info-section #education {
           width: 100%; } }
     #bio .info-section #all-about-me {
       width: 600px; }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 630px) {
         #bio .info-section #all-about-me {
           width: 100%; } }
   #bio button:hover {
@@ -319,6 +319,7 @@ header #header-psudo-banner {
       #contact #contact-form {
         width: 100%; } }
     #contact #contact-form button {
+      transition: 0.5s;
       float: left;
       background-color: #5A5A5A;
       border-color: #5A5A5A; }
@@ -394,7 +395,7 @@ h2 {
       width: 90%; } }
 
 button {
-  transition: 0.3s;
+  transition: 0.5s;
   font-size: 18px;
   width: 150px;
   padding: 15px 25px;
