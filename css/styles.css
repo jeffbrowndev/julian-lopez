@@ -101,17 +101,17 @@ nav {
         display: none;
         height: 100vh; } }
   nav p {
-    transition: 0.2s;
+    transition: 0.4s;
     text-align: center;
     padding: 25px 25px;
-    color: #FFFFFF;
     font-size: 21px;
+    color: #FFFFFF;
     display: inline-block; }
     @media screen and (max-width: 500px) {
       nav p {
         display: block; } }
     nav p:hover {
-      color: #3498D1; }
+      color: #3498D1 !important; }
   nav .nav-links.display {
     display: block;
     background-color: rgba(25, 89, 150, 0.9);
@@ -181,8 +181,7 @@ header #header-psudo-banner {
         #bio .info-section #all-about-me {
           width: 100%; } }
   #bio button:hover {
-    background-color: transparent;
-    color: #195996; }
+    background-color: transparent; }
 
 #work {
   padding: 100px 10px;
@@ -251,12 +250,14 @@ header #header-psudo-banner {
           vertical-align: middle; }
           #work .projects .project .overlay .text h3 {
             font-size: 20px;
+            font-weight: bold;
             opacity: 0;
             transition: 0s;
             transition-delay: 0s;
             transform: translateX(50px);
             padding-bottom: 10px; }
           #work .projects .project .overlay .text p {
+            font-weight: 200px;
             opacity: 0;
             transition: 0s;
             transition-delay: 0s;
@@ -350,7 +351,7 @@ header #header-psudo-banner {
   #contact textarea {
     height: 200px;
     resize: none;
-    font-family: "Helvetica", serif; }
+    font-family: "Helvetica"; }
 
 .credits {
   width: 100%;
@@ -372,7 +373,7 @@ html, body, h1, h2, h3, p, a {
   margin: 0;
   padding: 0;
   font-weight: 400;
-  font-family: "Helvetica", serif;
+  font-family: "Helvetica";
   position: relative; }
 
 body {
