@@ -12,11 +12,11 @@
   <body>
     <!-- fixed navigation bar -->
     <nav>
-      <div class="nav-links animated fadeInDown" >
+      <div class="nav-links animated fadeInDown">
         <div class="links">
           <a href="#top"><strong><p class='link home-link animated fadeInDown'>HOME</p></strong></a>
-          <a href="#bio"><strong><p class='link bio-link animated fadeInDown'>BIO</p></strong></a>
           <a href="#work"><strong><p class='link work-link animated fadeInDown'>WORK</p></strong></a>
+          <a href="#bio"><strong><p class='link bio-link animated fadeInDown'>BIO</p></strong></a>
           <a href="#contact"><strong><p class='link contact-link animated fadeInDown'>CONTACT</p></strong></a>
         </div>
       </div>
@@ -37,28 +37,6 @@
       <img id='header-banner' src="images/jl-header.jpg" alt='Julian Lopez Banner'>
       <img id='header-psudo-banner' src="images/jl-psudo-header.png" alt="Psudo Banner">
     </header>
-    <!-- bio -->
-    <section id='bio'>
-      <div class="info-section" data-aos='fade-left'>
-        <h2 id='education'>EDUCATION</h2>
-        <p>
-          The Art Institute of Philadelphia, Philadelphia&nbsp;PA<br>
-          Bachelors of Science in Graphic Design March 2017
-        </p>
-      </div>
-      <div class="info-section" data-aos='fade-right'>
-        <h2 id='all-about-me'>ALL ABOUT ME</h2>
-        <p>
-          I have experience creating work for various mediums,
-          such as printed marketing materials as well as digital
-          for web & mobile designs. My design style is characterized
-          as modern, clean and mixed with abstract elements. I
-          place great attention on small details, strong use of a
-          grid and a refined juxtaposition between colors and layouts.
-        </p>
-      </div>
-      <a href="https://drive.google.com/file/d/1r7JpB-HuKw5Dq0VuGuMOO3uZBTgkitLw/view" target='_blank'><button>RESUMÉ</button></a>
-    </section>
     <!-- work & projects -->
     <section id='work'>
       <h2 id='the-work'>THE WORK</h2>
@@ -84,7 +62,7 @@
           </div>
         </div>
         <!-- JCC -->
-        <div class="project" data-aos='fade' data-aos-delay='200'>
+        <div class="project jcc" data-aos='fade' data-aos-delay='200'>
           <div class="box-background" id='jcc'></div>
           <div class="overlay modal-main" href='#animatedModal'>
             <div class="text">
@@ -146,6 +124,28 @@
       </div>
       </div>
     </section>
+    <!-- bio -->
+    <section id='bio'>
+      <div class="info-section" data-aos='fade-left'>
+        <h2 id='education'>EDUCATION</h2>
+        <p>
+          The Art Institute of Philadelphia, Philadelphia&nbsp;PA<br>
+          Bachelors of Science in Graphic Design March 2017
+        </p>
+      </div>
+      <div class="info-section" data-aos='fade-right'>
+        <h2 id='all-about-me'>ALL ABOUT ME</h2>
+        <p>
+          I have experience creating work for various mediums,
+          such as printed marketing materials as well as digital
+          for web & mobile designs. My design style is characterized
+          as modern, clean and mixed with abstract elements. I
+          place great attention on small details, strong use of a
+          grid and a refined juxtaposition between colors and layouts.
+        </p>
+      </div>
+      <a href="https://drive.google.com/file/d/1r7JpB-HuKw5Dq0VuGuMOO3uZBTgkitLw/view" target='_blank'><button>RESUMÉ</button></a>
+    </section>
     <!-- contact form -->
     <footer id='contact'>
       <h2>LET'S TALK, LEAVE A MESSAGE</h2>
@@ -154,14 +154,14 @@
           <h3>Name*</h3>
           <input required placeholder="Enter Your Name" type="text">
         </div>
-        <div data-aos='fade-up' data-aos-delay='200'>
+        <div data-aos='fade-up' data-aos-delay='150'>
           <h3>E-mail*</h3>
           <input required placeholder="Enter Your E-Mail" type="text">
         </div>
-        <div data-aos='fade-up' data-aos-delay='300'>
+        <div data-aos='fade-up' data-aos-delay='250'>
           <h3>Message*</h3>
           <textarea required placeholder="Enter Your Message"></textarea>
-          <button data-aos='fade-up'>SEND</button>
+          <button>SEND</button>
         </div>
         <div style='clear: both;'></div>
       </form>

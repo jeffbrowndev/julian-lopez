@@ -41,15 +41,15 @@ const highlight = () => {
   const contact = $('#contact').offset().top;
   const atBottom = (window.innerHeight + window.pageYOffset) >= document.body.offsetHeight;
   //highlight links based on scroll position
-  (bio <= dist + 152 && dist <= work - 152) ?
-    $('.bio-link').css('color', '#3498D1') :
-    $('.bio-link').css('color', 'white');
-  (work <= dist + 152 && dist <= contact - 152 && !atBottom) ?
-    $('.work-link').css('color', '#3498D1') :
-    $('.work-link').css('color', 'white');
-  (top <= dist && dist <= bio - 152) ?
+  (top <= dist && dist <= work - 152) ?
     $('.home-link').css('color', '#3498D1') :
     $('.home-link').css('color', 'white');
+  (work <= dist + 152 && dist <= bio - 152) ?
+    $('.work-link').css('color', '#3498D1') :
+    $('.work-link').css('color', 'white');
+  (bio <= dist + 152 && dist <= contact - 152 && !atBottom) ?
+    $('.bio-link').css('color', '#3498D1') :
+    $('.bio-link').css('color', 'white');
   (dist >= contact - 152 || atBottom) ?
     $('.contact-link').css('color', '#3498D1') :
     $('.contact-link').css('color', 'white');

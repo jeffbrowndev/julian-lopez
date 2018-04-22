@@ -28,7 +28,7 @@ nav {
       display: block;
     }
     &:hover {
-      color: $bio-blue !important;
+      color: $work-blue !important;
     }
   }
   .nav-links.display {
@@ -48,10 +48,10 @@ nav {
       .home-link {
         animation-delay: 0.25s;
       }
-      .bio-link {
+      .work-link {
         animation-delay: 0.3s;
       }
-      .work-link {
+      .bio-link {
         animation-delay: 0.35s;
       }
       .contact-link {

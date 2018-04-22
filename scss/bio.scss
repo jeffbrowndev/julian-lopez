@@ -1,4 +1,5 @@
 #bio {
+  overflow: hidden;
   background-color: $bio-blue;
   padding: $sectMargin $horzPadding;
   text-align: center;
@@ -6,7 +7,7 @@
     padding: $mobileMargin $horzPadding;
   }
   .info-section {
-    margin: 0 auto $sectMargin;
+    margin: 0 auto 75px;
     max-width: $wrapperWidth;
     @include mQ(500px) {
       margin: 0 auto $mobileMargin;

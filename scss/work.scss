@@ -1,6 +1,8 @@
 @import 'mixins';
+@import 'variables';
 
 #work {
+  box-sizing: border-box;
   padding: $sectMargin $horzPadding;
   text-align: center;
   background-color: $work-blue;
@@ -15,12 +17,13 @@
     }
   }
   .projects {
+    box-sizing: border-box;
     width: $wrapperWidth;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    @include mQ($wrapperWidth) {
+    @include mQ($wrapperWidth + 30px) {
       width: 100%;
     }
     .project {
@@ -28,10 +31,10 @@
       position: relative;
       flex-basis: 20%;
       box-sizing: border-box;
-      @include mQ(960px) {
+      @include mQ($wrapperWidth + 30px) {
         flex-basis: calc(100% / 3);
       }
-      @include mQ(750px) {
+      @include mQ(850px) {
         flex-basis: 50%;
       }
       @include mQ(500px) {
@@ -131,5 +134,27 @@
     #motion {
       background-image: url("backgrounds/Motion Graphics Cover Box.jpg");
     }
+  }
+  //change order of projects on tablet
+  @include mQ(960px) {
+    .project:nth-child(1) {order: 4};
+    .project:nth-child(2) {order: 1};
+    .project:nth-child(3) {order: 2};
+    .project:nth-child(4) {order: 3};
+    .project:nth-child(5) {order: 6};
+    .project:nth-child(6) {order: 7};
+    .project:nth-child(7) {order: 5};
+    .project:nth-child(8) {order: 8};
+  }
+  //change order of projects on mobile
+  @include mQ(750px) {
+    .project:nth-child(1) {order: 5};
+    .project:nth-child(2) {order: 3};
+    .project:nth-child(3) {order: 1};
+    .project:nth-child(4) {order: 2};
+    .project:nth-child(5) {order: 4};
+    .project:nth-child(6) {order: 7};
+    .project:nth-child(7) {order: 6};
+    .project:nth-child(8) {order: 8};
   }
 }

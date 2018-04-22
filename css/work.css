@@ -1,0 +1,147 @@
+#work {
+  box-sizing: border-box;
+  padding: 100px 10px;
+  text-align: center;
+  background-color: #3498D1; }
+  @media screen and (max-width: 500px) {
+    #work {
+      padding: 50px 10px; } }
+  #work #the-work {
+    margin-bottom: 50px;
+    width: 400px; }
+    @media screen and (max-width: 500px) {
+      #work #the-work {
+        width: 100%; } }
+  #work .projects {
+    box-sizing: border-box;
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    @media screen and (max-width: 1130px) {
+      #work .projects {
+        width: 100%; } }
+    #work .projects .project {
+      overflow: hidden;
+      position: relative;
+      flex-basis: 20%;
+      box-sizing: border-box; }
+      @media screen and (max-width: 1130px) {
+        #work .projects .project {
+          flex-basis: calc(100% / 3); } }
+      @media screen and (max-width: 850px) {
+        #work .projects .project {
+          flex-basis: 50%; } }
+      @media screen and (max-width: 500px) {
+        #work .projects .project {
+          flex-basis: 100%; } }
+      #work .projects .project .box-background {
+        transition: 0.5s;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%; }
+      #work .projects .project .box-background.active {
+        transform: scale(1.1); }
+      #work .projects .project .overlay {
+        cursor: pointer;
+        box-sizing: border-box;
+        padding: 15px;
+        transition: 0.25s;
+        opacity: 0;
+        color: #FFFFFF;
+        background-color: rgba(0, 0, 0, 0.9);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: table; }
+        #work .projects .project .overlay .text {
+          display: table-cell;
+          vertical-align: middle; }
+          #work .projects .project .overlay .text h3 {
+            font-size: 20px;
+            font-weight: bold;
+            opacity: 0;
+            transition: 0s;
+            transition-delay: 0s;
+            transform: translateX(50px);
+            padding-bottom: 10px; }
+          #work .projects .project .overlay .text p {
+            font-weight: 200px;
+            opacity: 0;
+            transition: 0s;
+            transition-delay: 0s;
+            transform: translateY(50px); }
+      #work .projects .project .overlay.active {
+        opacity: 1; }
+        #work .projects .project .overlay.active h3 {
+          transition: 0.4s;
+          transition-delay: 0.15s;
+          opacity: 1;
+          transform: translateX(0); }
+        #work .projects .project .overlay.active p {
+          transition: 0.3s;
+          transition-delay: 0.35s;
+          opacity: 1;
+          transform: translateY(0); }
+    #work .projects .project::before {
+      content: '';
+      display: block;
+      padding-top: 100%; }
+    #work .projects #bsm {
+      background-image: url("backgrounds/BSM Cover Box.jpg"); }
+    #work .projects #nalac {
+      background-image: url("backgrounds/NALAC Cover Box.jpg"); }
+    #work .projects #jcc {
+      background-image: url("backgrounds/JCC Cover Box.jpg"); }
+    #work .projects #prolific {
+      background-image: url("backgrounds/Prolific Cover Box.jpg"); }
+    #work .projects #hawaiian {
+      background-image: url("backgrounds/Hawaiin Cover Box.jpg"); }
+    #work .projects #roman {
+      background-image: url("backgrounds/Roman Magazine Cover Box.jpg"); }
+    #work .projects #asian {
+      background-image: url("backgrounds/Asian Magazine Cover Box.jpg"); }
+    #work .projects #motion {
+      background-image: url("backgrounds/Motion Graphics Cover Box.jpg"); }
+  @media screen and (max-width: 960px) {
+    #work .project:nth-child(1) {
+      order: 4; }
+    #work .project:nth-child(2) {
+      order: 1; }
+    #work .project:nth-child(3) {
+      order: 2; }
+    #work .project:nth-child(4) {
+      order: 3; }
+    #work .project:nth-child(5) {
+      order: 6; }
+    #work .project:nth-child(6) {
+      order: 7; }
+    #work .project:nth-child(7) {
+      order: 5; }
+    #work .project:nth-child(8) {
+      order: 8; } }
+  @media screen and (max-width: 750px) {
+    #work .project:nth-child(1) {
+      order: 5; }
+    #work .project:nth-child(2) {
+      order: 3; }
+    #work .project:nth-child(3) {
+      order: 1; }
+    #work .project:nth-child(4) {
+      order: 2; }
+    #work .project:nth-child(5) {
+      order: 4; }
+    #work .project:nth-child(6) {
+      order: 7; }
+    #work .project:nth-child(7) {
+      order: 6; }
+    #work .project:nth-child(8) {
+      order: 8; } }

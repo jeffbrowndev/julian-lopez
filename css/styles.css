@@ -127,9 +127,9 @@ nav {
         animation-duration: 0.4s; }
       nav .nav-links.display .links .home-link {
         animation-delay: 0.25s; }
-      nav .nav-links.display .links .bio-link {
-        animation-delay: 0.3s; }
       nav .nav-links.display .links .work-link {
+        animation-delay: 0.3s; }
+      nav .nav-links.display .links .bio-link {
         animation-delay: 0.35s; }
       nav .nav-links.display .links .contact-link {
         animation-delay: 0.4s; }
@@ -151,14 +151,15 @@ header #header-psudo-banner {
       margin-top: 50px; } }
 
 #bio {
-  background-color: #3498D1;
+  overflow: hidden;
+  background-color: #57BCE6;
   padding: 100px 10px;
   text-align: center; }
   @media screen and (max-width: 500px) {
     #bio {
       padding: 50px 10px; } }
   #bio .info-section {
-    margin: 0 auto 100px;
+    margin: 0 auto 75px;
     max-width: 1100px; }
     @media screen and (max-width: 500px) {
       #bio .info-section {
@@ -184,9 +185,10 @@ header #header-psudo-banner {
     background-color: transparent; }
 
 #work {
+  box-sizing: border-box;
   padding: 100px 10px;
   text-align: center;
-  background-color: #57BCE6; }
+  background-color: #3498D1; }
   @media screen and (max-width: 500px) {
     #work {
       padding: 50px 10px; } }
@@ -197,12 +199,13 @@ header #header-psudo-banner {
       #work #the-work {
         width: 100%; } }
   #work .projects {
+    box-sizing: border-box;
     width: 1100px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
-    @media screen and (max-width: 1100px) {
+    @media screen and (max-width: 1130px) {
       #work .projects {
         width: 100%; } }
     #work .projects .project {
@@ -210,10 +213,10 @@ header #header-psudo-banner {
       position: relative;
       flex-basis: 20%;
       box-sizing: border-box; }
-      @media screen and (max-width: 960px) {
+      @media screen and (max-width: 1130px) {
         #work .projects .project {
           flex-basis: calc(100% / 3); } }
-      @media screen and (max-width: 750px) {
+      @media screen and (max-width: 850px) {
         #work .projects .project {
           flex-basis: 50%; } }
       @media screen and (max-width: 500px) {
@@ -294,8 +297,43 @@ header #header-psudo-banner {
       background-image: url("backgrounds/Asian Magazine Cover Box.jpg"); }
     #work .projects #motion {
       background-image: url("backgrounds/Motion Graphics Cover Box.jpg"); }
+  @media screen and (max-width: 960px) {
+    #work .project:nth-child(1) {
+      order: 4; }
+    #work .project:nth-child(2) {
+      order: 1; }
+    #work .project:nth-child(3) {
+      order: 2; }
+    #work .project:nth-child(4) {
+      order: 3; }
+    #work .project:nth-child(5) {
+      order: 6; }
+    #work .project:nth-child(6) {
+      order: 7; }
+    #work .project:nth-child(7) {
+      order: 5; }
+    #work .project:nth-child(8) {
+      order: 8; } }
+  @media screen and (max-width: 750px) {
+    #work .project:nth-child(1) {
+      order: 5; }
+    #work .project:nth-child(2) {
+      order: 3; }
+    #work .project:nth-child(3) {
+      order: 1; }
+    #work .project:nth-child(4) {
+      order: 2; }
+    #work .project:nth-child(5) {
+      order: 4; }
+    #work .project:nth-child(6) {
+      order: 7; }
+    #work .project:nth-child(7) {
+      order: 6; }
+    #work .project:nth-child(8) {
+      order: 8; } }
 
 #contact {
+  overflow: hidden;
   text-align: center;
   padding: 100px 10px;
   background-color: #9FDFFA; }
@@ -305,7 +343,7 @@ header #header-psudo-banner {
   #contact h2 {
     margin-bottom: 50px;
     width: 960px; }
-    @media screen and (max-width: 960px) {
+    @media screen and (max-width: 990px) {
       #contact h2 {
         width: 100%; } }
   #contact #contact-form {
@@ -316,7 +354,7 @@ header #header-psudo-banner {
       color: #5A5A5A;
       font-size: 20px;
       margin-bottom: 10px; }
-    @media screen and (max-width: 960px) {
+    @media screen and (max-width: 990px) {
       #contact #contact-form {
         width: 100%; } }
     #contact #contact-form button {
