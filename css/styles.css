@@ -82,6 +82,30 @@
         transform: rotate(90deg); }
   #animatedModal .modal-content .modal {
     display: none; }
+  #animatedModal .modal-content #hawaiian-modal {
+    text-align: center;
+    background: url("backgrounds/Hawaiin Background.jpg"); }
+    #animatedModal .modal-content #hawaiian-modal #rectagle, #animatedModal .modal-content #hawaiian-modal #hawaiian-pouches {
+      width: 100%; }
+    #animatedModal .modal-content #hawaiian-modal #hawaiian-logo {
+      margin-top: 100px;
+      width: 50%; }
+      @media screen and (max-width: 960px) {
+        #animatedModal .modal-content #hawaiian-modal #hawaiian-logo {
+          width: 95%;
+          margin-top: 100px; } }
+    #animatedModal .modal-content #hawaiian-modal #hawaiian-business-cards {
+      margin-top: 200px;
+      width: 50%; }
+      @media screen and (max-width: 960px) {
+        #animatedModal .modal-content #hawaiian-modal #hawaiian-business-cards {
+          width: 95%;
+          margin-top: 100px; } }
+    #animatedModal .modal-content #hawaiian-modal #hawaiian-pouches {
+      margin-top: 200px; }
+      @media screen and (max-width: 960px) {
+        #animatedModal .modal-content #hawaiian-modal #hawaiian-pouches {
+          margin-top: 100px; } }
 
 nav {
   position: relative;
