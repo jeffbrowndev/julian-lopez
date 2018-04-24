@@ -1,0 +1,203 @@
+#animatedModal {
+  height: 100%;
+  width: 100%;
+  background-color: #FFFFFF; }
+  #animatedModal .close-animatedModal {
+    padding: 25px 10px;
+    text-align: center; }
+    #animatedModal .close-animatedModal .close {
+      cursor: pointer;
+      transition: 0.2s; }
+      #animatedModal .close-animatedModal .close:hover {
+        transform: rotate(90deg); }
+  #animatedModal .modal-content .modal {
+    display: none; }
+  #animatedModal .modal-content .faction-logo {
+    width: 60%;
+    margin: 200px 0; }
+    @media screen and (max-width: 960px) {
+      #animatedModal .modal-content .faction-logo {
+        width: 95%;
+        margin: 100px 0; } }
+  #animatedModal .modal-content #hawaiian-modal {
+    text-align: center;
+    background: url("backgrounds/Hawaiin Background.jpg"); }
+    #animatedModal .modal-content #hawaiian-modal #rectagle, #animatedModal .modal-content #hawaiian-modal #hawaiian-pouches {
+      width: 100%; }
+    #animatedModal .modal-content #hawaiian-modal #hawaiian-logo {
+      margin-top: 100px;
+      width: 50%; }
+      @media screen and (max-width: 960px) {
+        #animatedModal .modal-content #hawaiian-modal #hawaiian-logo {
+          width: 95%;
+          margin-top: 100px; } }
+    #animatedModal .modal-content #hawaiian-modal #hawaiian-business-cards {
+      margin-top: 200px;
+      width: 50%; }
+      @media screen and (max-width: 960px) {
+        #animatedModal .modal-content #hawaiian-modal #hawaiian-business-cards {
+          width: 95%;
+          margin-top: 100px; } }
+    #animatedModal .modal-content #hawaiian-modal #hawaiian-pouches {
+      margin-top: 200px; }
+      @media screen and (max-width: 960px) {
+        #animatedModal .modal-content #hawaiian-modal #hawaiian-pouches {
+          margin-top: 100px; } }
+  #animatedModal .modal-content #asian-modal {
+    text-align: center;
+    background: url("backgrounds/AsianMagBG.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom; }
+    #animatedModal .modal-content #asian-modal #asian-description {
+      text-align: left;
+      width: 80%;
+      margin: 0 auto 200px; }
+      #animatedModal .modal-content #asian-modal #asian-description h1 {
+        color: #c12026;
+        font-size: 56px;
+        font-weight: 700; }
+        @media screen and (max-width: 960px) {
+          #animatedModal .modal-content #asian-modal #asian-description h1 {
+            font-size: 36px; } }
+      #animatedModal .modal-content #asian-modal #asian-description p {
+        color: #65c0e6;
+        font-size: 36px; }
+        @media screen and (max-width: 960px) {
+          #animatedModal .modal-content #asian-modal #asian-description p {
+            font-size: 24px; } }
+      @media screen and (max-width: 960px) {
+        #animatedModal .modal-content #asian-modal #asian-description {
+          width: 90%;
+          margin-bottom: 100px; } }
+    #animatedModal .modal-content #asian-modal #asian-mag-cover {
+      margin-bottom: 300px;
+      width: 60%; }
+      @media screen and (max-width: 960px) {
+        #animatedModal .modal-content #asian-modal #asian-mag-cover {
+          width: 95%;
+          margin-bottom: 100px; } }
+    #animatedModal .modal-content #asian-modal #asian-mag-toc {
+      margin-bottom: 300px;
+      width: 60%; }
+      @media screen and (max-width: 960px) {
+        #animatedModal .modal-content #asian-modal #asian-mag-toc {
+          width: 95%;
+          margin-bottom: 100px; } }
+    #animatedModal .modal-content #asian-modal #asian-mag-spread {
+      width: 60%; }
+      @media screen and (max-width: 960px) {
+        #animatedModal .modal-content #asian-modal #asian-mag-spread {
+          width: 95%; } }
+  #animatedModal .modal-content #roman-modal {
+    text-align: center;
+    background: url("backgrounds/RomanMagBG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 100%; }
+    #animatedModal .modal-content #roman-modal #roman-description {
+      text-align: left;
+      width: 80%;
+      margin: 0 auto 200px; }
+      #animatedModal .modal-content #roman-modal #roman-description h1 {
+        color: #25b5e9;
+        font-size: 56px;
+        font-weight: 700; }
+        @media screen and (max-width: 960px) {
+          #animatedModal .modal-content #roman-modal #roman-description h1 {
+            font-size: 36px; } }
+      #animatedModal .modal-content #roman-modal #roman-description p {
+        color: #FFFFFF;
+        font-size: 36px; }
+        @media screen and (max-width: 960px) {
+          #animatedModal .modal-content #roman-modal #roman-description p {
+            font-size: 24px; } }
+      @media screen and (max-width: 960px) {
+        #animatedModal .modal-content #roman-modal #roman-description {
+          width: 90%;
+          margin-bottom: 100px; } }
+    #animatedModal .modal-content #roman-modal #roman-mag-cover {
+      margin-bottom: 300px;
+      width: 60%; }
+      @media screen and (max-width: 960px) {
+        #animatedModal .modal-content #roman-modal #roman-mag-cover {
+          width: 95%;
+          margin-bottom: 100px; } }
+    #animatedModal .modal-content #roman-modal #roman-mag-toc {
+      margin-bottom: 300px;
+      width: 60%; }
+      @media screen and (max-width: 960px) {
+        #animatedModal .modal-content #roman-modal #roman-mag-toc {
+          width: 95%;
+          margin-bottom: 100px; } }
+    #animatedModal .modal-content #roman-modal #roman-mag-spread {
+      width: 60%; }
+      @media screen and (max-width: 960px) {
+        #animatedModal .modal-content #roman-modal #roman-mag-spread {
+          width: 95%; } }
+  #animatedModal .modal-content #prolific-modal {
+    text-align: center; }
+    #animatedModal .modal-content #prolific-modal #prolific-header {
+      width: 100%; }
+    #animatedModal .modal-content #prolific-modal h1 {
+      color: #ac202a;
+      font-size: 60px;
+      width: 50%;
+      padding-bottom: 40px;
+      margin: 200px auto 50px;
+      border-bottom: 5px solid grey; }
+      @media screen and (max-width: 1050px) {
+        #animatedModal .modal-content #prolific-modal h1 {
+          font-size: 40px;
+          width: 95%; } }
+    #animatedModal .modal-content #prolific-modal #mockups {
+      background: url("backgrounds/ProlificRedGradient.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: top;
+      width: 100%;
+      padding: 0 5%;
+      margin: 300px auto 0; }
+      @media screen and (max-width: 1050px) {
+        #animatedModal .modal-content #prolific-modal #mockups {
+          margin: 100px auto 0; } }
+      #animatedModal .modal-content #prolific-modal #mockups .web-mockup {
+        width: 75%;
+        margin-bottom: 300px; }
+        @media screen and (max-width: 1050px) {
+          #animatedModal .modal-content #prolific-modal #mockups .web-mockup {
+            width: 100%;
+            margin-bottom: 100px; } }
+      #animatedModal .modal-content #prolific-modal #mockups .web-mockup:nth-child(odd) {
+        float: right; }
+      #animatedModal .modal-content #prolific-modal #mockups .web-mockup:last-child {
+        margin-bottom: 0; }
+    #animatedModal .modal-content #prolific-modal #mockup {
+      width: 90%;
+      margin-top: -25%; }
+    #animatedModal .modal-content #prolific-modal #icons {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap; }
+      @media screen and (max-width: 1050px) {
+        #animatedModal .modal-content #prolific-modal #icons {
+          width: 95%; } }
+      #animatedModal .modal-content #prolific-modal #icons .icon-container {
+        flex-basis: 25%;
+        margin-bottom: 100px; }
+        #animatedModal .modal-content #prolific-modal #icons .icon-container .icon {
+          height: 200px;
+          margin-bottom: 25px; }
+        #animatedModal .modal-content #prolific-modal #icons .icon-container p {
+          font-size: 18px; }
+        @media screen and (max-width: 1400px) {
+          #animatedModal .modal-content #prolific-modal #icons .icon-container {
+            flex-basis: calc(100% / 3); } }
+        @media screen and (max-width: 1050px) {
+          #animatedModal .modal-content #prolific-modal #icons .icon-container {
+            flex-basis: 50%; } }
+        @media screen and (max-width: 700px) {
+          #animatedModal .modal-content #prolific-modal #icons .icon-container {
+            flex-basis: 100%; } }

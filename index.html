@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
   </head>
@@ -42,7 +41,7 @@
       <h2 id='the-work'>THE WORK</h2>
       <div class="projects">
         <!-- BSM -->
-        <div class="project content" id='bsm' data-aos='fade' data-aos-delay='0'>
+        <div class="project content" id='bsm'>
           <div class="box-background" id='bsm'></div>
           <div class="overlay modal-main" href='#animatedModal'>
             <div class="text">
@@ -52,7 +51,7 @@
           </div>
         </div>
         <!-- NALAC -->
-        <div class="project content" id='nalac' data-aos='fade' data-aos-delay='100'>
+        <div class="project content" id='nalac'>
           <div class="box-background" id='nalac'></div>
           <div class="overlay modal-main" href='#animatedModal'>
             <div class="text">
@@ -62,7 +61,7 @@
           </div>
         </div>
         <!-- JCC -->
-        <div class="project content" id='jcc' data-aos='fade' data-aos-delay='200'>
+        <div class="project content" id='jcc'>
           <div class="box-background" id='jcc'></div>
           <div class="overlay modal-main" href='#animatedModal'>
             <div class="text">
@@ -72,7 +71,7 @@
           </div>
         </div>
         <!-- It's A Prolific World -->
-        <div class="project content" id='prolific' data-aos='fade' data-aos-delay='300'>
+        <div class="project content" id='prolific'>
           <div class="box-background" id='prolific'></div>
           <div class="overlay modal-main" href='#animatedModal'>
             <div class="text">
@@ -82,7 +81,7 @@
           </div>
         </div>
         <!-- Hawaiian Shaved Ice -->
-        <div class="project content" id='hawaiian' data-aos='fade' data-aos-delay='400'>
+        <div class="project content" id='hawaiian'>
           <div class="box-background" id='hawaiian'></div>
           <div class="overlay modal-main" href='#animatedModal'>
             <div class="text">
@@ -92,7 +91,7 @@
           </div>
         </div>
         <!-- Roman Magazine -->
-        <div class="project content" id='roman' data-aos='fade' data-aos-delay='500'>
+        <div class="project content" id='roman'>
           <div class="box-background" id='roman'></div>
           <div class="overlay modal-main" href='#animatedModal'>
             <div class="text">
@@ -102,7 +101,7 @@
           </div>
         </div>
         <!-- Asian Magazine -->
-        <div class="project content" id='asian' data-aos='fade' data-aos-delay='600'>
+        <div class="project content" id='asian'>
           <div class="box-background" id='asian'></div>
           <div class="overlay modal-main" href='#animatedModal'>
             <div class="text">
@@ -112,7 +111,7 @@
           </div>
         </div>
         <!-- Motion Graphics -->
-        <div class="project content" id='motion' data-aos='fade' data-aos-delay='700'>
+        <div class="project content" id='motion'>
           <div class="box-background" id='motion'></div>
           <div class="overlay modal-main" href='#animatedModal'>
             <div class="text">
@@ -126,14 +125,14 @@
     </section>
     <!-- bio -->
     <section id='bio'>
-      <div class="info-section" data-aos='fade-left'>
+      <div class="info-section">
         <h2 id='education'>EDUCATION</h2>
         <p>
           The Art Institute of Philadelphia, Philadelphia&nbsp;PA<br>
           Bachelors of Science in Graphic Design March 2017
         </p>
       </div>
-      <div class="info-section" data-aos='fade-right'>
+      <div class="info-section">
         <h2 id='all-about-me'>ALL ABOUT ME</h2>
         <p>
           I have experience creating work for various mediums,
@@ -150,15 +149,15 @@
     <footer id='contact'>
       <h2>LET'S TALK, LEAVE A MESSAGE</h2>
       <form action="" id='contact-form'>
-        <div data-aos='fade-up'>
+        <div>
           <h3>Name*</h3>
           <input required placeholder="Enter Your Name" type="text">
         </div>
-        <div data-aos='fade-up' data-aos-delay='150'>
+        <div>
           <h3>E-mail*</h3>
           <input required placeholder="Enter Your E-Mail" type="text">
         </div>
-        <div data-aos='fade-up' data-aos-delay='250'>
+        <div>
           <h3>Message*</h3>
           <textarea required placeholder="Enter Your Message"></textarea>
           <button>SEND</button>
@@ -166,6 +165,7 @@
         <div style='clear: both;'></div>
       </form>
     </footer>
+    <!-- copyright and credits -->
     <div class="credits">
       <p>© 2018 Julian Lopez Graphics</p>
     </div>
@@ -182,7 +182,68 @@
           <h1>JCC</h1>
         </div>
         <div class="modal" id='prolific-modal'>
-          <h1>PROLIFIC</h1>
+          <div>
+            <img id='prolific-header' src="images\modal-images\prolific\Prolific Graffiiti Header (2560x1987).jpg" alt="Prolific Header">
+            <img id='mockup' src="images\modal-images\prolific\Prolific Mockup Macbook.png" alt="Macbook Mockup">
+          </div>
+          <h1>Iconography</h1>
+          <div id="icons">
+            <div class="icon-container">
+              <img style='transform: rotate(45deg)' class='icon' src="images\modal-images\prolific\Brand Measurment Icon.png" alt="Brand Measurment">
+              <p>Brand Measurment</p>
+            </div>
+            <div class="icon-container">
+              <img class='icon' src="images\modal-images\prolific\Research Icon.png" alt="Research">
+              <p>Research</p>
+            </div>
+            <div class="icon-container">
+              <img class='icon' src="images\modal-images\prolific\Logo Design Icon.png" alt="Logo Design">
+              <p>Logo Design</p>
+            </div>
+            <div class="icon-container">
+              <img class='icon' src="images\modal-images\prolific\Brand Guidlines Icon.png" alt="Brand Guidelines">
+              <p>Brand Guidelines</p>
+            </div>
+            <div class="icon-container">
+              <img class='icon' src="images\modal-images\prolific\Brand Positioning Icon.png" alt="Brand Positioning">
+              <p>Brand Positioning</p>
+            </div>
+            <div class="icon-container">
+              <img class='icon' src="images\modal-images\prolific\Defining Your Brand Icon.png" alt="Defining Your Brand">
+              <p>Defining Your Brand</p>
+            </div>
+            <div class="icon-container">
+              <img class='icon' src="images\modal-images\prolific\Content Stragety Icon.png" alt="Content Strategy">
+              <p>Content Strategy</p>
+            </div>
+            <div class="icon-container">
+              <img class='icon' src="images\modal-images\prolific\Features & Functionanlity Icon.png" alt="Features & Functionality">
+              <p>Features & Functionality</p>
+            </div>
+            <div class="icon-container">
+              <img class='icon' src="images\modal-images\prolific\User Experience Icon.png" alt="User Experience">
+              <p>User Experience</p>
+            </div>
+            <div class="icon-container">
+              <img class='icon' src="images\modal-images\prolific\User Interface Icon.png" alt="User Interface">
+              <p>User Interface</p>
+            </div>
+            <div class="icon-container">
+              <img class='icon' src="images\modal-images\prolific\Development & Testing Icon.png" alt="Development & Testing">
+              <p>Development & Testing</p>
+            </div>
+            <div class="icon-container">
+              <img class='icon' src="images\modal-images\prolific\Launch Icon.png" alt="Launch">
+              <p>Launch</p>
+            </div>
+          </div>
+          <div id='mockups'>
+            <img src="images\modal-images\prolific\Prolific Home Page.png" alt="Prolific Home Page" class="web-mockup">
+            <img src="images\modal-images\prolific\Prolific Services Overview.png" alt="Prolific Services Overview" class="web-mockup">
+            <img src="images\modal-images\prolific\Prolific Services Page.png" alt="Prolific Services Page" class="web-mockup">
+            <img src="images\modal-images\prolific\Prolific Contact Page.png" alt="Prolific Contact Page" class="web-mockup">
+          </div>
+          <div style='clear: both'></div>
         </div>
         <div class="modal" id='hawaiian-modal'>
           <img data-aos='fade-left' id='rectagle' src="images/modal-images/hawaiian/Hawaiian Rectangle.png" alt="Rectagle">
@@ -191,10 +252,32 @@
           <img id='hawaiian-pouches' src="images\modal-images\hawaiian\Hawaiian Shaved Ice Pouches (2560x).jpg" alt="">
         </div>
         <div class="modal" id='roman-modal'>
-          <h1>ROMAN</h1>
+          <img class='faction-logo' src="images\modal-images\asian\The Faction Logo.png" alt="Faction Logo">
+          <div id='roman-description'>
+            <h1>Brief Description</h1>
+            <p>
+              The Faction is a magazine which highlights different cultures across the globe.
+              Every three months a new issue is released focusing on one particular culture.
+              The main focus of this issue is Asian culture which was the influence behind this piece.
+            </p>
+          </div>
+          <img id="roman-mag-cover" src="images\modal-images\roman\RomanMagCover.png" alt="Roman Magazine Cover">
+          <img id='roman-mag-toc' src="images\modal-images\roman\RomanMagTOC.png" alt="Roman Magazine TOC">
+          <img id='roman-mag-spread' src="images\modal-images\roman\RomanMagSpread.png" alt="Roman Magazine Spread">
         </div>
         <div class="modal" id='asian-modal'>
-          <h1>ASIAN</h1>
+          <img class='faction-logo' src="images\modal-images\asian\The Faction Logo.png" alt="Faction Logo">
+          <div id='asian-description'>
+            <h1>Brief Description</h1>
+            <p>
+              The Faction is a magazine which highlights different cultures across the globe.
+              Every three months a new issue is released focusing on one particular culture.
+              The main focus of this issue is Asian culture which was the influence behind this piece.
+            </p>
+          </div>
+          <img id='asian-mag-cover' src="images\modal-images\asian\AsianMagCover.png" alt="Asian Magazine Cover">
+          <img id='asian-mag-toc' src="images\modal-images\asian\AsianMagTOC.png" alt="Asian Magazine TOC">
+          <img id='asian-mag-spread' src="images\modal-images\asian\AsianMagSpread.png" alt="Asian Magazine Spread">
         </div>
         <div class="modal" id='motion-modal'>
           <h1>MOTION</h1>
@@ -203,7 +286,6 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script src='scripts/hamburger.js'></script>
     <script src='scripts/animatedModal.js'></script>
     <script src='scripts/modalControls.js'></script>

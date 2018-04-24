@@ -1,11 +1,5 @@
 //header image
 const header = document.querySelector('#header-banner');
-//global fade-in-on-scroll settings
-AOS.init({
-  delay: 100,
-  offset: 100,
-  duration: 700,
-});
 
 const banner = document.querySelector('#header-banner');
 const psudoBanner = document.querySelector('#header-psudo-banner');

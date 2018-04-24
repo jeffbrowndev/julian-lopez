@@ -1,4 +1,6 @@
-@import variables;
+@import 'variables';
+@import 'mixins';
+
 #animatedModal {
   height: 100%;
   width: 100%;
@@ -17,6 +19,14 @@
   .modal-content {
     .modal {
       display: none;
+    }
+    .faction-logo {
+      width: 60%;
+      margin: 200px 0;
+      @include mQ(960px) {
+        width: 95%;
+        margin: 100px 0;
+      }
     }
     #hawaiian-modal {
       text-align: center;
@@ -44,6 +54,190 @@
         margin-top: 200px;
         @include mQ(960px) {
           margin-top: 100px;
+        }
+      }
+    }
+    #asian-modal {
+      text-align: center;
+      background: url("backgrounds/AsianMagBG.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      #asian-description {
+        text-align: left;
+        width: 80%;
+        margin: 0 auto 200px;
+        h1 {
+          color: #c12026;
+          font-size: 56px;
+          font-weight: 700;
+          @include mQ(960px) {
+            font-size: 36px;
+          }
+        }
+        p {
+          color: #65c0e6;
+          font-size: 36px;
+          @include mQ(960px) {
+            font-size: 24px;
+          }
+        }
+        @include mQ(960px) {
+          width: 90%;
+          margin-bottom: 100px;
+        }
+      }
+      #asian-mag-cover {
+        margin-bottom: 300px;
+        width: 60%;
+        @include mQ(960px) {
+          width: 95%;
+          margin-bottom: 100px;
+        }
+      }
+      #asian-mag-toc {
+        margin-bottom: 300px;
+        width: 60%;
+        @include mQ(960px) {
+          width: 95%;
+          margin-bottom: 100px;
+        }
+      }
+      #asian-mag-spread {
+        width: 60%;
+        @include mQ(960px) {
+          width: 95%;
+        }
+      }
+    }
+    #roman-modal {
+      text-align: center;
+      background: url("backgrounds/RomanMagBG.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
+      height: 100%;
+      #roman-description {
+        text-align: left;
+        width: 80%;
+        margin: 0 auto 200px;
+        h1 {
+          color: #25b5e9;
+          font-size: 56px;
+          font-weight: 700;
+          @include mQ(960px) {
+            font-size: 36px;
+          }
+        }
+        p {
+          color: $white;
+          font-size: 36px;
+          @include mQ(960px) {
+            font-size: 24px;
+          }
+        }
+        @include mQ(960px) {
+          width: 90%;
+          margin-bottom: 100px;
+        }
+      }
+      #roman-mag-cover {
+        margin-bottom: 300px;
+        width: 60%;
+        @include mQ(960px) {
+          width: 95%;
+          margin-bottom: 100px;
+        }
+      }
+      #roman-mag-toc {
+        margin-bottom: 300px;
+        width: 60%;
+        @include mQ(960px) {
+          width: 95%;
+          margin-bottom: 100px;
+        }
+      }
+      #roman-mag-spread {
+        width: 60%;
+        @include mQ(960px) {
+          width: 95%;
+        }
+      }
+    }
+    #prolific-modal {
+      text-align: center;
+      #prolific-header {
+        width: 100%;
+      }
+      h1 {
+        color: #ac202a;
+        font-size: 60px;
+        width: 50%;
+        padding-bottom: 40px;
+        margin: 200px auto 50px;
+        border-bottom: 5px solid grey;
+        @include mQ(1050px) {
+          font-size: 40px;
+          width: 95%;
+        }
+      }
+      #mockups {
+        background: url("backgrounds/ProlificRedGradient.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top;
+        width: 100%;
+        padding: 0 5%;
+        margin: 300px auto 0;
+        @include mQ(1050px) {
+          margin: 100px auto 0;
+        }
+        .web-mockup {
+          width: 75%;
+          margin-bottom: 300px;
+          @include mQ(1050px) {
+            width: 100%;
+            margin-bottom: 100px;
+          }
+        }
+        .web-mockup:nth-child(odd) {
+          float: right;
+        }
+        .web-mockup:last-child {
+          margin-bottom: 0;
+        }
+      }
+      #mockup {
+        width: 90%;
+        margin-top: -25%;
+      }
+      #icons {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        @include mQ(1050px) {
+          width: 95%;
+        }
+        .icon-container {
+          flex-basis: 25%;
+          margin-bottom: 100px;
+          .icon {
+            height: 200px;
+            margin-bottom: 25px;
+          }
+          p {
+            font-size: 18px;
+          }
+          @include mQ(1400px) {
+            flex-basis: calc(100% / 3);
+          }
+          @include mQ(1050px) {
+            flex-basis: 50%;
+          }
+          @include mQ(700px) {
+            flex-basis: 100%;
+          }
         }
       }
     }
