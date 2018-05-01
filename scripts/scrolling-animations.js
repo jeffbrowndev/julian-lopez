@@ -1,11 +1,13 @@
 //header image
 const header = document.querySelector('#header-banner');
-
 const banner = document.querySelector('#header-banner');
 const psudoBanner = document.querySelector('#header-psudo-banner');
+const bsmBanner = document.querySelector('#bsm-header-image');
 
 //initialize header based on user device
 window.innerWidth <= 960 && psudoBanner.setAttribute('src', 'images/jl-header-mobile.jpg');
+//initialize BSM header based on user device
+bsmBanner.setAttribute('src', 'images/modal-images/bsm/bsm-header-mobile.png');
 
 const scroll = (e) => {
   const scrolled = -e.pageY * 0.25;
@@ -14,11 +16,16 @@ const scroll = (e) => {
 
 const resize = () => {
   if(window.innerWidth <= 960) {
+    //main page banner
     banner.setAttribute('src', 'images/jl-header-mobile.jpg')
+    //bsm banner
+    bsmBanner.setAttribute('src', 'images/modal-images/bsm/bsm-header-mobile.png')
     psudoBanner.setAttribute('src', 'images/jl-psudo-header-mobile.png')
+
   }
   else {
     banner.setAttribute('src', 'images/jl-header.jpg')
+    bsmBanner.setAttribute('src', 'images/modal-images/bsm/BSM Header Bar (2560x800).jpg')
     psudoBanner.setAttribute('src', 'images/jl-psudo-header.png')
   }
 }

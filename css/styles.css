@@ -271,6 +271,198 @@
         @media screen and (max-width: 700px) {
           #animatedModal .modal-content #prolific-modal #icons .icon-container {
             flex-basis: 100%; } }
+  #animatedModal .modal-content #bsm-modal {
+    text-align: center; }
+    #animatedModal .modal-content #bsm-modal #bsm-header {
+      position: relative;
+      text-align: center;
+      width: 100%; }
+      #animatedModal .modal-content #bsm-modal #bsm-header #bsm-header-image {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1; }
+      #animatedModal .modal-content #bsm-modal #bsm-header #bsm-logo {
+        width: 35%;
+        margin: 7% 0; }
+        @media screen and (max-width: 960px) {
+          #animatedModal .modal-content #bsm-modal #bsm-header #bsm-logo {
+            width: 60%;
+            margin: 24% 0; } }
+    #animatedModal .modal-content #bsm-modal #bsm-text-container {
+      display: flex;
+      width: 90%;
+      margin: 100px auto;
+      text-align: center; }
+      #animatedModal .modal-content #bsm-modal #bsm-text-container .bsm-text {
+        padding: 0 2%;
+        height: 100%; }
+        #animatedModal .modal-content #bsm-modal #bsm-text-container .bsm-text h3 {
+          font-size: 38px;
+          color: #42B549; }
+        #animatedModal .modal-content #bsm-modal #bsm-text-container .bsm-text p {
+          font-size: 24px;
+          color: #666767;
+          height: auto; }
+        @media screen and (max-width: 750px) {
+          #animatedModal .modal-content #bsm-modal #bsm-text-container .bsm-text h3 {
+            font-size: 24px; }
+          #animatedModal .modal-content #bsm-modal #bsm-text-container .bsm-text p {
+            font-size: 18px; } }
+      #animatedModal .modal-content #bsm-modal #bsm-text-container .line {
+        height: 200px;
+        width: 15px;
+        background-color: #666767;
+        align-self: center; }
+        @media screen and (max-width: 1100px) {
+          #animatedModal .modal-content #bsm-modal #bsm-text-container .line {
+            height: 5px;
+            width: 200px;
+            margin: 50px auto; } }
+      @media screen and (max-width: 1100px) {
+        #animatedModal .modal-content #bsm-modal #bsm-text-container {
+          display: block; } }
+    #animatedModal .modal-content #bsm-modal #new-old {
+      display: flex;
+      width: 80%;
+      margin: 200px auto; }
+      #animatedModal .modal-content #bsm-modal #new-old .bsm-logo-box {
+        flex-basis: 50%; }
+        #animatedModal .modal-content #bsm-modal #new-old .bsm-logo-box p {
+          font-size: 28px;
+          color: #42B549; }
+          @media screen and (max-width: 500px) {
+            #animatedModal .modal-content #bsm-modal #new-old .bsm-logo-box p {
+              font-size: 21px; } }
+        #animatedModal .modal-content #bsm-modal #new-old .bsm-logo-box img {
+          margin-top: 100px;
+          width: 50%; }
+          @media screen and (max-width: 1100px) {
+            #animatedModal .modal-content #bsm-modal #new-old .bsm-logo-box img {
+              width: 80%; } }
+          @media screen and (max-width: 500px) {
+            #animatedModal .modal-content #bsm-modal #new-old .bsm-logo-box img {
+              margin-top: 50px; } }
+        @media screen and (max-width: 500px) {
+          #animatedModal .modal-content #bsm-modal #new-old .bsm-logo-box {
+            width: 100%;
+            margin-bottom: 100px; } }
+      @media screen and (max-width: 750px) {
+        #animatedModal .modal-content #bsm-modal #new-old {
+          width: 95%; } }
+      @media screen and (max-width: 500px) {
+        #animatedModal .modal-content #bsm-modal #new-old {
+          display: block;
+          margin: 100px auto; } }
+    #animatedModal .modal-content #bsm-modal #family-set {
+      width: 80%;
+      text-align: center;
+      margin: auto; }
+      #animatedModal .modal-content #bsm-modal #family-set p {
+        color: #42B549;
+        font-size: 28px; }
+        @media screen and (max-width: 500px) {
+          #animatedModal .modal-content #bsm-modal #family-set p {
+            font-size: 21px; } }
+      #animatedModal .modal-content #bsm-modal #family-set #family-logos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; }
+        #animatedModal .modal-content #bsm-modal #family-set #family-logos img {
+          width: 25%;
+          margin: 100px 25px 0; }
+          @media screen and (max-width: 1100px) {
+            #animatedModal .modal-content #bsm-modal #family-set #family-logos img {
+              width: 40%;
+              margin: 100px 5% 0; } }
+          @media screen and (max-width: 500px) {
+            #animatedModal .modal-content #bsm-modal #family-set #family-logos img {
+              margin: 50px 5% 0;
+              width: 80%; } }
+        @media screen and (max-width: 500px) {
+          #animatedModal .modal-content #bsm-modal #family-set #family-logos {
+            display: block; } }
+      @media screen and (max-width: 750px) {
+        #animatedModal .modal-content #bsm-modal #family-set {
+          width: 95%; } }
+    #animatedModal .modal-content #bsm-modal #left-bar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 5%; }
+    #animatedModal .modal-content #bsm-modal #right-bar {
+      position: absolute;
+      top: 200%;
+      right: 0;
+      width: 5%; }
+    #animatedModal .modal-content #bsm-modal #spreads {
+      margin: 200px auto 0;
+      position: relative;
+      width: 80%; }
+      @media screen and (max-width: 1100px) {
+        #animatedModal .modal-content #bsm-modal #spreads {
+          width: 95%; } }
+      #animatedModal .modal-content #bsm-modal #spreads img {
+        width: 100%; }
+      #animatedModal .modal-content #bsm-modal #spreads .bsm-item {
+        width: 50%;
+        float: right;
+        clear: both; }
+        #animatedModal .modal-content #bsm-modal #spreads .bsm-item:nth-child(even) {
+          float: left; }
+        @media screen and (max-width: 750px) {
+          #animatedModal .modal-content #bsm-modal #spreads .bsm-item {
+            width: 100%;
+            margin-bottom: 50px; } }
+      #animatedModal .modal-content #bsm-modal #spreads .spread-with-header p {
+        margin-bottom: 100px;
+        color: #42B549;
+        font-size: 28px; }
+        @media screen and (max-width: 500px) {
+          #animatedModal .modal-content #bsm-modal #spreads .spread-with-header p {
+            font-size: 21px;
+            margin-bottom: 50px; } }
+      #animatedModal .modal-content #bsm-modal #spreads .spread-with-header #front-back {
+        width: 78%;
+        margin: auto;
+        display: flex; }
+        #animatedModal .modal-content #bsm-modal #spreads .spread-with-header #front-back p {
+          text-align: center;
+          flex-basis: 50%;
+          margin: 0;
+          color: #666767;
+          font-size: 23px; }
+          @media screen and (max-width: 500px) {
+            #animatedModal .modal-content #bsm-modal #spreads .spread-with-header #front-back p {
+              font-size: 16px; } }
+      #animatedModal .modal-content #bsm-modal #spreads #diag-spreads {
+        width: 100%;
+        margin: 100px auto 0;
+        position: relative; }
+        #animatedModal .modal-content #bsm-modal #spreads #diag-spreads #diag-left {
+          width: 60%;
+          position: absolute;
+          left: 0;
+          top: 500px; }
+          @media screen and (max-width: 1100px) {
+            #animatedModal .modal-content #bsm-modal #spreads #diag-spreads #diag-left {
+              top: 300px; } }
+          @media screen and (max-width: 750px) {
+            #animatedModal .modal-content #bsm-modal #spreads #diag-spreads #diag-left {
+              position: static;
+              width: 100%; } }
+        #animatedModal .modal-content #bsm-modal #spreads #diag-spreads #diag-right {
+          width: 60%;
+          position: absolute;
+          right: 0; }
+          @media screen and (max-width: 750px) {
+            #animatedModal .modal-content #bsm-modal #spreads #diag-spreads #diag-right {
+              position: static;
+              width: 100%; } }
+        @media screen and (max-width: 750px) {
+          #animatedModal .modal-content #bsm-modal #spreads #diag-spreads {
+            margin: auto; } }
 
 nav {
   position: relative;
@@ -303,7 +495,7 @@ nav {
       color: #3498D1 !important; }
   nav .nav-links.display {
     display: block;
-    background-color: rgba(25, 89, 150, 0.9);
+    background-color: rgba(25, 89, 150, 0.95);
     position: relative; }
     nav .nav-links.display .links {
       animation-duration: 0.1s; }
@@ -389,7 +581,7 @@ header #header-psudo-banner {
         width: 100%; } }
   #work .projects {
     box-sizing: border-box;
-    width: 1100px;
+    width: 70%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -486,7 +678,7 @@ header #header-psudo-banner {
       background-image: url("backgrounds/Asian Magazine Cover Box.jpg"); }
     #work .projects #motion {
       background-image: url("backgrounds/Motion Graphics Cover Box.jpg"); }
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1130px) {
     #work .project:nth-child(1) {
       order: 4; }
     #work .project:nth-child(2) {
@@ -503,7 +695,7 @@ header #header-psudo-banner {
       order: 5; }
     #work .project:nth-child(8) {
       order: 8; } }
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 850px) {
     #work .project:nth-child(1) {
       order: 5; }
     #work .project:nth-child(2) {

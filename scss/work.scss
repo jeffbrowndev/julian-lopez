@@ -18,7 +18,7 @@
   }
   .projects {
     box-sizing: border-box;
-    width: $wrapperWidth;
+    width: 70%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -136,7 +136,7 @@
     }
   }
   //change order of projects on tablet
-  @include mQ(960px) {
+  @include mQ($wrapperWidth + 30px) {
     .project:nth-child(1) {order: 4};
     .project:nth-child(2) {order: 1};
     .project:nth-child(3) {order: 2};
@@ -147,7 +147,7 @@
     .project:nth-child(8) {order: 8};
   }
   //change order of projects on mobile
-  @include mQ(750px) {
+  @include mQ(850px) {
     .project:nth-child(1) {order: 5};
     .project:nth-child(2) {order: 3};
     .project:nth-child(3) {order: 1};

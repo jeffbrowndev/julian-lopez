@@ -29,7 +29,7 @@ nav {
       color: #3498D1 !important; }
   nav .nav-links.display {
     display: block;
-    background-color: rgba(25, 89, 150, 0.9);
+    background-color: rgba(25, 89, 150, 0.95);
     position: relative; }
     nav .nav-links.display .links {
       animation-duration: 0.1s; }
