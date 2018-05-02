@@ -7,7 +7,7 @@ const bsmBanner = document.querySelector('#bsm-header-image');
 //initialize header based on user device
 window.innerWidth <= 960 && psudoBanner.setAttribute('src', 'images/jl-header-mobile.jpg');
 //initialize BSM header based on user device
-bsmBanner.setAttribute('src', 'images/modal-images/bsm/bsm-header-mobile.png');
+window.innerWidth <= 960 && bsmBanner.setAttribute('src', 'images/modal-images/bsm/bsm-header-mobile.png');
 
 const scroll = (e) => {
   const scrolled = -e.pageY * 0.25;

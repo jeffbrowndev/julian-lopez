@@ -125,6 +125,9 @@
     #hawaiian {
       background-image: url("backgrounds/Hawaiin Cover Box.jpg");
     }
+    #logos {
+      background-image: url("backgrounds/Logos Cover Box.png");
+    }
     #roman {
       background-image: url("backgrounds/Roman Magazine Cover Box.jpg");
     }
@@ -135,7 +138,7 @@
       background-image: url("backgrounds/Motion Graphics Cover Box.jpg");
     }
   }
-  //change order of projects on tablet
+  //3 across
   @include mQ($wrapperWidth + 30px) {
     .project:nth-child(1) {order: 4};
     .project:nth-child(2) {order: 1};
@@ -143,10 +146,11 @@
     .project:nth-child(4) {order: 3};
     .project:nth-child(5) {order: 6};
     .project:nth-child(6) {order: 7};
-    .project:nth-child(7) {order: 5};
-    .project:nth-child(8) {order: 8};
+    .project:nth-child(7) {order: 8};
+    .project:nth-child(8) {order: 5};
+    .project:nth-child(9) {order: 9};
   }
-  //change order of projects on mobile
+  //2 across
   @include mQ(850px) {
     .project:nth-child(1) {order: 5};
     .project:nth-child(2) {order: 3};
@@ -154,7 +158,20 @@
     .project:nth-child(4) {order: 2};
     .project:nth-child(5) {order: 4};
     .project:nth-child(6) {order: 7};
-    .project:nth-child(7) {order: 6};
-    .project:nth-child(8) {order: 8};
+    .project:nth-child(7) {order: 8};
+    .project:nth-child(8) {order: 6};
+    .project:nth-child(9) {order: 9};
+  }
+  //1 across
+  @include mQ(500px) {
+    .project:nth-child(1) {order: 5};
+    .project:nth-child(2) {order: 3};
+    .project:nth-child(3) {order: 1};
+    .project:nth-child(4) {order: 2};
+    .project:nth-child(5) {order: 4};
+    .project:nth-child(6) {order: 8};
+    .project:nth-child(7) {order: 7};
+    .project:nth-child(8) {order: 6};
+    .project:nth-child(9) {order: 9};
   }
 }

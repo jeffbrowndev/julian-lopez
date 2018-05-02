@@ -2,6 +2,7 @@
 @import 'mixins';
 
 #animatedModal {
+  cursor: pointer;
   height: 100%;
   width: 100%;
   background-color: $white;
@@ -31,8 +32,14 @@
     #hawaiian-modal {
       text-align: center;
       background: url("backgrounds/Hawaiin Background.jpg");
+      position: relative;
       #rectagle, #hawaiian-pouches {
         width: 100%;
+      }
+      #rectagle {
+        position: absolute;
+        top: 0;
+        left: 0;
       }
       #hawaiian-logo {
         margin-top: 100px;
@@ -161,6 +168,40 @@
         width: 60%;
         @include mQ(960px) {
           width: 95%;
+        }
+      }
+    }
+    #logos-modal {
+      #logos-grid {
+        width: 80%;
+        margin: 200px auto;
+        text-align: center;
+        img {
+          display: block;
+          width: 40%;
+          height: 100%;
+          float: left;
+          clear: both;
+          &:nth-child(even) {
+            float: right;
+          }
+          @include mQ($wrapperWidth) {
+            float: none;
+            margin-bottom: 100px;
+          }
+          @include mQ(750px) {
+            width: 100%;
+          }
+        }
+        @include mQ($wrapperWidth) {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+          margin: 100px auto;
+        }
+        @include mQ(750px) {
+          margin: 100px auto 0;
         }
       }
     }

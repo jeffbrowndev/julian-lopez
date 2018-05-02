@@ -105,6 +105,8 @@
       background-image: url("backgrounds/Prolific Cover Box.jpg"); }
     #work .projects #hawaiian {
       background-image: url("backgrounds/Hawaiin Cover Box.jpg"); }
+    #work .projects #logos {
+      background-image: url("backgrounds/Logos Cover Box.png"); }
     #work .projects #roman {
       background-image: url("backgrounds/Roman Magazine Cover Box.jpg"); }
     #work .projects #asian {
@@ -125,9 +127,11 @@
     #work .project:nth-child(6) {
       order: 7; }
     #work .project:nth-child(7) {
-      order: 5; }
+      order: 8; }
     #work .project:nth-child(8) {
-      order: 8; } }
+      order: 5; }
+    #work .project:nth-child(9) {
+      order: 9; } }
   @media screen and (max-width: 850px) {
     #work .project:nth-child(1) {
       order: 5; }
@@ -142,6 +146,27 @@
     #work .project:nth-child(6) {
       order: 7; }
     #work .project:nth-child(7) {
-      order: 6; }
+      order: 8; }
     #work .project:nth-child(8) {
-      order: 8; } }
+      order: 6; }
+    #work .project:nth-child(9) {
+      order: 9; } }
+  @media screen and (max-width: 500px) {
+    #work .project:nth-child(1) {
+      order: 5; }
+    #work .project:nth-child(2) {
+      order: 3; }
+    #work .project:nth-child(3) {
+      order: 1; }
+    #work .project:nth-child(4) {
+      order: 2; }
+    #work .project:nth-child(5) {
+      order: 4; }
+    #work .project:nth-child(6) {
+      order: 8; }
+    #work .project:nth-child(7) {
+      order: 7; }
+    #work .project:nth-child(8) {
+      order: 6; }
+    #work .project:nth-child(9) {
+      order: 9; } }

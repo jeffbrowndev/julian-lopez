@@ -1,4 +1,5 @@
 #animatedModal {
+  cursor: pointer;
   height: 100%;
   width: 100%;
   background-color: #FFFFFF; }
@@ -21,9 +22,14 @@
         margin: 100px 0; } }
   #animatedModal .modal-content #hawaiian-modal {
     text-align: center;
-    background: url("backgrounds/Hawaiin Background.jpg"); }
+    background: url("backgrounds/Hawaiin Background.jpg");
+    position: relative; }
     #animatedModal .modal-content #hawaiian-modal #rectagle, #animatedModal .modal-content #hawaiian-modal #hawaiian-pouches {
       width: 100%; }
+    #animatedModal .modal-content #hawaiian-modal #rectagle {
+      position: absolute;
+      top: 0;
+      left: 0; }
     #animatedModal .modal-content #hawaiian-modal #hawaiian-logo {
       margin-top: 100px;
       width: 50%; }
@@ -136,6 +142,35 @@
       @media screen and (max-width: 960px) {
         #animatedModal .modal-content #roman-modal #roman-mag-spread {
           width: 95%; } }
+  #animatedModal .modal-content #logos-modal #logos-grid {
+    width: 80%;
+    margin: 200px auto;
+    text-align: center; }
+    #animatedModal .modal-content #logos-modal #logos-grid img {
+      display: block;
+      width: 40%;
+      height: 100%;
+      float: left;
+      clear: both; }
+      #animatedModal .modal-content #logos-modal #logos-grid img:nth-child(even) {
+        float: right; }
+      @media screen and (max-width: 1100px) {
+        #animatedModal .modal-content #logos-modal #logos-grid img {
+          float: none;
+          margin-bottom: 100px; } }
+      @media screen and (max-width: 750px) {
+        #animatedModal .modal-content #logos-modal #logos-grid img {
+          width: 100%; } }
+    @media screen and (max-width: 1100px) {
+      #animatedModal .modal-content #logos-modal #logos-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 100px auto; } }
+    @media screen and (max-width: 750px) {
+      #animatedModal .modal-content #logos-modal #logos-grid {
+        margin: 100px auto 0; } }
   #animatedModal .modal-content #prolific-modal {
     text-align: center; }
     #animatedModal .modal-content #prolific-modal #prolific-header {
