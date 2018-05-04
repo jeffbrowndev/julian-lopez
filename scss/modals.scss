@@ -172,6 +172,9 @@
       }
     }
     #logos-modal {
+      #logos-header {
+        width: 100%;
+      }
       #logos-grid {
         width: 80%;
         margin: 200px auto;
@@ -505,6 +508,55 @@
           @include mQ(750px) {
             margin: auto;
           }
+        }
+      }
+    }
+    #nalac-modal {
+      position: relative;
+      text-align: center;
+      #nalac-header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+      }
+      #nalac-header-logo {
+        width: 40%;
+        margin: 10% auto;
+        z-index: 1;
+      }
+      .nalac-text-section {
+        width: 80%;
+        margin: auto;
+        text-align: left;
+      }
+    }
+    #motion-modal {
+      padding: 200px 20% 0;
+      background-color: $footer-blue;
+      @include mQ($wrapperWidth) {
+        padding: 100px 2.5% 0;
+      }
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      p {
+        padding: 10px 0 200px 0;
+        text-align: center;
+        font-size: 14px;
+        color: $grey;
+        @include mQ($wrapperWidth) {
+          padding: 10px 0 100px 0;
         }
       }
     }
