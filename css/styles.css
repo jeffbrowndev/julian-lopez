@@ -513,10 +513,38 @@
       width: 40%;
       margin: 10% auto;
       z-index: 1; }
+    #animatedModal .modal-content #nalac-modal #nalac-text {
+      margin-top: 100px; }
     #animatedModal .modal-content #nalac-modal .nalac-text-section {
       width: 80%;
-      margin: auto;
+      margin: 0 auto 50px;
       text-align: left; }
+      #animatedModal .modal-content #nalac-modal .nalac-text-section h3 {
+        font-size: 46px;
+        font-weight: bold;
+        margin-bottom: 10px; }
+      #animatedModal .modal-content #nalac-modal .nalac-text-section p {
+        color: #5A5A5A;
+        font-size: 23px; }
+    #animatedModal .modal-content #nalac-modal #logo-compare {
+      width: 80%;
+      margin: 200px auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center; }
+      #animatedModal .modal-content #nalac-modal #logo-compare p {
+        width: 50%;
+        margin-bottom: 50px;
+        font-size: 22px; }
+      #animatedModal .modal-content #nalac-modal #logo-compare img {
+        width: 40%;
+        margin: 0 5%; }
+      #animatedModal .modal-content #nalac-modal #logo-compare #logos-vertical {
+        width: 50%; }
+        #animatedModal .modal-content #nalac-modal #logo-compare #logos-vertical img {
+          width: 50%;
+          margin: 0; }
   #animatedModal .modal-content #motion-modal {
     padding: 200px 20% 0;
     background-color: #9FDFFA; }

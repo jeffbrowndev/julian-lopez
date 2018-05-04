@@ -526,10 +526,46 @@
         margin: 10% auto;
         z-index: 1;
       }
+      #nalac-text {
+        margin-top: 100px;
+      }
       .nalac-text-section {
         width: 80%;
-        margin: auto;
+        margin: 0 auto 50px;
         text-align: left;
+        h3 {
+          font-size: 46px;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        p {
+          color: $grey;
+          font-size: 23px;
+        }
+      }
+      #logo-compare {
+        width: 80%;
+        margin: 200px auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        p {
+          width: 50%;
+          margin-bottom: 50px;
+          font-size: 22px;
+        }
+        img {
+          width: 40%;
+          margin: 0 5%;
+        }
+        #logos-vertical {
+          width: 50%;
+          img {
+            width: 50%;
+            margin: 0;
+          }
+        }
       }
     }
     #motion-modal {
