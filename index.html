@@ -156,19 +156,20 @@
     <!-- contact form -->
     <footer id='contact'>
       <h2>LET'S TALK, LEAVE A MESSAGE</h2>
-      <form action="" id='contact-form'>
+      <form action="https://formspree.io/jeffbrowndev@gmail.com" method='POST' id='contact-form'>
         <div>
           <h3>Name*</h3>
-          <input required placeholder="Enter Your Name" type="text">
+          <input name="name" required placeholder="Enter Your Name" type="text">
         </div>
         <div>
           <h3>E-mail*</h3>
-          <input required placeholder="Enter Your E-Mail" type="text">
+          <input name='email' required placeholder="Enter Your E-Mail" type="text">
         </div>
         <div>
           <h3>Message*</h3>
-          <textarea required placeholder="Enter Your Message"></textarea>
-          <button>SEND</button>
+          <textarea name='message' required placeholder="Enter Your Message"></textarea>
+          <input type="hidden" name="_next" value="/" />
+          <button type='submit' value="SEND">SEND</button>
         </div>
         <div style='clear: both;'></div>
       </form>
@@ -268,17 +269,35 @@
             </div>
           </div>
           <div id="logo-compare">
-            <p>Existing Logo</p>
-            <p>New Logo</p>
-            <img src="images\modal-images\NALAC\NALAC Previous Logo.jpg" alt="NALAC Exisiting Logo">
-            <img src="images\modal-images\logos\NALAC Logo.png" alt="NALAC New Logo">
-            <img src="images\modal-images\NALAC\Mockup NALAC leader head.png" alt="NALAC Letter Head">
-            <div id="logos-vertical">
+            <p class='flex-item'>Existing Logo</p>
+            <p class='flex-item'>New Logo</p>
+            <img class='flex-item' src="images\modal-images\NALAC\NALAC Previous Logo.jpg" alt="NALAC Exisiting Logo">
+            <img class='flex-item' src="images\modal-images\logos\NALAC Logo.png" alt="NALAC New Logo">
+            <img class='flex-item' src="images\modal-images\NALAC\Mockup NALAC leader head.png" alt="NALAC Letter Head">
+            <div class='flex-item' id="logos-vertical">
               <img src="images\modal-images\NALAC\ID Card & Notebook For web.png" alt="NALAC ID Card & Notebook">
               <img src="images\modal-images\NALAC\Envelope NALAC.png" alt="NALAC Envelope">
             </div>
-            <img src="images\modal-images\NALAC\Mockup Business card NALAC horizontal front v1.png" alt="NALAC Business Card Front">
-            <img src="images\modal-images\NALAC\Mockup Business card NALAC horizontal back with shadow v1.png" alt="NALAC Business Card Back">
+            <img class='flex-item' src="images\modal-images\NALAC\Mockup Business card NALAC horizontal front v1.png" alt="NALAC Business Card Front">
+            <img class='flex-item' src="images\modal-images\NALAC\Mockup Business card NALAC horizontal back with shadow v1.png" alt="NALAC Business Card Back">
+          </div>
+          <div id="blue-gradient">
+            <div id="top">
+              <img src="images\modal-images\NALAC\NALAC Macbook (Home page).png" alt="NALAC Macbook">
+              <img src="images\modal-images\NALAC\NALAC Home Page Mockup (web).png" alt="NALAC Home Page Mockup">
+            </div>
+            <img id='store-mockups' src="images\modal-images\NALAC\NALAC Store Mockups (Hard angles).png" alt="NALAC Store Mockups">
+            <div id="bottom">
+              <img src="images\modal-images\NALAC\NALAC Mockup Invloved-Contact (Web).png" alt="NALAC Mockup Involved">
+            </div>
+            <div id="clouds">
+              <img src="images\modal-images\NALAC\NALAC Tradicional Poster Mockup with blur at pole(150ppi).png" alt="Poster">
+              <img src="images\modal-images\NALAC\Mockup billboard NALAC v2 (faded bar).png" alt="Billboard">
+            </div>
+            <div id="tradeshow">
+              <img src="images\modal-images\NALAC\Sweater NALAC.png" alt="Sweater">
+              <img src="images\modal-images\NALAC\Trade show NALAC.png" alt="Trade Show">
+            </div>
           </div>
         </div>
         <div class="modal" id='jcc-modal'>
@@ -369,7 +388,7 @@
           </div>
         </div>
         <div class="modal" id='roman-modal'>
-          <img class='faction-logo' src="images\modal-images\asian\The Faction Logo.png" alt="Faction Logo">
+          <img class='faction-logo' src="images\modal-images\logos\The Faction Logo.png" alt="Faction Logo">
           <div id='roman-description'>
             <h1>Brief Description</h1>
             <p>
@@ -381,16 +400,16 @@
           <img id='roman-mag-spread' src="images\modal-images\roman\RomanMagSpread.png" alt="Roman Magazine Spread">
         </div>
         <div class="modal" id='asian-modal'>
-          <img class='faction-logo' src="images\modal-images\asian\The Faction Logo.png" alt="Faction Logo">
+          <img class='faction-logo' src="images\modal-images\logos\The Faction Logo.png" alt="Faction Logo">
           <div id='asian-description'>
             <h1>Brief Description</h1>
             <p>
               The Faction is a magazine that highlights different cultures across the globe. Every three months a new issue is released spotlighting one culture. Asian culture has the center of attention this issue, which was the influence of this piece.
             </p>
           </div>
-          <img id='asian-mag-cover' src="images\modal-images\asian\AsianMagCover.png" alt="Asian Magazine Cover">
-          <img id='asian-mag-toc' src="images\modal-images\asian\AsianMagTOC.png" alt="Asian Magazine TOC">
-          <img id='asian-mag-spread' src="images\modal-images\asian\AsianMagSpread.png" alt="Asian Magazine Spread">
+          <img id='asian-mag-cover' src="images\modal-images\asian\Asia MagCover.png" alt="Asian Magazine Cover">
+          <img id='asian-mag-toc' src="images\modal-images\asian\AsianTOCv1.png" alt="Asian Magazine TOC">
+          <img id='asian-mag-spread' src="images\modal-images\asian\AsianSpreadv1.png" alt="Asian Magazine Spread">
         </div>
         <div class="modal" id='motion-modal'>
           <div class="video-container">

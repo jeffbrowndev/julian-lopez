@@ -2,7 +2,8 @@
   cursor: pointer;
   height: 100%;
   width: 100%;
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  z-index: 9999; }
   #animatedModal .close-animatedModal {
     padding: 25px 10px;
     text-align: center; }
@@ -443,19 +444,32 @@
       width: 40%;
       margin: 10% auto;
       z-index: 1; }
+      @media screen and (max-width: 750px) {
+        #animatedModal .modal-content #nalac-modal #nalac-header-logo {
+          width: 60%;
+          margin: 5% auto; } }
     #animatedModal .modal-content #nalac-modal #nalac-text {
       margin-top: 100px; }
     #animatedModal .modal-content #nalac-modal .nalac-text-section {
       width: 80%;
       margin: 0 auto 50px;
       text-align: left; }
+      @media screen and (max-width: 750px) {
+        #animatedModal .modal-content #nalac-modal .nalac-text-section {
+          width: 95%; } }
       #animatedModal .modal-content #nalac-modal .nalac-text-section h3 {
         font-size: 46px;
         font-weight: bold;
         margin-bottom: 10px; }
+        @media screen and (max-width: 750px) {
+          #animatedModal .modal-content #nalac-modal .nalac-text-section h3 {
+            font-size: 26px; } }
       #animatedModal .modal-content #nalac-modal .nalac-text-section p {
         color: #5A5A5A;
         font-size: 23px; }
+        @media screen and (max-width: 750px) {
+          #animatedModal .modal-content #nalac-modal .nalac-text-section p {
+            font-size: 18px; } }
     #animatedModal .modal-content #nalac-modal #logo-compare {
       width: 80%;
       margin: 200px auto;
@@ -463,18 +477,100 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: center; }
+      @media screen and (max-width: 750px) {
+        #animatedModal .modal-content #nalac-modal #logo-compare {
+          margin: 200px auto 0; }
+          #animatedModal .modal-content #nalac-modal #logo-compare .flex-item:nth-child(1) {
+            order: 1; }
+          #animatedModal .modal-content #nalac-modal #logo-compare .flex-item:nth-child(2) {
+            order: 3; }
+          #animatedModal .modal-content #nalac-modal #logo-compare .flex-item:nth-child(3) {
+            order: 2; }
+          #animatedModal .modal-content #nalac-modal #logo-compare .flex-item:nth-child(4) {
+            order: 4; }
+          #animatedModal .modal-content #nalac-modal #logo-compare .flex-item:nth-child(5) {
+            order: 5; }
+          #animatedModal .modal-content #nalac-modal #logo-compare .flex-item:nth-child(6) {
+            order: 6; }
+          #animatedModal .modal-content #nalac-modal #logo-compare .flex-item:nth-child(7) {
+            order: 7; }
+          #animatedModal .modal-content #nalac-modal #logo-compare .flex-item:nth-child(8) {
+            order: 8; }
+          #animatedModal .modal-content #nalac-modal #logo-compare .flex-item {
+            margin-bottom: 100px; } }
       #animatedModal .modal-content #nalac-modal #logo-compare p {
         width: 50%;
         margin-bottom: 50px;
         font-size: 22px; }
+        @media screen and (max-width: 750px) {
+          #animatedModal .modal-content #nalac-modal #logo-compare p {
+            margin-bottom: 0;
+            width: 100%; } }
       #animatedModal .modal-content #nalac-modal #logo-compare img {
         width: 40%;
         margin: 0 5%; }
+        @media screen and (max-width: 750px) {
+          #animatedModal .modal-content #nalac-modal #logo-compare img {
+            width: 100%;
+            margin: 0; } }
       #animatedModal .modal-content #nalac-modal #logo-compare #logos-vertical {
         width: 50%; }
+        @media screen and (max-width: 750px) {
+          #animatedModal .modal-content #nalac-modal #logo-compare #logos-vertical {
+            width: 100%; } }
         #animatedModal .modal-content #nalac-modal #logo-compare #logos-vertical img {
           width: 50%;
           margin: 0; }
+          @media screen and (max-width: 750px) {
+            #animatedModal .modal-content #nalac-modal #logo-compare #logos-vertical img {
+              width: 100%; } }
+    #animatedModal .modal-content #nalac-modal #blue-gradient {
+      background: url("backgrounds/NALAC Gradient.png");
+      background-position: top; }
+      #animatedModal .modal-content #nalac-modal #blue-gradient img {
+        width: 50%; }
+      #animatedModal .modal-content #nalac-modal #blue-gradient #top {
+        width: 80%;
+        display: flex;
+        margin: auto;
+        transform: translateY(-50px); }
+        #animatedModal .modal-content #nalac-modal #blue-gradient #top img {
+          height: 100%; }
+          #animatedModal .modal-content #nalac-modal #blue-gradient #top img:nth-child(1) {
+            transform: translateX(15%);
+            align-self: center; }
+          #animatedModal .modal-content #nalac-modal #blue-gradient #top img:nth-child(2) {
+            transform: translateX(-15%); }
+      #animatedModal .modal-content #nalac-modal #blue-gradient #bottom {
+        width: 80%;
+        margin: 200px auto; }
+        #animatedModal .modal-content #nalac-modal #blue-gradient #bottom img {
+          width: 100%; }
+      #animatedModal .modal-content #nalac-modal #blue-gradient #store-mockups {
+        margin-top: 200px;
+        width: 80%; }
+      #animatedModal .modal-content #nalac-modal #blue-gradient #clouds {
+        margin: 200px auto;
+        background: url("backgrounds/NALAC Clouds.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0 10%;
+        display: flex; }
+        #animatedModal .modal-content #nalac-modal #blue-gradient #clouds img:nth-child(1) {
+          flex-basis: 35%;
+          align-self: flex-end; }
+        #animatedModal .modal-content #nalac-modal #blue-gradient #clouds img:nth-child(2) {
+          flex-basis: 65%;
+          align-self: flex-end; }
+      #animatedModal .modal-content #nalac-modal #blue-gradient #tradeshow {
+        margin: auto;
+        width: 80%;
+        display: flex; }
+        #animatedModal .modal-content #nalac-modal #blue-gradient #tradeshow img:nth-child(1) {
+          flex-basis: 25%;
+          align-self: flex-end; }
+        #animatedModal .modal-content #nalac-modal #blue-gradient #tradeshow img:nth-child(2) {
+          flex-basis: 75%; }
   #animatedModal .modal-content #motion-modal {
     padding: 200px 20% 0;
     background-color: #9FDFFA; }

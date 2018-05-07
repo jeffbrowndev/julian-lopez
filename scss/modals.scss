@@ -6,6 +6,7 @@
   height: 100%;
   width: 100%;
   background-color: $white;
+  z-index: 9999;
   .close-animatedModal {
     padding: $labelMargin $horzPadding;
     text-align: center;
@@ -525,6 +526,10 @@
         width: 40%;
         margin: 10% auto;
         z-index: 1;
+        @include mQ(750px) {
+          width: 60%;
+          margin: 5% auto;
+        }
       }
       #nalac-text {
         margin-top: 100px;
@@ -533,14 +538,23 @@
         width: 80%;
         margin: 0 auto 50px;
         text-align: left;
+        @include mQ(750px) {
+          width: 95%;
+        }
         h3 {
           font-size: 46px;
           font-weight: bold;
           margin-bottom: 10px;
+          @include mQ(750px) {
+            font-size: 26px;
+          }
         }
         p {
           color: $grey;
           font-size: 23px;
+          @include mQ(750px) {
+            font-size: 18px;
+          }
         }
       }
       #logo-compare {
@@ -550,20 +564,114 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        @include mQ(750px) {
+          margin: 200px auto 0;
+          .flex-item:nth-child(1) {order: 1};
+          .flex-item:nth-child(2) {order: 3};
+          .flex-item:nth-child(3) {order: 2};
+          .flex-item:nth-child(4) {order: 4};
+          .flex-item:nth-child(5) {order: 5};
+          .flex-item:nth-child(6) {order: 6};
+          .flex-item:nth-child(7) {order: 7};
+          .flex-item:nth-child(8) {order: 8};
+          .flex-item {
+            margin-bottom: 100px;
+          }
+        }
         p {
           width: 50%;
           margin-bottom: 50px;
           font-size: 22px;
+          @include mQ(750px) {
+            margin-bottom: 0;
+            width: 100%;
+          }
         }
         img {
           width: 40%;
           margin: 0 5%;
+          @include mQ(750px) {
+            width: 100%;
+            margin: 0;
+          }
         }
         #logos-vertical {
           width: 50%;
+          @include mQ(750px) {
+            width: 100%;
+          }
           img {
             width: 50%;
             margin: 0;
+            @include mQ(750px) {
+              width: 100%;
+            }
+          }
+        }
+      }
+      #blue-gradient {
+        background: url("backgrounds/NALAC Gradient.png");
+        background-position: top;
+        img {
+          width: 50%;
+        }
+        #top {
+          width: 80%;
+          display: flex;
+          margin: auto;
+          transform: translateY(-50px);
+          img {
+            height: 100%;
+            &:nth-child(1) {
+              transform: translateX(15%);
+              align-self: center;
+            }
+            &:nth-child(2) {
+              transform: translateX(-15%);
+            }
+          }
+        }
+        #bottom {
+          width: 80%;
+          margin: 200px auto;
+          img {
+            width: 100%;
+          }
+        }
+        #store-mockups {
+          margin-top: 200px;
+          width: 80%;
+        }
+        #clouds {
+          margin: 200px auto;
+          background: url("backgrounds/NALAC Clouds.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          padding: 0 10%;
+          display: flex;
+          img {
+            &:nth-child(1) {
+              flex-basis: 35%;
+              align-self: flex-end;
+            }
+            &:nth-child(2) {
+              flex-basis: 65%;
+              align-self: flex-end;
+            }
+          }
+        }
+        #tradeshow {
+          margin: auto;
+          width: 80%;
+          display: flex;
+          img {
+            &:nth-child(1) {
+              flex-basis: 25%;
+              align-self: flex-end;
+            }
+            &:nth-child(2) {
+              flex-basis: 75%;
+            }
           }
         }
       }
