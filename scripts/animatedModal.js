@@ -17,9 +17,9 @@
             position:'fixed',
             width:'100%',
             height:'100%',
-            top:'0px',
+            top:'76px',
             left:'0px',
-            zIndexIn: '9999',
+            zIndexIn: '100',
             zIndexOut: '-9999',
             color: '$white',
             opacityIn:'1',
@@ -66,12 +66,13 @@
             '-ms-animation-duration':settings.animationDuration,
             'animation-duration':settings.animationDuration
         };
-        //Apply stles
+        //Apply styles
         id.css(initStyles);
 
         modal.click(function(event) {
             event.preventDefault();
             $('body, html').css({'overflow':'hidden'});
+            $('#close').css('display', 'block');
 
             if (href == idConc) {
                 if (id.hasClass(settings.modalTarget+'-off')) {
@@ -94,6 +95,7 @@
         closeBt.click(function(event) {
             event.preventDefault();
             $('body, html').css({'overflow':'auto'});
+            $('#close').css('display', 'none');
 
             settings.beforeClose(); //beforeClose
             if (id.hasClass(settings.modalTarget+'-on')) {

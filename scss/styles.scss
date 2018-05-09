@@ -21,6 +21,32 @@ html, body, h1, h2, h3, p, a {
 body {
   background-color: $work-blue;
 }
+#close {
+  display: none;
+  width: 100%;
+  background-color: $nav-blue;
+  z-index: 9999;
+  position: fixed;
+  text-align: center;
+  box-shadow: 0 0 3px black;
+  height: 76px;
+  .close-animatedModal {
+    width: 50px;
+    padding: 13px 0;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+      transform: rotate(90deg);
+    }
+    @include mQ(500px) {
+      width: 40px;
+      padding: 10px 0;
+    }
+  }
+  @include mQ(500px) {
+    height: 60px;
+  }
+}
 a {
   text-decoration: none;
 }

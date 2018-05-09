@@ -2,32 +2,23 @@
 @import 'mixins';
 
 #animatedModal {
-  cursor: pointer;
-  height: 100%;
-  width: 100%;
   background-color: $white;
-  z-index: 9999;
-  .close-animatedModal {
-    padding: $labelMargin $horzPadding;
-    text-align: center;
-    .close {
-      cursor: pointer;
-      transition: 0.2s;
-      &:hover {
-        transform: rotate(90deg);
-      }
-    }
+  height: calc(100% - 76px) !important;
+  @include mQ(500px) {
+    height: calc(100% - 60px) !important;
+    top: 60px !important;
   }
   .modal-content {
+    text-align: center;
+    position: relative;
     .modal {
       display: none;
     }
     .faction-logo {
       width: 60%;
-      margin: 200px 0;
+      margin: 10% 0;
       @include mQ(960px) {
         width: 95%;
-        margin: 100px 0;
       }
     }
     #hawaiian-modal {
@@ -72,7 +63,7 @@
       background-repeat: no-repeat;
       background-position: bottom;
       #asian-description {
-        text-align: left;
+        text-align: center;
         width: 80%;
         margin: 0 auto 200px;
         h1 {
@@ -89,6 +80,9 @@
           @include mQ(960px) {
             font-size: 24px;
           }
+          @include mQ(750px) {
+            font-size: 18px;
+          }
         }
         @include mQ(960px) {
           width: 90%;
@@ -97,7 +91,7 @@
       }
       #asian-mag-cover {
         margin-bottom: 300px;
-        width: 60%;
+        width: 80%;
         @include mQ(960px) {
           width: 95%;
           margin-bottom: 100px;
@@ -105,14 +99,14 @@
       }
       #asian-mag-toc {
         margin-bottom: 300px;
-        width: 60%;
+        width: 80%;
         @include mQ(960px) {
           width: 95%;
           margin-bottom: 100px;
         }
       }
       #asian-mag-spread {
-        width: 60%;
+        width: 80%;
         @include mQ(960px) {
           width: 95%;
         }
@@ -125,10 +119,14 @@
       background-size: cover;
       background-position: bottom;
       height: 100%;
+      @include mQ(750px) {
+        background-position: top;
+      }
       #roman-description {
-        text-align: left;
+        text-align: center;
         width: 80%;
-        margin: 0 auto 200px;
+        margin: 0 auto 10%;
+        text-shadow: 0 0 2px black;
         h1 {
           color: #25b5e9;
           font-size: 56px;
@@ -143,30 +141,37 @@
           @include mQ(960px) {
             font-size: 24px;
           }
+          @include mQ(750px) {
+            font-size: 18px;
+          }
         }
         @include mQ(960px) {
           width: 90%;
-          margin-bottom: 100px;
         }
       }
       #roman-mag-cover {
-        margin-bottom: 300px;
-        width: 60%;
+        margin-bottom: 35%;
+        width: 80%;
         @include mQ(960px) {
           width: 95%;
-          margin-bottom: 100px;
+        }
+        @include mQ(750px) {
+          margin-bottom: 25%;
         }
       }
       #roman-mag-toc {
-        margin-bottom: 300px;
-        width: 60%;
+        margin-bottom: 25%;
+        width: 80%;
         @include mQ(960px) {
           width: 95%;
-          margin-bottom: 100px;
+        }
+        @include mQ(750px) {
+          margin-bottom: 50%;
         }
       }
       #roman-mag-spread {
-        width: 60%;
+        width: 80%;
+        margin-bottom: 2%;
         @include mQ(960px) {
           width: 95%;
         }
@@ -422,15 +427,15 @@
       }
       #left-bar {
         position: absolute;
-        top: 100%;
         left: 0;
+        top: 25%;
         width: 5%;
       }
       #right-bar {
         position: absolute;
-        top: 200%;
         right: 0;
         width: 5%;
+        top: 50%;
       }
       #spreads {
         margin: 200px auto 0;

@@ -10,5 +10,7 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "lazyloadxt": "^1.1.0"
+  }
 }
