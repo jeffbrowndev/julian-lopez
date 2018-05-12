@@ -8,6 +8,47 @@
     height: calc(100% - 60px) !important;
     top: 60px !important;
   }
+  .text-container {
+    display: flex;
+    width: 90%;
+    margin: 100px auto;
+    text-align: center;
+    .text {
+      padding: 0 2%;
+      height: 100%;
+      h3 {
+        font-size: 38px;
+        //color: #42B549;
+      }
+      p {
+        font-size: 24px;
+        //color: #666767;
+        height: auto;
+      }
+      @include mQ(750px) {
+        h3 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+    .line {
+      height: 200px;
+      width: 15px;
+      background-color: #666767;
+      align-self: center;
+      @include mQ($wrapperWidth) {
+        height: 5px;
+        width: 200px;
+        margin: 50px auto;
+      }
+    }
+    @include mQ($wrapperWidth) {
+      display: block;
+    }
+  }
   .modal-content {
     text-align: center;
     position: relative;
@@ -25,13 +66,8 @@
       text-align: center;
       background: url("backgrounds/Hawaiin Background.jpg");
       position: relative;
-      #rectagle, #hawaiian-pouches {
+      #hawaiian-pouches {
         width: 100%;
-      }
-      #rectagle {
-        position: absolute;
-        top: 0;
-        left: 0;
       }
       #hawaiian-logo {
         margin-top: 100px;
@@ -293,6 +329,14 @@
     }
     #bsm-modal {
       text-align: center;
+      .text-container {
+        h3 {
+          color: #42B549;
+        }
+        p {
+          color: #666767;
+        }
+      }
       #bsm-header {
         position: relative;
         text-align: center;
@@ -311,47 +355,6 @@
             width: 60%;
             margin: 24% 0;
           }
-        }
-      }
-      #bsm-text-container {
-        display: flex;
-        width: 90%;
-        margin: 100px auto;
-        text-align: center;
-        .bsm-text {
-          padding: 0 2%;
-          height: 100%;
-          h3 {
-            font-size: 38px;
-            color: #42B549;
-          }
-          p {
-            font-size: 24px;
-            color: #666767;
-            height: auto;
-          }
-          @include mQ(750px) {
-            h3 {
-              font-size: 24px;
-            }
-            p {
-              font-size: 18px;
-            }
-          }
-        }
-        .line {
-          height: 200px;
-          width: 15px;
-          background-color: #666767;
-          align-self: center;
-          @include mQ($wrapperWidth) {
-            height: 5px;
-            width: 200px;
-            margin: 50px auto;
-          }
-        }
-        @include mQ($wrapperWidth) {
-          display: block;
         }
       }
       #new-old {
@@ -520,6 +523,11 @@
     #nalac-modal {
       position: relative;
       text-align: center;
+      .text-container {
+        p {
+          color: #666767;
+        }
+      }
       #nalac-header {
         position: absolute;
         top: 0;
@@ -570,6 +578,7 @@
         align-items: center;
         justify-content: center;
         @include mQ(750px) {
+          width: 95%;
           margin: 200px auto 0;
           .flex-item:nth-child(1) {order: 1};
           .flex-item:nth-child(2) {order: 3};
@@ -581,6 +590,9 @@
           .flex-item:nth-child(8) {order: 8};
           .flex-item {
             margin-bottom: 100px;
+            &:last-child {
+              margin-bottom: 50px;
+            }
           }
         }
         p {
@@ -617,66 +629,131 @@
       #blue-gradient {
         background: url("backgrounds/NALAC Gradient.png");
         background-position: top;
-        img {
-          width: 50%;
-        }
-        #top {
-          width: 80%;
-          display: flex;
-          margin: auto;
-          transform: translateY(-50px);
-          img {
-            height: 100%;
-            &:nth-child(1) {
-              transform: translateX(15%);
-              align-self: center;
-            }
-            &:nth-child(2) {
-              transform: translateX(-15%);
-            }
+        width: 100%;
+        .image {
+          padding: 0;
+          flex-basis: 50%;
+          @include mQ(750px) {
+            flex-basis: 100%;
           }
-        }
-        #bottom {
-          width: 80%;
-          margin: 200px auto;
           img {
             width: 100%;
           }
         }
-        #store-mockups {
-          margin-top: 200px;
+        #homepage {
           width: 80%;
-        }
-        #clouds {
-          margin: 200px auto;
-          background: url("backgrounds/NALAC Clouds.png");
-          background-repeat: no-repeat;
-          background-size: cover;
-          padding: 0 10%;
+          margin: 0 auto 200px;
           display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          @include mQ(1200px) {
+            padding-top: 5%;
+          }
+          @include mQ(960px) {
+            padding-top: 10%;
+          }
+          @include mQ(750px) {
+            padding-top: 5%;
+            margin: 0 auto 100px;
+            width: 95%;
+          }
+          @include mQ(500px) {
+            padding-top: 20%;
+          }
+        }
+        #store {
+          width: 100%;
           img {
-            &:nth-child(1) {
-              flex-basis: 35%;
-              align-self: flex-end;
+            width: 100%;
+          }
+          #store-desktop {
+            max-width: 1440px;
+            margin: auto;
+            @include mQ(1440px) {
+              display: none;
             }
-            &:nth-child(2) {
-              flex-basis: 65%;
-              align-self: flex-end;
+          }
+          #store-cropped {
+            width: 100%;
+            display: none;
+            @include mQ(1440px) {
+              display: block;
+            }
+            @include mQ(750px) {
+              display: none;
+            }
+          }
+          #store-mobile {
+            width: 100%;
+            display: none;
+            img {
+              margin-bottom: 25px;
+            }
+            @include mQ(750px) {
+              display: block;
             }
           }
         }
-        #tradeshow {
-          margin: auto;
-          width: 80%;
-          display: flex;
+        #get-involved {
           img {
-            &:nth-child(1) {
-              flex-basis: 25%;
-              align-self: flex-end;
+            width: 100%;
+          }
+          width: 80%;
+          margin: 200px auto;
+          @include mQ(750px) {
+            width: 95%;
+            margin: 100px auto;
+          }
+          #get-involved-desktop {
+            width: 100%;
+            @include mQ(750px) {
+              display: none;
+            }
+          }
+          #get-involved-mobile {
+            display: none;
+            @include mQ(750px) {
+              display: block;
+            }
+            img {
+              &:nth-child(2) {
+                margin-top: -20%;
+              }
+            }
+          }
+        }
+        #billboard {
+          background: url('backgrounds/NALAC Clouds.png');
+          background-size: cover;
+          width: 100%;
+          margin: auto;
+          padding-bottom: 100px;
+          display: flex;
+          align-items: center;
+          .image {
+            width: 80%;
+            margin: auto;
+            @include mQ(750px) {
+              width: 100%;
             }
             &:nth-child(2) {
-              flex-basis: 75%;
+              @include mQ(750px) {
+                display: none;
+              }
             }
+            &:nth-child(3) {
+              display: none;
+              @include mQ(750px) {
+                display: block;
+              }
+            }
+          }
+          @include mQ(750px) {
+            background: none;
+            width: 95%;
+            display: block;
+            padding-bottom: 0;
           }
         }
       }

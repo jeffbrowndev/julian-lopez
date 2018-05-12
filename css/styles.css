@@ -75,6 +75,37 @@
     #animatedModal {
       height: calc(100% - 60px) !important;
       top: 60px !important; } }
+  #animatedModal .text-container {
+    display: flex;
+    width: 90%;
+    margin: 100px auto;
+    text-align: center; }
+    #animatedModal .text-container .text {
+      padding: 0 2%;
+      height: 100%; }
+      #animatedModal .text-container .text h3 {
+        font-size: 38px; }
+      #animatedModal .text-container .text p {
+        font-size: 24px;
+        height: auto; }
+      @media screen and (max-width: 750px) {
+        #animatedModal .text-container .text h3 {
+          font-size: 24px; }
+        #animatedModal .text-container .text p {
+          font-size: 18px; } }
+    #animatedModal .text-container .line {
+      height: 200px;
+      width: 15px;
+      background-color: #666767;
+      align-self: center; }
+      @media screen and (max-width: 1100px) {
+        #animatedModal .text-container .line {
+          height: 5px;
+          width: 200px;
+          margin: 50px auto; } }
+    @media screen and (max-width: 1100px) {
+      #animatedModal .text-container {
+        display: block; } }
   #animatedModal .modal-content {
     text-align: center;
     position: relative; }
@@ -90,12 +121,8 @@
       text-align: center;
       background: url("backgrounds/Hawaiin Background.jpg");
       position: relative; }
-      #animatedModal .modal-content #hawaiian-modal #rectagle, #animatedModal .modal-content #hawaiian-modal #hawaiian-pouches {
+      #animatedModal .modal-content #hawaiian-modal #hawaiian-pouches {
         width: 100%; }
-      #animatedModal .modal-content #hawaiian-modal #rectagle {
-        position: absolute;
-        top: 0;
-        left: 0; }
       #animatedModal .modal-content #hawaiian-modal #hawaiian-logo {
         margin-top: 100px;
         width: 50%; }
@@ -320,6 +347,10 @@
               flex-basis: 100%; } }
     #animatedModal .modal-content #bsm-modal {
       text-align: center; }
+      #animatedModal .modal-content #bsm-modal .text-container h3 {
+        color: #42B549; }
+      #animatedModal .modal-content #bsm-modal .text-container p {
+        color: #666767; }
       #animatedModal .modal-content #bsm-modal #bsm-header {
         position: relative;
         text-align: center;
@@ -337,39 +368,6 @@
             #animatedModal .modal-content #bsm-modal #bsm-header #bsm-logo {
               width: 60%;
               margin: 24% 0; } }
-      #animatedModal .modal-content #bsm-modal #bsm-text-container {
-        display: flex;
-        width: 90%;
-        margin: 100px auto;
-        text-align: center; }
-        #animatedModal .modal-content #bsm-modal #bsm-text-container .bsm-text {
-          padding: 0 2%;
-          height: 100%; }
-          #animatedModal .modal-content #bsm-modal #bsm-text-container .bsm-text h3 {
-            font-size: 38px;
-            color: #42B549; }
-          #animatedModal .modal-content #bsm-modal #bsm-text-container .bsm-text p {
-            font-size: 24px;
-            color: #666767;
-            height: auto; }
-          @media screen and (max-width: 750px) {
-            #animatedModal .modal-content #bsm-modal #bsm-text-container .bsm-text h3 {
-              font-size: 24px; }
-            #animatedModal .modal-content #bsm-modal #bsm-text-container .bsm-text p {
-              font-size: 18px; } }
-        #animatedModal .modal-content #bsm-modal #bsm-text-container .line {
-          height: 200px;
-          width: 15px;
-          background-color: #666767;
-          align-self: center; }
-          @media screen and (max-width: 1100px) {
-            #animatedModal .modal-content #bsm-modal #bsm-text-container .line {
-              height: 5px;
-              width: 200px;
-              margin: 50px auto; } }
-        @media screen and (max-width: 1100px) {
-          #animatedModal .modal-content #bsm-modal #bsm-text-container {
-            display: block; } }
       #animatedModal .modal-content #bsm-modal #new-old {
         display: flex;
         width: 80%;
@@ -513,6 +511,8 @@
     #animatedModal .modal-content #nalac-modal {
       position: relative;
       text-align: center; }
+      #animatedModal .modal-content #nalac-modal .text-container p {
+        color: #666767; }
       #animatedModal .modal-content #nalac-modal #nalac-header {
         position: absolute;
         top: 0;
@@ -558,6 +558,7 @@
         justify-content: center; }
         @media screen and (max-width: 750px) {
           #animatedModal .modal-content #nalac-modal #logo-compare {
+            width: 95%;
             margin: 200px auto 0; }
             #animatedModal .modal-content #nalac-modal #logo-compare .flex-item:nth-child(1) {
               order: 1; }
@@ -576,7 +577,9 @@
             #animatedModal .modal-content #nalac-modal #logo-compare .flex-item:nth-child(8) {
               order: 8; }
             #animatedModal .modal-content #nalac-modal #logo-compare .flex-item {
-              margin-bottom: 100px; } }
+              margin-bottom: 100px; }
+              #animatedModal .modal-content #nalac-modal #logo-compare .flex-item:last-child {
+                margin-bottom: 50px; } }
         #animatedModal .modal-content #nalac-modal #logo-compare p {
           width: 50%;
           margin-bottom: 50px;
@@ -605,51 +608,113 @@
                 width: 100%; } }
       #animatedModal .modal-content #nalac-modal #blue-gradient {
         background: url("backgrounds/NALAC Gradient.png");
-        background-position: top; }
-        #animatedModal .modal-content #nalac-modal #blue-gradient img {
-          width: 50%; }
-        #animatedModal .modal-content #nalac-modal #blue-gradient #top {
+        background-position: top;
+        width: 100%; }
+        #animatedModal .modal-content #nalac-modal #blue-gradient .image {
+          padding: 0;
+          flex-basis: 50%; }
+          @media screen and (max-width: 750px) {
+            #animatedModal .modal-content #nalac-modal #blue-gradient .image {
+              flex-basis: 100%; } }
+          #animatedModal .modal-content #nalac-modal #blue-gradient .image img {
+            width: 100%; }
+        #animatedModal .modal-content #nalac-modal #blue-gradient #homepage {
           width: 80%;
+          margin: 0 auto 200px;
           display: flex;
-          margin: auto;
-          transform: translateY(-50px); }
-          #animatedModal .modal-content #nalac-modal #blue-gradient #top img {
-            height: 100%; }
-            #animatedModal .modal-content #nalac-modal #blue-gradient #top img:nth-child(1) {
-              transform: translateX(15%);
-              align-self: center; }
-            #animatedModal .modal-content #nalac-modal #blue-gradient #top img:nth-child(2) {
-              transform: translateX(-15%); }
-        #animatedModal .modal-content #nalac-modal #blue-gradient #bottom {
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap; }
+          @media screen and (max-width: 1200px) {
+            #animatedModal .modal-content #nalac-modal #blue-gradient #homepage {
+              padding-top: 5%; } }
+          @media screen and (max-width: 960px) {
+            #animatedModal .modal-content #nalac-modal #blue-gradient #homepage {
+              padding-top: 10%; } }
+          @media screen and (max-width: 750px) {
+            #animatedModal .modal-content #nalac-modal #blue-gradient #homepage {
+              padding-top: 5%;
+              margin: 0 auto 100px;
+              width: 95%; } }
+          @media screen and (max-width: 500px) {
+            #animatedModal .modal-content #nalac-modal #blue-gradient #homepage {
+              padding-top: 20%; } }
+        #animatedModal .modal-content #nalac-modal #blue-gradient #store {
+          width: 100%; }
+          #animatedModal .modal-content #nalac-modal #blue-gradient #store img {
+            width: 100%; }
+          #animatedModal .modal-content #nalac-modal #blue-gradient #store #store-desktop {
+            max-width: 1440px;
+            margin: auto; }
+            @media screen and (max-width: 1440px) {
+              #animatedModal .modal-content #nalac-modal #blue-gradient #store #store-desktop {
+                display: none; } }
+          #animatedModal .modal-content #nalac-modal #blue-gradient #store #store-cropped {
+            width: 100%;
+            display: none; }
+            @media screen and (max-width: 1440px) {
+              #animatedModal .modal-content #nalac-modal #blue-gradient #store #store-cropped {
+                display: block; } }
+            @media screen and (max-width: 750px) {
+              #animatedModal .modal-content #nalac-modal #blue-gradient #store #store-cropped {
+                display: none; } }
+          #animatedModal .modal-content #nalac-modal #blue-gradient #store #store-mobile {
+            width: 100%;
+            display: none; }
+            #animatedModal .modal-content #nalac-modal #blue-gradient #store #store-mobile img {
+              margin-bottom: 25px; }
+            @media screen and (max-width: 750px) {
+              #animatedModal .modal-content #nalac-modal #blue-gradient #store #store-mobile {
+                display: block; } }
+        #animatedModal .modal-content #nalac-modal #blue-gradient #get-involved {
           width: 80%;
           margin: 200px auto; }
-          #animatedModal .modal-content #nalac-modal #blue-gradient #bottom img {
+          #animatedModal .modal-content #nalac-modal #blue-gradient #get-involved img {
             width: 100%; }
-        #animatedModal .modal-content #nalac-modal #blue-gradient #store-mockups {
-          margin-top: 200px;
-          width: 80%; }
-        #animatedModal .modal-content #nalac-modal #blue-gradient #clouds {
-          margin: 200px auto;
+          @media screen and (max-width: 750px) {
+            #animatedModal .modal-content #nalac-modal #blue-gradient #get-involved {
+              width: 95%;
+              margin: 100px auto; } }
+          #animatedModal .modal-content #nalac-modal #blue-gradient #get-involved #get-involved-desktop {
+            width: 100%; }
+            @media screen and (max-width: 750px) {
+              #animatedModal .modal-content #nalac-modal #blue-gradient #get-involved #get-involved-desktop {
+                display: none; } }
+          #animatedModal .modal-content #nalac-modal #blue-gradient #get-involved #get-involved-mobile {
+            display: none; }
+            @media screen and (max-width: 750px) {
+              #animatedModal .modal-content #nalac-modal #blue-gradient #get-involved #get-involved-mobile {
+                display: block; } }
+            #animatedModal .modal-content #nalac-modal #blue-gradient #get-involved #get-involved-mobile img:nth-child(2) {
+              margin-top: -20%; }
+        #animatedModal .modal-content #nalac-modal #blue-gradient #billboard {
           background: url("backgrounds/NALAC Clouds.png");
-          background-repeat: no-repeat;
           background-size: cover;
-          padding: 0 10%;
-          display: flex; }
-          #animatedModal .modal-content #nalac-modal #blue-gradient #clouds img:nth-child(1) {
-            flex-basis: 35%;
-            align-self: flex-end; }
-          #animatedModal .modal-content #nalac-modal #blue-gradient #clouds img:nth-child(2) {
-            flex-basis: 65%;
-            align-self: flex-end; }
-        #animatedModal .modal-content #nalac-modal #blue-gradient #tradeshow {
+          width: 100%;
           margin: auto;
-          width: 80%;
-          display: flex; }
-          #animatedModal .modal-content #nalac-modal #blue-gradient #tradeshow img:nth-child(1) {
-            flex-basis: 25%;
-            align-self: flex-end; }
-          #animatedModal .modal-content #nalac-modal #blue-gradient #tradeshow img:nth-child(2) {
-            flex-basis: 75%; }
+          padding-bottom: 100px;
+          display: flex;
+          align-items: center; }
+          #animatedModal .modal-content #nalac-modal #blue-gradient #billboard .image {
+            width: 80%;
+            margin: auto; }
+            @media screen and (max-width: 750px) {
+              #animatedModal .modal-content #nalac-modal #blue-gradient #billboard .image {
+                width: 100%; } }
+            @media screen and (max-width: 750px) {
+              #animatedModal .modal-content #nalac-modal #blue-gradient #billboard .image:nth-child(2) {
+                display: none; } }
+            #animatedModal .modal-content #nalac-modal #blue-gradient #billboard .image:nth-child(3) {
+              display: none; }
+              @media screen and (max-width: 750px) {
+                #animatedModal .modal-content #nalac-modal #blue-gradient #billboard .image:nth-child(3) {
+                  display: block; } }
+          @media screen and (max-width: 750px) {
+            #animatedModal .modal-content #nalac-modal #blue-gradient #billboard {
+              background: none;
+              width: 95%;
+              display: block;
+              padding-bottom: 0; } }
     #animatedModal .modal-content #motion-modal {
       padding: 200px 20% 0;
       background-color: #9FDFFA; }
@@ -1026,7 +1091,7 @@ header #header-psudo-banner {
 * {
   box-sizing: border-box; }
 
-html, body, h1, h2, h3, p, a {
+html, body, h1, h2, h3, p, a, img {
   margin: 0;
   padding: 0;
   font-weight: 400;
