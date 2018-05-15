@@ -739,6 +739,227 @@
         @media screen and (max-width: 1100px) {
           #animatedModal .modal-content #motion-modal p {
             padding: 10px 0 100px 0; } }
+    #animatedModal .modal-content #jcc-modal #jcc-top, #animatedModal .modal-content #jcc-modal #middle-bottom {
+      background: #d9d9d9;
+      background: linear-gradient(180deg, #d9d9d9 0%, white 50%, #d9d9d9 100%); }
+    #animatedModal .modal-content #jcc-modal #bottom {
+      background: #e7c59c;
+      padding: 10% 0; }
+    #animatedModal .modal-content #jcc-modal #middle-bottom {
+      padding: 10% 0; }
+    #animatedModal .modal-content #jcc-modal img {
+      max-width: 100%; }
+    #animatedModal .modal-content #jcc-modal h3 {
+      font-size: 38px; }
+    #animatedModal .modal-content #jcc-modal p {
+      font-size: 24px; }
+    #animatedModal .modal-content #jcc-modal #jcc-desc {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      padding: 10% 0; }
+      @media screen and (max-width: 750px) {
+        #animatedModal .modal-content #jcc-modal #jcc-desc {
+          width: 95%; }
+          #animatedModal .modal-content #jcc-modal #jcc-desc h3 {
+            font-size: 24px; }
+          #animatedModal .modal-content #jcc-modal #jcc-desc p {
+            font-size: 18px; } }
+    #animatedModal .modal-content #jcc-modal #jcc-travel, #animatedModal .modal-content #jcc-modal #advertising {
+      width: 80%;
+      margin: 0 auto 10%;
+      display: flex; }
+      @media screen and (max-width: 750px) {
+        #animatedModal .modal-content #jcc-modal #jcc-travel, #animatedModal .modal-content #jcc-modal #advertising {
+          display: block; } }
+    #animatedModal .modal-content #jcc-modal #jcc-cocktail {
+      width: 80%;
+      margin: auto; }
+      #animatedModal .modal-content #jcc-modal #jcc-cocktail #cards {
+        width: 100%;
+        margin: 0 auto 10%; }
+        @media screen and (max-width: 750px) {
+          #animatedModal .modal-content #jcc-modal #jcc-cocktail #cards img:first-child {
+            display: none; } }
+        #animatedModal .modal-content #jcc-modal #jcc-cocktail #cards img:last-child {
+          display: none; }
+          @media screen and (max-width: 750px) {
+            #animatedModal .modal-content #jcc-modal #jcc-cocktail #cards img:last-child {
+              display: block; } }
+      #animatedModal .modal-content #jcc-modal #jcc-cocktail #raffle {
+        margin: auto;
+        width: 80%; }
+        #animatedModal .modal-content #jcc-modal #jcc-cocktail #raffle img {
+          padding-bottom: 10%; }
+        @media screen and (max-width: 750px) {
+          #animatedModal .modal-content #jcc-modal #jcc-cocktail #raffle {
+            width: 95%; } }
+      #animatedModal .modal-content #jcc-modal #jcc-cocktail #jcc-staggered {
+        width: 80%;
+        margin: auto; }
+        #animatedModal .modal-content #jcc-modal #jcc-cocktail #jcc-staggered img {
+          padding-bottom: 10%; }
+        @media screen and (max-width: 750px) {
+          #animatedModal .modal-content #jcc-modal #jcc-cocktail #jcc-staggered {
+            width: 95%; } }
+        #animatedModal .modal-content #jcc-modal #jcc-cocktail #jcc-staggered #staggered-left {
+          width: 50%;
+          float: left; }
+          @media screen and (max-width: 750px) {
+            #animatedModal .modal-content #jcc-modal #jcc-cocktail #jcc-staggered #staggered-left {
+              float: none;
+              width: 100%;
+              margin: auto; } }
+        #animatedModal .modal-content #jcc-modal #jcc-cocktail #jcc-staggered #staggered-right {
+          padding-top: 30%;
+          width: 50%;
+          float: left; }
+          @media screen and (max-width: 750px) {
+            #animatedModal .modal-content #jcc-modal #jcc-cocktail #jcc-staggered #staggered-right {
+              float: none;
+              width: 100%;
+              margin: auto;
+              padding: 0; } }
+    #animatedModal .modal-content #jcc-modal #blue-section {
+      padding: 10% 0 0;
+      background: #38aae8;
+      background: linear-gradient(260deg, #38aae8 0%, #66beec 100%);
+      width: 100%; }
+      #animatedModal .modal-content #jcc-modal #blue-section #cover-pen {
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 10%;
+        display: flex;
+        margin-bottom: 10%; }
+        #animatedModal .modal-content #jcc-modal #blue-section #cover-pen img {
+          padding-bottom: 10%; }
+        @media screen and (max-width: 750px) {
+          #animatedModal .modal-content #jcc-modal #blue-section #cover-pen {
+            width: 95%;
+            margin: auto;
+            padding: 0;
+            display: block; } }
+        #animatedModal .modal-content #jcc-modal #blue-section #cover-pen #giveaway {
+          flex-basis: 50%; }
+          @media screen and (max-width: 750px) {
+            #animatedModal .modal-content #jcc-modal #blue-section #cover-pen #giveaway {
+              width: 100%; } }
+        #animatedModal .modal-content #jcc-modal #blue-section #cover-pen #pen-container {
+          position: relative;
+          flex-basis: 50%; }
+          #animatedModal .modal-content #jcc-modal #blue-section #cover-pen #pen-container img {
+            width: 35%;
+            position: absolute;
+            right: 0;
+            top: 30%; }
+          @media screen and (max-width: 750px) {
+            #animatedModal .modal-content #jcc-modal #blue-section #cover-pen #pen-container {
+              display: none; } }
+      #animatedModal .modal-content #jcc-modal #blue-section #camera {
+        width: 100%;
+        box-sizing: border-box;
+        padding-right: 10%;
+        display: flex;
+        margin-bottom: 10%; }
+        @media screen and (max-width: 750px) {
+          #animatedModal .modal-content #jcc-modal #blue-section #camera {
+            width: 95%;
+            margin: auto;
+            padding: 0;
+            display: block; }
+            #animatedModal .modal-content #jcc-modal #blue-section #camera img {
+              padding-bottom: 10%; } }
+        #animatedModal .modal-content #jcc-modal #blue-section #camera #camera-container {
+          position: relative;
+          flex-basis: 50%; }
+          #animatedModal .modal-content #jcc-modal #blue-section #camera #camera-container img {
+            width: 60%;
+            position: absolute;
+            left: 0;
+            top: 25%; }
+          @media screen and (max-width: 750px) {
+            #animatedModal .modal-content #jcc-modal #blue-section #camera #camera-container {
+              display: none; } }
+        #animatedModal .modal-content #jcc-modal #blue-section #camera #house {
+          flex-basis: 50%; }
+          @media screen and (max-width: 750px) {
+            #animatedModal .modal-content #jcc-modal #blue-section #camera #house {
+              width: 100%; } }
+      #animatedModal .modal-content #jcc-modal #blue-section #happy-holidays, #animatedModal .modal-content #jcc-modal #blue-section #amazon, #animatedModal .modal-content #jcc-modal #blue-section #ohm, #animatedModal .modal-content #jcc-modal #blue-section #card-party {
+        width: 80%;
+        padding-bottom: 10%; }
+        @media screen and (max-width: 750px) {
+          #animatedModal .modal-content #jcc-modal #blue-section #happy-holidays, #animatedModal .modal-content #jcc-modal #blue-section #amazon, #animatedModal .modal-content #jcc-modal #blue-section #ohm, #animatedModal .modal-content #jcc-modal #blue-section #card-party {
+            width: 95%; } }
+      #animatedModal .modal-content #jcc-modal #blue-section #annual-meeting {
+        width: 80%;
+        margin: 0 auto 10%; }
+        #animatedModal .modal-content #jcc-modal #blue-section #annual-meeting img {
+          width: 50%;
+          float: left; }
+          #animatedModal .modal-content #jcc-modal #blue-section #annual-meeting img:last-child {
+            padding-top: 15%; }
+            @media screen and (max-width: 750px) {
+              #animatedModal .modal-content #jcc-modal #blue-section #annual-meeting img:last-child {
+                padding: 0; } }
+        @media screen and (max-width: 750px) {
+          #animatedModal .modal-content #jcc-modal #blue-section #annual-meeting {
+            display: block; }
+            #animatedModal .modal-content #jcc-modal #blue-section #annual-meeting img {
+              float: none;
+              width: 80%;
+              padding-bottom: 10%; } }
+    #animatedModal .modal-content #jcc-modal #party {
+      width: 80%;
+      margin: 0 auto 10%; }
+      #animatedModal .modal-content #jcc-modal #party img {
+        width: 50%;
+        float: left; }
+        #animatedModal .modal-content #jcc-modal #party img:first-child {
+          padding-top: 15%; }
+          @media screen and (max-width: 750px) {
+            #animatedModal .modal-content #jcc-modal #party img:first-child {
+              padding: 0 0 10%; } }
+      @media screen and (max-width: 750px) {
+        #animatedModal .modal-content #jcc-modal #party {
+          display: block; }
+          #animatedModal .modal-content #jcc-modal #party img {
+            float: none;
+            width: 80%; } }
+    #animatedModal .modal-content #jcc-modal #amazon, #animatedModal .modal-content #jcc-modal #ohm, #animatedModal .modal-content #jcc-modal #party, #animatedModal .modal-content #jcc-modal #card-party {
+      padding-top: 10%; }
+    @media screen and (max-width: 750px) {
+      #animatedModal .modal-content #jcc-modal #amazon, #animatedModal .modal-content #jcc-modal #card-party {
+        padding: 0; } }
+    #animatedModal .modal-content #jcc-modal #road-rules {
+      padding-bottom: 10%; }
+      @media screen and (max-width: 750px) {
+        #animatedModal .modal-content #jcc-modal #road-rules {
+          padding: 0; } }
+      #animatedModal .modal-content #jcc-modal #road-rules img {
+        width: 80%; }
+        @media screen and (max-width: 750px) {
+          #animatedModal .modal-content #jcc-modal #road-rules img {
+            width: 95%;
+            margin: auto; } }
+        #animatedModal .modal-content #jcc-modal #road-rules img:first-child {
+          float: left; }
+          @media screen and (max-width: 750px) {
+            #animatedModal .modal-content #jcc-modal #road-rules img:first-child {
+              float: none; } }
+        #animatedModal .modal-content #jcc-modal #road-rules img:last-child {
+          float: right; }
+          @media screen and (max-width: 750px) {
+            #animatedModal .modal-content #jcc-modal #road-rules img:last-child {
+              float: none; } }
+    #animatedModal .modal-content #jcc-modal #homeless {
+      width: 50%; }
+      @media screen and (max-width: 750px) {
+        #animatedModal .modal-content #jcc-modal #homeless {
+          width: 80%; } }
+    @media screen and (max-width: 750px) {
+      #animatedModal .modal-content #jcc-modal #advertising img:first-child {
+        padding-bottom: 10%; } }
 
 nav {
   box-shadow: 0 0 3px black;
