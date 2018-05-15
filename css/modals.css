@@ -697,8 +697,13 @@
             font-size: 18px; } }
     #animatedModal .modal-content #jcc-modal #jcc-travel, #animatedModal .modal-content #jcc-modal #advertising {
       width: 80%;
-      margin: 0 auto 10%;
+      height: 100%;
+      margin: auto;
+      padding-bottom: 10%;
       display: flex; }
+      #animatedModal .modal-content #jcc-modal #jcc-travel .jcc-image, #animatedModal .modal-content #jcc-modal #advertising .jcc-image {
+        height: 100%;
+        flex-basis: 50%; }
       @media screen and (max-width: 750px) {
         #animatedModal .modal-content #jcc-modal #jcc-travel, #animatedModal .modal-content #jcc-modal #advertising {
           display: block; } }
@@ -707,7 +712,8 @@
       margin: auto; }
       #animatedModal .modal-content #jcc-modal #jcc-cocktail #cards {
         width: 100%;
-        margin: 0 auto 10%; }
+        margin: auto;
+        padding-bottom: 10%; }
         @media screen and (max-width: 750px) {
           #animatedModal .modal-content #jcc-modal #jcc-cocktail #cards img:first-child {
             display: none; } }

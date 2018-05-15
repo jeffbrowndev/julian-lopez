@@ -824,8 +824,14 @@ background: linear-gradient(180deg, rgba(217,217,217,1) 0%, rgba(255,255,255,1) 
       }
       #jcc-travel, #advertising {
         width: 80%;
-        margin: 0 auto 10%;
+        height: 100%;
+        margin: auto;
+        padding-bottom: 10%;
         display: flex;
+        .jcc-image {
+          height: 100%;
+          flex-basis: 50%;
+        }
         @include mQ(750px) {
           display: block;
         }
@@ -835,7 +841,8 @@ background: linear-gradient(180deg, rgba(217,217,217,1) 0%, rgba(255,255,255,1) 
         margin: auto;
         #cards {
           width: 100%;
-          margin: 0 auto 10%;
+          margin: auto;
+          padding-bottom: 10%;
           img {
             &:first-child {
               @include mQ(750px) {
