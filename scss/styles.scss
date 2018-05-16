@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'mixins';
+@import 'fadeUp';
 @import 'hamburger';
 @import 'modals';
 @import 'nav';
@@ -20,6 +21,10 @@ html, body, h1, h2, h3, p, a, img {
 }
 body {
   background-color: $work-blue;
+}
+img {
+  transition: 0.4s;
+  transform: translateY(0);
 }
 #close {
   display: none;

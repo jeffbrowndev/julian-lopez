@@ -32,7 +32,11 @@
             beforeOpen: function() {},
             afterOpen: function() {},
             beforeClose: function() {},
-            afterClose: function() {}
+            afterClose: function() {
+              document.querySelectorAll('.lazy-loaded').forEach(image => {
+                image.classList.add('fade-up');
+              })
+            }
 
 
 

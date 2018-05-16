@@ -1,5 +1,6 @@
 header {
   #header-banner {
+    transition: 0s;
     margin-top: 76px;
     width: 100%;
     position: fixed;
@@ -9,6 +10,7 @@ header {
     }
   }
   #header-psudo-banner {
+    transition: 0s;
     margin-top: 76px;
     width: 100%;
     @include mQ(500px) {

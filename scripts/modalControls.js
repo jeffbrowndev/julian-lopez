@@ -1,5 +1,6 @@
 const contentBoxes = document.querySelectorAll('.content');
 const modals = Array.from(document.querySelectorAll('.modal'));
+const images = document.querySelectorAll('lazy-loaded');
 
 $.lazyLoadXT.autoInit=false;
 
