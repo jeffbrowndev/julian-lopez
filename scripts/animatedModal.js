@@ -35,6 +35,8 @@
             afterClose: function() {
               document.querySelectorAll('.lazy-loaded').forEach(image => {
                 image.classList.add('fade-up');
+                if (image.classList.contains('fade-in-only'))
+                  image.classList.add('bottom-image');
               })
             }
 

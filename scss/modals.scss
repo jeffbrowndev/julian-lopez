@@ -36,11 +36,11 @@
     }
     .line {
       height: 200px;
-      width: 15px;
+      width: 10px;
       background-color: #666767;
       align-self: center;
       @include mQ($wrapperWidth) {
-        height: 5px;
+        height: 3px;
         width: 200px;
         margin: 50px auto;
       }
@@ -100,7 +100,7 @@
       background-position: bottom;
       #asian-description {
         text-align: center;
-        width: 80%;
+        width: 60%;
         margin: 0 auto 200px;
         h1 {
           color: #c12026;
@@ -108,6 +108,9 @@
           font-weight: 700;
           @include mQ(960px) {
             font-size: 36px;
+          }
+          @include mQ(500px) {
+            font-size: 28px;
           }
         }
         p {
@@ -118,6 +121,9 @@
           }
           @include mQ(750px) {
             font-size: 18px;
+          }
+          @include mQ(500px) {
+            font-size: 16px;
           }
         }
         @include mQ(960px) {
@@ -160,7 +166,7 @@
       }
       #roman-description {
         text-align: center;
-        width: 80%;
+        width: 60%;
         margin: 0 auto 10%;
         text-shadow: 0 0 2px black;
         h1 {
@@ -169,6 +175,9 @@
           font-weight: 700;
           @include mQ(960px) {
             font-size: 36px;
+          }
+          @include mQ(500px) {
+            font-size: 28px;
           }
         }
         p {
@@ -180,13 +189,16 @@
           @include mQ(750px) {
             font-size: 18px;
           }
+          @include mQ(500px) {
+            font-size: 16px;
+          }
         }
         @include mQ(960px) {
           width: 90%;
         }
       }
       #roman-mag-cover {
-        margin-bottom: 35%;
+        margin-bottom: 32%;
         width: 80%;
         @include mQ(960px) {
           width: 95%;
@@ -229,6 +241,9 @@
           clear: both;
           &:nth-child(even) {
             float: right;
+          }
+          &:last-child {
+            padding-bottom: 10%;
           }
           @include mQ($wrapperWidth) {
             float: none;
@@ -298,11 +313,11 @@
         margin-top: -25%;
       }
       #icons {
-        width: 90%;
+        width: 1525px;
         margin: auto;
         display: flex;
         flex-wrap: wrap;
-        @include mQ(1050px) {
+        @include mQ(1600px) {
           width: 95%;
         }
         .icon-container {
@@ -323,199 +338,6 @@
           }
           @include mQ(700px) {
             flex-basis: 100%;
-          }
-        }
-      }
-    }
-    #bsm-modal {
-      text-align: center;
-      .text-container {
-        h3 {
-          color: #42B549;
-        }
-        p {
-          color: #666767;
-        }
-      }
-      #bsm-header {
-        position: relative;
-        text-align: center;
-        width: 100%;
-        #bsm-header-image {
-          width: 100%;
-          position: absolute;
-          top: 0;
-          left: 0;
-          z-index: -1;
-        }
-        #bsm-logo {
-          width: 35%;
-          margin: 7% 0;
-          @include mQ(960px) {
-            width: 60%;
-            margin: 24% 0;
-          }
-        }
-      }
-      #new-old {
-        display: flex;
-        width: 80%;
-        margin: 200px auto;
-        .bsm-logo-box {
-          flex-basis: 50%;
-          p {
-            font-size: 28px;
-            color: #42B549;
-            @include mQ(500px) {
-              font-size: 21px;
-            }
-          }
-          img {
-            margin-top: 100px;
-            width: 50%;
-            @include mQ($wrapperWidth) {
-              width: 80%;
-            }
-            @include mQ(500px) {
-              margin-top: 50px;
-            }
-          }
-          @include mQ(500px) {
-            width: 100%;
-            margin-bottom: 100px;
-          }
-        }
-        @include mQ(750px) {
-          width: 95%;
-        }
-        @include mQ(500px) {
-          display: block;
-          margin: 100px auto;
-        }
-      }
-      #family-set {
-        width: 80%;
-        text-align: center;
-        margin: auto;
-        p {
-          color: #42B549;
-          font-size: 28px;
-          @include mQ(500px) {
-            font-size: 21px;
-          }
-        }
-        #family-logos {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          img {
-            width: 25%;
-            margin: 100px 25px 0;
-            @include mQ($wrapperWidth) {
-              width: 40%;
-              margin: 100px 5% 0;
-            }
-            @include mQ(500px) {
-              margin: 50px 5% 0;
-              width: 80%;
-            }
-          }
-          @include mQ(500px) {
-            display: block;
-          }
-        }
-        @include mQ(750px) {
-          width: 95%;
-        }
-      }
-      #left-bar {
-        position: absolute;
-        left: 0;
-        top: 25%;
-        width: 5%;
-      }
-      #right-bar {
-        position: absolute;
-        right: 0;
-        width: 5%;
-        top: 50%;
-      }
-      #spreads {
-        margin: 200px auto 0;
-        position: relative;
-        width: 80%;
-        @include mQ($wrapperWidth) {
-          width: 95%;
-        }
-        img {
-          width: 100%;
-        }
-        .bsm-item {
-          width: 50%;
-          float: right;
-          clear: both;
-          &:nth-child(even) {
-            float: left;
-          }
-          @include mQ(750px) {
-            width: 100%;
-            margin-bottom: 50px;
-          }
-        }
-        .spread-with-header {
-          p {
-            margin-bottom: 100px;
-            color: #42B549;
-            font-size: 28px;
-            @include mQ(500px) {
-              font-size: 21px;
-              margin-bottom: 50px;
-            }
-          }
-          #front-back {
-            width: 78%;
-            margin: auto;
-            display: flex;
-            p {
-              text-align: center;
-              flex-basis: 50%;
-              margin: 0;
-              color: #666767;
-              font-size: 23px;
-              @include mQ(500px) {
-                font-size: 16px;
-              }
-            }
-          }
-        }
-        #diag-spreads {
-          width: 100%;
-          margin: 100px auto 0;
-          position: relative;
-          #diag-left {
-            width: 60%;
-            position: absolute;
-            left: 0;
-            top: 500px;
-            @include mQ($wrapperWidth) {
-              top: 300px;
-            }
-            @include mQ(750px) {
-              position: static;
-              width: 100%;
-            }
-          }
-          #diag-right {
-            width: 60%;
-            position: absolute;
-            right: 0;
-            @include mQ(750px) {
-              position: static;
-              width: 100%;
-            }
-          }
-          @include mQ(750px) {
-            margin: auto;
           }
         }
       }
@@ -647,7 +469,9 @@
           justify-content: center;
           align-items: center;
           flex-wrap: wrap;
+          transform: translateY(-10%);
           @include mQ(1200px) {
+            transform: none;
             padding-top: 5%;
           }
           @include mQ(960px) {
@@ -668,7 +492,7 @@
             width: 100%;
           }
           #store-desktop {
-            max-width: 1440px;
+            width: 80%;
             margin: auto;
             @include mQ(1440px) {
               display: none;
@@ -726,6 +550,7 @@
         #billboard {
           background: url('backgrounds/NALAC Clouds.png');
           background-size: cover;
+          background-repeat: no-repeat;
           width: 100%;
           margin: auto;
           padding-bottom: 100px;
@@ -750,8 +575,7 @@
             }
           }
           @include mQ(750px) {
-            background: none;
-            width: 95%;
+            width: 100%;
             display: block;
             padding-bottom: 0;
           }
@@ -808,7 +632,7 @@ background: linear-gradient(180deg, rgba(217,217,217,1) 0%, rgba(255,255,255,1) 
         font-size: 24px;
       }
       #jcc-desc {
-        width: 80%;
+        width: 60%;
         margin: auto;
         text-align: center;
         padding: 10% 0;
@@ -906,7 +730,6 @@ background: linear-gradient(260deg, rgba(56,170,232,1) 0%, rgba(102,190,236,1) 1
         #cover-pen {
           width: 100%;
           box-sizing: border-box;
-          padding-left: 10%;
           display: flex;
           margin-bottom: 10%;
           img {
@@ -941,7 +764,6 @@ background: linear-gradient(260deg, rgba(56,170,232,1) 0%, rgba(102,190,236,1) 1
         #camera {
           width: 100%;
           box-sizing: border-box;
-          padding-right: 10%;
           display: flex;
           margin-bottom: 10%;
           @include mQ(750px) {
@@ -1058,7 +880,7 @@ background: linear-gradient(260deg, rgba(56,170,232,1) 0%, rgba(102,190,236,1) 1
         }
       }
       #homeless {
-        width: 50%;
+        width: 30%;
         @include mQ(750px) {
           width: 80%;
         }

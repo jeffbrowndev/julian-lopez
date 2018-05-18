@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script defer src="scripts/jquery.lazyloadxt.js"></script>
+    <script defer src='scripts/hamburger.js'></script>
+    <script defer src='scripts/animatedModal.js'></script>
+    <script defer src='scripts/modalControls.js'></script>
+    <script defer src='scripts/scrolling-animations.js'></script>
+    <script defer src='scripts/hover-animations.js'></script>
   </head>
   <body>
     <!-- close modal -->
@@ -137,20 +145,20 @@
       <div class="info-section">
         <h2 id='all-about-me'>ALL ABOUT ME</h2>
         <p>
-          I have experience creating work for various mediums,
-          such as printed marketing materials as well as digital
-          for web & mobile designs. My design style is characterized
-          as modern, clean and mixed with abstract elements. I
-          place great attention on small details, strong use of a
-          grid and a refined juxtaposition between colors and layouts.
+          I have experience creating work for multiple mediums,
+          such as Digital for Web & Mobile Designs along with Printed
+          Marketing materials. My design style is characterized as modern,
+          clean and mixed with abstract elements. I place exceptional
+          attention on small details, the use of a grid and a refined
+          juxtaposition between colors & layouts.
         </p>
       </div>
-      <a href="https://drive.google.com/file/d/1r7JpB-HuKw5Dq0VuGuMOO3uZBTgkitLw/view" target='_blank'><button>RESUMÉ</button></a>
+      <a href="https://drive.google.com/open?id=1mquq_2ODfemXbzaOc8ex7o1z2DfFVYoS" target='_blank'><button>RESUMÉ</button></a>
     </section>
     <!-- contact form -->
     <footer id='contact'>
       <h2>LET'S TALK, LEAVE A MESSAGE</h2>
-      <form action="https://formspree.io/jeffbrowndev@gmail.com" method='POST' id='contact-form'>
+      <form action="https://formspree.io/julianlopezprofessional@gmail.com" method='POST' id='contact-form'>
         <div>
           <h3>Name*</h3>
           <input name="name" required placeholder="Enter Your Name" type="text">
@@ -186,7 +194,7 @@
             <div class="line"></div>
             <div class="text">
               <h3>Challenges:</h3>
-              <p>Latinos are a bright & vibrant culture, comprised of an abundance of color and energy. Portraying the same energy was pivotal in the development of NALAC’s rebranding. I needed to create an appearance and feel that was modern, sleek and most importantly fused seamlessly among Latin culture.</p>
+              <p>Latinos are a bright & vibrant culture, comprised of an abundance of color and energy. Portraying the same energy was pivotal in the development of NALAC’s rebranding. I needed to create an appearance and feel that was modern, sleek and most importantly fused seamlessly among Latin&nbsp;culture.</p>
             </div>
             <div class="line"></div>
             <div class="text">
@@ -195,7 +203,7 @@
             </div>
           </div>
           <div id="logo-compare">
-            <p class='flex-item'>Existing Logo</p>
+            <p class='flex-item'>Previous Logo</p>
             <p class='flex-item'>New Logo</p>
             <img class='flex-item fade-up' data-src="images\modal-images\NALAC\NALAC Previous Logo.jpg" alt="NALAC Exisiting Logo">
             <img class='flex-item fade-up' data-src="images\modal-images\logos\NALAC Logo.png" alt="NALAC New Logo">
@@ -248,7 +256,7 @@
                 <img class='fade-up' data-src="images\modal-images\NALAC\Mockup billboard NALAC v2 (faded bar).png" alt="">
               </div>
               <div class="image">
-                <img class='fade-up' data-src="images\modal-images\NALAC\Mockup billboard NALAC v2 (web).png" alt="">
+                <img class='fade-up bottom-image fade-in-only' data-src="images\modal-images\NALAC\Mockup billboard NALAC v2 (web).png" alt="">
               </div>
             </div>
           </div>
@@ -257,7 +265,7 @@
           <div id='jcc-top'>
             <div id="jcc-desc">
               <h3>Brief Description</h3>
-              <p>During my tenure at the Milton and Betty Katz JCC (JCC), their contract offer was unique. JCC offered a phenomenal opportunity, essentially offering two Graphic Design roles on one contract. Each work week my time was shared, two days were spent at JCC & the other three days were at Jewish Family Service (JFS). This opportunity allowed me to work alongside & learn from multiple Marketing Teams & Directors at once. During this time, I successfully & consistently produced for both organizations simultaneously, which is why you will notice a diverse style of work below.</p>
+              <p>During my tenure at the Milton and Betty Katz JCC (JCC), their contract offer was unique. JCC offered a phenomenal opportunity, essentially offering two Graphic Design roles on one contract. Each work week my time was shared, two days were spent at JCC & the other three days were at Jewish Family Service (JFS). This opportunity allowed me to work alongside & learn from multiple Marketing Teams & Directors at once. During this time, I successfully & consistently produced for both organizations simultaneously, which is why you will notice a diverse style of work&nbsp;below.</p>
             </div>
             <div id="jcc-travel">
               <div class="jcc-image">
@@ -315,8 +323,8 @@
           </div>
           <div id="middle-bottom">
             <div id="road-rules">
-              <img class='fade-up' data-src="images\modal-images\JCC\JCC Road Rules Mockup Inside (web)-min.png" alt="">
               <img class='fade-up' data-src="images\modal-images\JCC\JCC Road Rules Mockup Outside (web)-min.png" alt="">
+              <img class='fade-up' data-src="images\modal-images\JCC\JCC Road Rules Mockup Inside (web)-min.png" alt="">
             </div>
             <div style='clear:both'></div>
             <img class='fade-up' data-src="images\modal-images\JCC\JCC Fitness Yoga Mockup (web)-min.png" alt="" id="ohm">
@@ -336,7 +344,7 @@
                 <img class='fade-up' data-src="images\modal-images\JCC\JCC Mockup Advertise Outside v2 (inside web)-min.png" alt="">
               </div>
             </div>
-            <img id='homeless' data-src="images\modal-images\JCC\Project Homeless Connect (Half sheet) w_ shadow web-min.png" alt="">
+            <img class='fade-up bottom-image fade-in-only' id='homeless' data-src="images\modal-images\JCC\Project Homeless Connect (Half sheet) w_ shadow web-min.png" alt="">
           </div>
         </div>
         <div class="modal" id='prolific-modal'>
@@ -399,14 +407,14 @@
             <img data-src="images\modal-images\prolific\Prolific Home Page.png" alt="Prolific Home Page" class="web-mockup fade-up">
             <img data-src="images\modal-images\prolific\Prolific Services Overview.png" alt="Prolific Services Overview" class="web-mockup fade-up">
             <img data-src="images\modal-images\prolific\Prolific Services Page.png" alt="Prolific Services Page" class="web-mockup fade-up">
-            <img data-src="images\modal-images\prolific\Prolific Contact Page.png" alt="Prolific Contact Page" class="web-mockup fade-up">
+            <img data-src="images\modal-images\prolific\Prolific Contact Page.png" alt="Prolific Contact Page" class="web-mockup fade-up bottom-image fade-in-only">
           </div>
           <div style='clear: both'></div>
         </div>
         <div class="modal" id='hawaiian-modal'>
           <img id='hawaiian-logo' src="images/modal-images/hawaiian/Hawaiin Logo.png" alt="Hawaiian Logo">
           <img class='fade-up' id='hawaiian-business-cards' data-src="images\modal-images\hawaiian\Hawaiian Business Card Mockup.png" alt="Hawaiian Business Cards">
-          <img class='fade-up' id='hawaiian-pouches' data-src="images\modal-images\hawaiian\Hawaiian Shaved Ice Pouches (2560x).jpg" alt="">
+          <img class='fade-up bottom-image fade-in-only' id='hawaiian-pouches' data-src="images\modal-images\hawaiian\Hawaiian Shaved Ice Pouches (2560x).jpg" alt="">
         </div>
         <div class="modal" id='logos-modal'>
           <img id='logos-header' src="images\modal-images\logos\Logo Banner for Web.jpg" alt="Logos Header">
@@ -418,7 +426,7 @@
             <img class='fade-up' data-src="images\modal-images\logos\NALAC Logo.png" alt="NALAC Logo">
             <img class='fade-up' data-src="images\modal-images\logos\3 Group Logo.png" alt="3 Group Logo">
             <img class='fade-up' data-src="images\modal-images\logos\Ranchero Ramos Logo.png" alt="Ranchero Ramos Logo">
-            <img class='fade-up' data-src="images\modal-images\logos\FT@H Logo.png" alt="FT@H Logo">
+            <img class='fade-up bottom-image fade-in-only' data-src="images\modal-images\logos\FT@H Logo.png" alt="FT@H Logo">
             <!-- <div style='clear:both'></div> -->
           </div>
         </div>
@@ -432,7 +440,7 @@
           </div>
           <img class='fade-up' id="roman-mag-cover" data-src="images\modal-images\roman\RomanMagCover.png" alt="Roman Magazine Cover">
           <img class='fade-up' id='roman-mag-toc' data-src="images\modal-images\roman\RomanMagTOC.png" alt="Roman Magazine TOC">
-          <img class='fade-up' id='roman-mag-spread' data-src="images\modal-images\roman\RomanMagSpread.png" alt="Roman Magazine Spread">
+          <img class='fade-up bottom-image fade-in-only' id='roman-mag-spread' data-src="images\modal-images\roman\RomanMagSpread.png" alt="Roman Magazine Spread">
         </div>
         <div class="modal" id='asian-modal'>
           <img class='faction-logo' src="images\modal-images\logos\The Faction Logo.png" alt="Faction Logo">
@@ -444,7 +452,7 @@
           </div>
           <img class='fade-up' id='asian-mag-cover' data-src="images\modal-images\asian\Asia MagCover.png" alt="Asian Magazine Cover">
           <img class='fade-up' id='asian-mag-toc' data-src="images\modal-images\asian\AsianTOCv1.png" alt="Asian Magazine TOC">
-          <img class='fade-up' id='asian-mag-spread' data-src="images\modal-images\asian\AsianSpreadv1.png" alt="Asian Magazine Spread">
+          <img class='fade-up bottom-image fade-in-only' id='asian-mag-spread' data-src="images\modal-images\asian\AsianSpreadv1.png" alt="Asian Magazine Spread">
         </div>
         <div class="modal" id='motion-modal'>
           <div class="video-container">
@@ -457,15 +465,5 @@
         <p>JL Intro</p>
       </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="node_modules\lazyloadxt\dist\jquery.lazyloadxt.js"></script>
-    <script src='scripts/hamburger.js'></script>
-    <script src='scripts/animatedModal.js'></script>
-    <script src='scripts/modalControls.js'></script>
-    <script src='scripts/scrolling-animations.js'></script>
-    <script src='scripts/hover-animations.js'></script>
-    <script src='scripts/smooth-scroll.js'></script>
-    <script src='scripts/fade-up.js'></script>
   </body>
 </html>
