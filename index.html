@@ -5,15 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" rel="stylesheet">
+    <link href="scss/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script defer src="scripts/aos.js"></script>
     <script defer src="scripts/jquery.lazyloadxt.js"></script>
     <script defer src='scripts/hamburger.js'></script>
     <script defer src='scripts/animatedModal.js'></script>
-    <script defer src='scripts/modalControls.js'></script>
     <script defer src='scripts/scrolling-animations.js'></script>
-    <script defer src='scripts/hover-animations.js'></script>
   </head>
   <body>
     <!-- close modal -->
@@ -52,8 +52,8 @@
       <h2 id='the-work'>THE WORK</h2>
       <div class="projects">
         <!-- NALAC -->
-        <div class="project content" id='nalac'>
-          <div class="box-background" id='nalac'></div>
+        <div data-aos='fade-in' data-aos-delay='100' class="project content" id='nalac'>
+          <div class="box-background" id='nalac-background'></div>
           <div class="overlay modal-main" href='#animatedModal'>
             <div class="text">
               <h3 class='box-header' data-aos=''>NALAC</h3>
@@ -62,7 +62,7 @@
           </div>
         </div>
         <!-- JCC -->
-        <div class="project content" id='jcc'>
+        <div data-aos='fade-in' data-aos-delay='150' class="project content" id='jcc'>
           <div class="box-background" id='jcc'></div>
           <div class="overlay modal-main" href='#animatedModal'>
             <div class="text">
@@ -72,7 +72,7 @@
           </div>
         </div>
         <!-- It's A Prolific World -->
-        <div class="project content" id='prolific'>
+        <div data-aos='fade-in' data-aos-delay='200' class="project content" id='prolific'>
           <div class="box-background" id='prolific'></div>
           <div class="overlay modal-main" href='#animatedModal'>
             <div class="text">
@@ -82,7 +82,7 @@
           </div>
         </div>
         <!-- Hawaiian Shaved Ice -->
-        <div class="project content" id='hawaiian'>
+        <div data-aos='fade-in' data-aos-delay='250' class="project content" id='hawaiian'>
           <div class="box-background" id='hawaiian'></div>
           <div class="overlay modal-main" href='#animatedModal'>
             <div class="text">
@@ -92,7 +92,7 @@
           </div>
         </div>
         <!-- Logos -->
-        <div class="project content" id='logos'>
+        <div data-aos='fade-in' data-aos-delay='100' class="project content" id='logos'>
           <div class="box-background" id='logos'></div>
           <div class="overlay modal-main" href='#animatedModal'>
             <div class="text">
@@ -101,7 +101,7 @@
           </div>
         </div>
         <!-- Roman Magazine -->
-        <div class="project content" id='roman'>
+        <div data-aos='fade-in' data-aos-delay='150' class="project content" id='roman'>
           <div class="box-background" id='roman'></div>
           <div class="overlay modal-main" href='#animatedModal'>
             <div class="text">
@@ -111,7 +111,7 @@
           </div>
         </div>
         <!-- Asian Magazine -->
-        <div class="project content" id='asian'>
+        <div data-aos='fade-in' data-aos-delay='200' class="project content" id='asian'>
           <div class="box-background" id='asian'></div>
           <div class="overlay modal-main" href='#animatedModal'>
             <div class="text">
@@ -121,7 +121,7 @@
           </div>
         </div>
         <!-- Motion Graphics -->
-        <div class="project content" id='motion'>
+        <div data-aos='fade-in' data-aos-delay='250' class="project content" id='motion'>
           <div class="box-background" id='motion'></div>
           <div class="overlay modal-main" href='#animatedModal'>
             <div class="text">
@@ -135,14 +135,14 @@
     </section>
     <!-- bio -->
     <section id='bio'>
-      <div class="info-section">
+      <div data-aos='fade-left' class="info-section">
         <h2 id='education'>EDUCATION</h2>
         <p>
           The Art Institute of Philadelphia, Philadelphia&nbsp;PA<br>
           Bachelors of Science in Graphic Design March 2017
         </p>
       </div>
-      <div class="info-section">
+      <div data-aos='fade-right' class="info-section">
         <h2 id='all-about-me'>ALL ABOUT ME</h2>
         <p>
           I have experience creating work for multiple mediums,
@@ -153,12 +153,12 @@
           juxtaposition between colors & layouts.
         </p>
       </div>
-      <a href="https://drive.google.com/open?id=1mquq_2ODfemXbzaOc8ex7o1z2DfFVYoS" target='_blank'><button>RESUMÉ</button></a>
+      <a href="https://drive.google.com/open?id=1mquq_2ODfemXbzaOc8ex7o1z2DfFVYoS" target='_blank'><button data-aos='fade-up'>RESUMÉ</button></a>
     </section>
     <!-- contact form -->
     <footer id='contact'>
       <h2>LET'S TALK, LEAVE A MESSAGE</h2>
-      <form action="https://formspree.io/julianlopezprofessional@gmail.com" method='POST' id='contact-form'>
+      <form data-aos='fade-up' action="https://formspree.io/julianlopezgraphics@gmail.com" method='POST' id='contact-form'>
         <div>
           <h3>Name*</h3>
           <input name="name" required placeholder="Enter Your Name" type="text">
@@ -188,17 +188,17 @@
           <img id='nalac-header-logo' src="images\modal-images\logos\NALAC Logo.png" alt="">
           <div class='text-container'>
             <div class="text">
-              <h3>Brief Description:</h3>
+              <h3>Brief Description</h3>
               <p>The National Association of Latino arts and CultureIs (NALAC). NALAC is exclusively dedicated to the promotion, advancement, development, and cultivation of the Latino arts field. 501(c)(3) not-for-profit corporation.</p>
             </div>
             <div class="line"></div>
             <div class="text">
-              <h3>Challenges:</h3>
+              <h3>Challenges</h3>
               <p>Latinos are a bright & vibrant culture, comprised of an abundance of color and energy. Portraying the same energy was pivotal in the development of NALAC’s rebranding. I needed to create an appearance and feel that was modern, sleek and most importantly fused seamlessly among Latin&nbsp;culture.</p>
             </div>
             <div class="line"></div>
             <div class="text">
-              <h3>Solutions:</h3>
+              <h3>Solutions</h3>
               <p>In Latin culture, women wear beautiful multi-colored dresses which is where NALAC’s distinct color scheme originated from. When developing NALAC’s trademark appearance, I adopted their original triangular pattern from their former website. Previously, the triangular pattern was subtle & hardly visible, after fusing the pattern & the new color scheme it became the forefront of their identity.</p>
             </div>
           </div>
@@ -212,8 +212,9 @@
               <img class='fade-up' data-src="images\modal-images\NALAC\ID Card & Notebook For web.png" alt="NALAC ID Card & Notebook">
               <img class='fade-up' data-src="images\modal-images\NALAC\Envelope NALAC.png" alt="NALAC Envelope">
             </div>
-            <img class='flex-item fade-up' data-src="images\modal-images\NALAC\Mockup Business card NALAC horizontal front v1.png" alt="NALAC Business Card Front">
-            <img class='flex-item fade-up' data-src="images\modal-images\NALAC\Mockup Business card NALAC horizontal back with shadow v1.png" alt="NALAC Business Card Back">
+            <img class='fade-up flex-item business-card-desktop' data-src="images\modal-images\NALAC\Mockup Business card NALAC horizontal front v1.png" alt="NALAC Business Card Front">
+            <img class='fade-up flex-item business-card-desktop' data-src="images\modal-images\NALAC\Mockup Business card NALAC horizontal back with shadow v1.png" alt="NALAC Business Card Back">
+            <img class='fade-up flex-item' id='business-cards-mobile' data-src="images\modal-images\NALAC\Mockup Business card NALAC Stacked (web)-min.png" alt="">
           </div>
           <div id="blue-gradient">
             <div id="homepage">
@@ -223,6 +224,7 @@
               <div class='image'>
                 <img class='fade-up' data-src="images\modal-images\NALAC\NALAC Home Page Mockup (web).png" alt="NALAC Homepage">
               </div>
+              <img class='image' src="images\modal-images\NALAC\Website NALAC home (web)-min.png" alt="">
             </div>
             <div id="store">
               <div id="store-desktop">
@@ -242,6 +244,10 @@
             <div id='get-involved'>
               <div id='get-involved-desktop'>
                 <img class='fade-up' data-src="images\modal-images\NALAC\NALAC Mockup Invloved-Contact (Web).png" alt="">
+              </div>
+              <div id="get-involved-tablet">
+                <img class='fade-up' data-src="images\modal-images\NALAC\NALAC Mockup Get Involved Tablet (Web)-min.png" alt="">
+                <img class='fade-up' data-src="images\modal-images\NALAC\NALAC Mockup Contact us Tablet (Web)-min.png" alt="">
               </div>
               <div id='get-involved-mobile'>
                 <img class='fade-up' data-src="images\modal-images\NALAC\NALAC Mockup Get Involved Mobile (Web)-min.png" alt="">
@@ -265,7 +271,7 @@
           <div id='jcc-top'>
             <div id="jcc-desc">
               <h3>Brief Description</h3>
-              <p>During my tenure at the Milton and Betty Katz JCC (JCC), their contract offer was unique. JCC offered a phenomenal opportunity, essentially offering two Graphic Design roles on one contract. Each work week my time was shared, two days were spent at JCC & the other three days were at Jewish Family Service (JFS). This opportunity allowed me to work alongside & learn from multiple Marketing Teams & Directors at once. During this time, I successfully & consistently produced for both organizations simultaneously, which is why you will notice a diverse style of work&nbsp;below.</p>
+              <p>During my tenure at the Milton and Betty Katz JCC (JCC), JCC’s contract offer was unique. JCC offered a phenomenal opportunity, essentially offering two Graphic Design roles on one contract. Each work week my time is shared, two days are spent at JCC & the other three days are at Jewish Family Service (JFS). This opportunity is allowing me to work alongside & learn from multiple Marketing Teams & Directors at once. During this time, I am successfully & consistently producing for both organizations simultaneously, which is why you will notice a diverse style of work&nbsp;below.</p>
             </div>
             <div id="jcc-travel">
               <div class="jcc-image">
@@ -301,23 +307,18 @@
               <div class="jcc-image">
                 <img class='fade-up' id='giveaway' data-src="images\modal-images\JCC\Hanukkah Giveaway Mockup (web)-min.png" alt="">
               </div>
-              <div id="pen-container" class='jcc-image'>
-                <img class='fade-up' data-src="images\modal-images\JCC\JCC Pencil Render-min.png" alt="">
-              </div>
             </div>
             <div id="camera">
-              <div id="camera-container" class='jcc-image'>
-                <img class='fade-up' data-src="images\modal-images\JCC\JCC Camera Render-min.png" alt="">
-              </div>
               <div class='jcc-image'>
                 <img class='fade-up' id='house' data-src="images\modal-images\JCC\House Tour 2018 Mockup (web)-min.png" alt="">
               </div>
             </div>
             <img class='fade-up' data-src="images\modal-images\JCC\JFS New years Blast Mockup (web)-min.png" alt="" id="happy-holidays">
-            <div id="annual-meeting">
+            <div id="annual-meeting-desktop">
               <img class='fade-up' data-src="images\modal-images\JCC\Annual Meeting Invite Card (front with shadow web)-min.png" alt="">
               <img class='fade-up' data-src="images\modal-images\JCC\Annual Meeting Invite Card (back with shadow web)-min.png" alt="">
             </div>
+            <img src="images\modal-images\JCC\Annual Meeting Invite Card (Mobile)-min.png" alt="" id="annual-meeting-mobile">
             <div style='clear:both'></div>
             <img class='fade-up' data-src="images\modal-images\JCC\JFS Amazon Ad Mockup (web)-min.png" alt="" id="amazon">
           </div>
@@ -328,10 +329,11 @@
             </div>
             <div style='clear:both'></div>
             <img class='fade-up' data-src="images\modal-images\JCC\JCC Fitness Yoga Mockup (web)-min.png" alt="" id="ohm">
-            <div id='party'>
+            <div id='party-desktop'>
               <img class='fade-up' data-src="images\modal-images\JCC\Card Party Mockup (back web)-min.png" alt="">
               <img class='fade-up' data-src="images\modal-images\JCC\Card Party Mockup (front web)-min.png" alt="">
             </div>
+            <img src="images\modal-images\JCC\Card Party Mockup (Mobile (front & Back)-min.png" alt="" id="party-mobile">
             <div style='clear:both'></div>
             <img class='fade-up' data-src="images\modal-images\JCC\Card Party Mockup (inside web)-min.png" alt="" id="card-party">
           </div>
@@ -344,7 +346,7 @@
                 <img class='fade-up' data-src="images\modal-images\JCC\JCC Mockup Advertise Outside v2 (inside web)-min.png" alt="">
               </div>
             </div>
-            <img class='fade-up bottom-image fade-in-only' id='homeless' data-src="images\modal-images\JCC\Project Homeless Connect (Half sheet) w_ shadow web-min.png" alt="">
+            <img class='fade-up bottom-image fade-in-only' id='breast-health' data-src="images\modal-images\JCC\Breast Health Mockup (web)-min.png" alt="">
           </div>
         </div>
         <div class="modal" id='prolific-modal'>
@@ -443,7 +445,7 @@
           <img class='fade-up bottom-image fade-in-only' id='roman-mag-spread' data-src="images\modal-images\roman\RomanMagSpread.png" alt="Roman Magazine Spread">
         </div>
         <div class="modal" id='asian-modal'>
-          <img class='faction-logo' src="images\modal-images\logos\The Faction Logo.png" alt="Faction Logo">
+          <img class='faction-logo' data-src="images\modal-images\logos\The Faction Logo.png" alt="Faction Logo">
           <div id='asian-description'>
             <h1>Brief Description</h1>
             <p>

@@ -4,7 +4,13 @@ const banner = document.querySelector('#header-banner');
 const psudoBanner = document.querySelector('#header-psudo-banner');
 const modal = document.querySelector('#animatedModal');
 const slides = document.querySelectorAll('.fade-up');
-// const bsmBanner = document.querySelector('#bsm-header-image');
+const fadeItems = document.querySelectorAll('.fade-item');
+
+AOS.init({
+   offset: 100,
+   duration: 500,
+   delay: 100,
+ });
 
 //initialize header based on user device
 window.innerWidth <= 960 && psudoBanner.setAttribute('src', 'images/jl-header-mobile.jpg');
@@ -12,7 +18,8 @@ window.innerWidth <= 960 && psudoBanner.setAttribute('src', 'images/jl-header-mo
 // window.innerWidth <= 960 && bsmBanner.setAttribute('src', 'images/modal-images/bsm/bsm-header-mobile.png');
 
 const scroll = (e) => {
-  const scrolled = -e.pageY * 0.25;
+  //parallax header effect
+  const scrolled = -$(window).scrollTop() * 0.25;
   header.setAttribute("style", "transform: translate3d(0px, " + scrolled + "px, 0px)");
 }
 
@@ -36,6 +43,11 @@ const fadeUp = () => {
     if(isHalfShown && isVisible) {
       slide.classList.remove('fade-up');
       slide.classList.remove('bottom-image');
+    }
+    else {
+      slide.classList.add('fade-up');
+      if (slide.classList.contains('fade-in-only'))
+        slide.classList.add('bottom-image');
     }
   })
 }

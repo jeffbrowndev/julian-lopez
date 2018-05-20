@@ -17,6 +17,7 @@
     }
   }
   .projects {
+    user-select: none;
     box-sizing: border-box;
     width: 70%;
     max-width: 2500px;
@@ -65,8 +66,8 @@
         background-color: rgba(0, 0, 0, 0.9);
         top: 0;
         left: 0;
-        width: 100.12%;
-        height: 100.12%;
+        width: 101%;
+        height: 101%;
         position: absolute;
         display: table;
         .text {
@@ -90,16 +91,16 @@
           }
         }
       }
-      .overlay.active {
+      .overlay:hover, .overlay:active {
         opacity: 1;
         h3 {
-          transition: 0.4s;
-          transition-delay: 0.15s;
+          transition: 0.25s;
+          transition-delay: 0.25s;
           opacity: 1;
           transform: translateX(0);
         }
         p {
-          transition: 0.3s;
+          transition: 0.25s;
           transition-delay: 0.35s;
           opacity: 1;
           transform: translateY(0);
@@ -107,11 +108,13 @@
       }
     }
     .project::before {
-      content: '';
+      content: "";
+      background-color: black;
       display: block;
+      margin: 0% !important;
       padding-top: 100%;
     }
-    #nalac {
+    #nalac-background {
       background-image: url("backgrounds/NALAC Cover Box.jpg");
     }
     #jcc {

@@ -10,7 +10,8 @@
 
     $.fn.animatedModal = function(options) {
         var modal = $(this);
-
+        let clickedModal = undefined;
+        const modals = Array.from(document.querySelectorAll('.modal'));
         //Defaults
         var settings = $.extend({
             modalTarget:'animatedModal',
@@ -30,7 +31,13 @@
             overflow:'auto',
             // Callbacks
             beforeOpen: function() {},
-            afterOpen: function() {},
+            afterOpen: function() {
+
+              let clicked = document.querySelector(`#${clickedModal}-modal`);
+              clicked.style.display = 'block';
+              console.log(`#${clickedModal}`);
+              $(`#${clickedModal}-modal img`).lazyLoadXT({show: true});
+            },
             beforeClose: function() {},
             afterClose: function() {
               document.querySelectorAll('.lazy-loaded').forEach(image => {
@@ -38,6 +45,14 @@
                 if (image.classList.contains('fade-in-only'))
                   image.classList.add('bottom-image');
               })
+              const currentModal = modals.find((modal) => {
+                return modal.style.display === 'block';
+              })
+              //set current modal to invisible
+              if(currentModal !== undefined) {
+                $(`#${currentModal.getAttribute('id')} img`).removeClass('lazy-loaded');
+                currentModal.style.display = 'none';
+              }
             }
 
 
@@ -77,6 +92,7 @@
 
         modal.click(function(event) {
             event.preventDefault();
+            clickedModal = event.currentTarget.offsetParent.id;
             $('body, html').css({'overflow':'hidden'});
             $('#close').css('display', 'block');
 
@@ -132,5 +148,6 @@
 
 //activate modal
 $(document).ready(() => {
+  $.lazyLoadXT.autoInit=false;
   $(".modal-main").animatedModal();
 })

@@ -13,6 +13,7 @@
       #work #the-work {
         width: 100%; } }
   #work .projects {
+    user-select: none;
     box-sizing: border-box;
     width: 70%;
     max-width: 2500px;
@@ -59,8 +60,8 @@
         background-color: rgba(0, 0, 0, 0.9);
         top: 0;
         left: 0;
-        width: 100.12%;
-        height: 100.12%;
+        width: 101%;
+        height: 101%;
         position: absolute;
         display: table; }
         #work .projects .project .overlay .text {
@@ -80,23 +81,25 @@
             transition: 0s;
             transition-delay: 0s;
             transform: translateY(50px); }
-      #work .projects .project .overlay.active {
+      #work .projects .project .overlay:hover, #work .projects .project .overlay:active {
         opacity: 1; }
-        #work .projects .project .overlay.active h3 {
-          transition: 0.4s;
-          transition-delay: 0.15s;
+        #work .projects .project .overlay:hover h3, #work .projects .project .overlay:active h3 {
+          transition: 0.25s;
+          transition-delay: 0.25s;
           opacity: 1;
           transform: translateX(0); }
-        #work .projects .project .overlay.active p {
-          transition: 0.3s;
+        #work .projects .project .overlay:hover p, #work .projects .project .overlay:active p {
+          transition: 0.25s;
           transition-delay: 0.35s;
           opacity: 1;
           transform: translateY(0); }
     #work .projects .project::before {
-      content: '';
+      content: "";
+      background-color: black;
       display: block;
+      margin: 0% !important;
       padding-top: 100%; }
-    #work .projects #nalac {
+    #work .projects #nalac-background {
       background-image: url("backgrounds/NALAC Cover Box.jpg"); }
     #work .projects #jcc {
       background-image: url("backgrounds/JCC Cover Box.jpg"); }

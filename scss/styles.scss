@@ -22,7 +22,7 @@ html, body, h1, h2, h3, p, a, img {
 body {
   background-color: $work-blue;
 }
-img {
+img, .project, .content {
   transition: 0.4s;
   transform: translateY(0);
 }

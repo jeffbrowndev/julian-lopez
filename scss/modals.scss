@@ -64,7 +64,7 @@
     }
     #hawaiian-modal {
       text-align: center;
-      background: url("backgrounds/Hawaiin Background.jpg");
+      background: url("backgrounds/Hawaiin Background.png");
       position: relative;
       #hawaiian-pouches {
         width: 100%;
@@ -196,6 +196,9 @@
         @include mQ(960px) {
           width: 90%;
         }
+        @include mQ(500px) {
+          margin: 0 auto 5%;
+        }
       }
       #roman-mag-cover {
         margin-bottom: 32%;
@@ -204,7 +207,10 @@
           width: 95%;
         }
         @include mQ(750px) {
-          margin-bottom: 25%;
+          margin-bottom: 35%;
+        }
+        @include mQ(500px) {
+          margin-bottom: 30%;
         }
       }
       #roman-mag-toc {
@@ -214,7 +220,10 @@
           width: 95%;
         }
         @include mQ(750px) {
-          margin-bottom: 50%;
+          margin-bottom: 30%;
+        }
+        @include mQ(500px) {
+          margin-bottom: 30%;
         }
       }
       #roman-mag-spread {
@@ -222,6 +231,11 @@
         margin-bottom: 2%;
         @include mQ(960px) {
           width: 95%;
+        }
+      }
+      @include mQ(500px) {
+        .faction-logo {
+          margin: 5% 0;
         }
       }
     }
@@ -262,6 +276,14 @@
         }
         @include mQ(750px) {
           margin: 100px auto 0;
+          img {
+            &:nth-child(3) {
+              margin: 0 0 50px;
+            }
+            &:nth-child(4) {
+              margin: 0 0 50px;
+            }
+          }
         }
       }
     }
@@ -275,7 +297,7 @@
         font-size: 60px;
         width: 50%;
         padding-bottom: 40px;
-        margin: 200px auto 50px;
+        margin: 100px auto 50px;
         border-bottom: 5px solid grey;
         @include mQ(1050px) {
           font-size: 40px;
@@ -309,8 +331,11 @@
         }
       }
       #mockup {
-        width: 90%;
+        width: 75%;
         margin-top: -25%;
+        @include mQ(750px) {
+          width: 95%;
+        }
       }
       #icons {
         width: 1525px;
@@ -394,11 +419,14 @@
       }
       #logo-compare {
         width: 80%;
-        margin: 200px auto;
+        margin: 10% auto;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        #business-cards-mobile {
+          display: none;
+        }
         @include mQ(750px) {
           width: 95%;
           margin: 200px auto 0;
@@ -410,6 +438,7 @@
           .flex-item:nth-child(6) {order: 6};
           .flex-item:nth-child(7) {order: 7};
           .flex-item:nth-child(8) {order: 8};
+          .flex-item:nth-child(9) {order: 9};
           .flex-item {
             margin-bottom: 100px;
             &:last-child {
@@ -447,6 +476,14 @@
             }
           }
         }
+        @include mQ(750px) {
+          .business-card-desktop {
+            display: none;
+          }
+          #business-cards-mobile {
+            display: block;
+          }
+        }
       }
       #blue-gradient {
         background: url("backgrounds/NALAC Gradient.png");
@@ -463,27 +500,50 @@
           }
         }
         #homepage {
-          width: 80%;
+          width: 90%;
+          padding-bottom: 45%;
           margin: 0 auto 200px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-wrap: wrap;
           transform: translateY(-10%);
-          @include mQ(1200px) {
-            transform: none;
-            padding-top: 5%;
-          }
-          @include mQ(960px) {
-            padding-top: 10%;
-          }
+          position: relative;
           @include mQ(750px) {
-            padding-top: 5%;
-            margin: 0 auto 100px;
-            width: 95%;
+            transform: translateY(0);
+            padding-bottom: 0%;
           }
-          @include mQ(500px) {
-            padding-top: 20%;
+          @include mQ(550px) {
+            transform: translateY(10%);
+          }
+          .image {
+            width: 55%;
+            &:nth-child(1) {
+              position: absolute;
+              top: 15%;
+              left: 0;
+              @include mQ(960px) {
+                top: 35%;
+              }
+              @include mQ(750px) {
+                position: static;
+                width: 100%;
+              }
+            }
+            &:nth-child(2) {
+              position: absolute;
+              top: 0;
+              right: 7%;
+              @include mQ(960px) {
+                top: 20%;
+              }
+              @include mQ(750px) {
+                display: none;
+              }
+            }
+            &:nth-child(3) {
+              display: none;
+              @include mQ(750px) {
+                display: block;
+                width: 100%;
+              }
+            }
           }
         }
         #store {
@@ -531,19 +591,29 @@
           }
           #get-involved-desktop {
             width: 100%;
-            @include mQ(750px) {
-              display: none;
-            }
           }
-          #get-involved-mobile {
+          #get-involved-tablet, #get-involved-mobile {
             display: none;
-            @include mQ(750px) {
-              display: block;
-            }
             img {
               &:nth-child(2) {
-                margin-top: -20%;
+                margin-top: 10%;
               }
+            }
+          }
+          @include mQ(960px) {
+            #get-involved-desktop, #get-involved-mobile {
+              display: none;
+            }
+            #get-involved-tablet {
+              display: block;
+            }
+          }
+          @include mQ(500px) {
+            #get-involved-desktop, #get-involved-tablet {
+              display: none;
+            }
+            #get-involved-mobile {
+              display: block;
             }
           }
         }
@@ -562,6 +632,9 @@
             @include mQ(750px) {
               width: 100%;
             }
+            &:nth-child(1) {
+              padding: 7%;
+            }
             &:nth-child(2) {
               @include mQ(750px) {
                 display: none;
@@ -578,6 +651,8 @@
             width: 100%;
             display: block;
             padding-bottom: 0;
+            background-position: bottom;
+            background-size: contain;
           }
         }
       }
@@ -611,13 +686,16 @@
       }
     }
     #jcc-modal {
+      #jcc-top {
+        padding-bottom: 10%;
+      }
       #jcc-top, #middle-bottom {
         background: rgb(217,217,217);
 background: linear-gradient(180deg, rgba(217,217,217,1) 0%, rgba(255,255,255,1) 50%, rgba(217,217,217,1) 100%);
       }
       #bottom {
         background: #e7c59c;
-        padding: 10% 0;
+        padding-top: 10%;
       }
       #middle-bottom {
         padding: 10% 0;
@@ -646,12 +724,15 @@ background: linear-gradient(180deg, rgba(217,217,217,1) 0%, rgba(255,255,255,1) 
           }
         }
       }
-      #jcc-travel, #advertising {
+      #jcc-travel {
+        padding-bottom: 10%;
+      }
+      #jcc-travel {
         width: 80%;
         height: 100%;
         margin: auto;
-        padding-bottom: 10%;
         display: flex;
+        align-items: center;
         .jcc-image {
           height: 100%;
           flex-basis: 50%;
@@ -661,10 +742,11 @@ background: linear-gradient(180deg, rgba(217,217,217,1) 0%, rgba(255,255,255,1) 
         }
       }
       #jcc-cocktail {
-        width: 80%;
+        width: 100%;
         margin: auto;
+        padding-bottom: 10%;
         #cards {
-          width: 100%;
+          width: 80%;
           margin: auto;
           padding-bottom: 10%;
           img {
@@ -687,22 +769,19 @@ background: linear-gradient(180deg, rgba(217,217,217,1) 0%, rgba(255,255,255,1) 
           img {
             padding-bottom: 10%;
           }
-          @include mQ(750px) {
-            width: 95%;
-          }
         }
         #jcc-staggered {
           width: 80%;
           margin: auto;
-          img {
-            padding-bottom: 10%;
-          }
           @include mQ(750px) {
-            width: 95%;
+            width: 100%;
           }
           #staggered-left {
             width: 50%;
             float: left;
+            img {
+              padding: 0 10% 10%;
+            }
             @include mQ(750px) {
               float: none;
               width: 100%;
@@ -710,9 +789,14 @@ background: linear-gradient(180deg, rgba(217,217,217,1) 0%, rgba(255,255,255,1) 
             }
           }
           #staggered-right {
-            padding-top: 30%;
+            padding-top: 25%;
             width: 50%;
             float: left;
+            img {
+              &:last-child {
+                padding: 0 10% 10%;
+              }
+            }
             @include mQ(750px) {
               float: none;
               width: 100%;
@@ -727,82 +811,15 @@ background: linear-gradient(180deg, rgba(217,217,217,1) 0%, rgba(255,255,255,1) 
         background: rgb(56,170,232);
 background: linear-gradient(260deg, rgba(56,170,232,1) 0%, rgba(102,190,236,1) 100%);
         width: 100%;
-        #cover-pen {
-          width: 100%;
-          box-sizing: border-box;
-          display: flex;
-          margin-bottom: 10%;
-          img {
-            padding-bottom: 10%;
-          }
-          @include mQ(750px) {
-            width: 95%;
-            margin: auto;
-            padding: 0;
-            display: block;
-          }
-          #giveaway {
-            flex-basis: 50%;
-            @include mQ(750px) {
-              width: 100%;
-            }
-          }
-          #pen-container {
-            position: relative;
-            flex-basis: 50%;
-            img {
-              width: 35%;
-              position: absolute;
-              right: 0;
-              top: 30%;
-            }
-            @include mQ(750px) {
-              display: none;
-            }
-          }
+        #camera, #cover-pen {
+          width: 80%;
+          margin: auto;
         }
-        #camera {
-          width: 100%;
-          box-sizing: border-box;
-          display: flex;
-          margin-bottom: 10%;
-          @include mQ(750px) {
-            width: 95%;
-            margin: auto;
-            padding: 0;
-            display: block;
-            img {
-              padding-bottom: 10%;
-            }
-          }
-          #camera-container {
-            position: relative;
-            flex-basis: 50%;
-            img {
-              width: 60%;
-              position: absolute;
-              left: 0;
-              top: 25%;
-            }
-            @include mQ(750px) {
-              display: none;
-            }
-          }
-          #house {
-            flex-basis: 50%;
-            @include mQ(750px) {
-              width: 100%;
-            }
-          }
-        }
-        #happy-holidays, #amazon, #ohm, #card-party {
+        #happy-holidays, #amazon, #card-party {
           width: 80%;
           padding-bottom: 10%;
-          @include mQ(750px) {
-            width: 95%;
-          }
         }
-        #annual-meeting {
+        #annual-meeting-desktop {
           width: 80%;
           margin: 0 auto 10%;
           img {
@@ -816,33 +833,43 @@ background: linear-gradient(260deg, rgba(56,170,232,1) 0%, rgba(102,190,236,1) 1
             }
           }
           @include mQ(750px) {
+            display: none;
+          }
+        }
+        #annual-meeting-mobile {
+          display: none;
+          width: 80%;
+          margin: auto;
+          @include mQ(750px) {
             display: block;
-            img {
-              float: none;
-              width: 80%;
-              padding-bottom: 10%;
-            }
           }
         }
       }
-      #party {
-        width: 80%;
-        margin: 0 auto 10%;
-        img {
-          width: 50%;
-          float: left;
-          &:first-child {
-            padding-top: 15%;
-            @include mQ(750px) {
-              padding: 0 0 10%;
+      #middle-bottom {
+        #party-desktop {
+          width: 80%;
+          margin: 0 auto 10%;
+          img {
+            width: 50%;
+            float: left;
+            &:first-child {
+              padding-top: 15%;
+              @include mQ(750px) {
+                padding: 0 0 10%;
+              }
             }
           }
+          @include mQ(750px) {
+            display: none;
+          }
         }
-        @include mQ(750px) {
-          display: block;
-          img {
-            float: none;
-            width: 80%;
+        #party-mobile {
+          display: none;
+          width: 80%;
+          margin: auto;
+          padding-bottom: 10%;
+          @include mQ(750px) {
+            display: block;
           }
         }
       }
@@ -853,6 +880,12 @@ background: linear-gradient(260deg, rgba(56,170,232,1) 0%, rgba(102,190,236,1) 1
         @include mQ(750px) {
           padding: 0;
         }
+      }
+      #ohm, #card-party {
+        width: 80%;
+      }
+      #ohm {
+        padding-bottom: 10%;
       }
       #road-rules {
         padding-bottom: 10%;
@@ -879,19 +912,29 @@ background: linear-gradient(260deg, rgba(56,170,232,1) 0%, rgba(102,190,236,1) 1
           }
         }
       }
-      #homeless {
-        width: 30%;
-        @include mQ(750px) {
-          width: 80%;
-        }
-      }
       #advertising {
-        @include mQ(750px) {
-          img {
-            &:first-child {
-              padding-bottom: 10%;
+        width: 80%;
+        margin-left: 14%;
+        display: flex;
+        align-items: center;
+        .jcc-image {
+          &:last-child {
+            @include mQ(750px) {
+              padding-top: 10%;
+              margin-left: 5%;
             }
           }
+          height: 100%;
+          flex-basis: 50%;
+        }
+        @include mQ(750px) {
+          display: block;
+        }
+      }
+      #breast-health {
+        width: 80%;
+        @include mQ(750px) {
+          width: 95%;
         }
       }
     }
