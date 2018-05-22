@@ -360,7 +360,6 @@
           display: none; }
         @media screen and (max-width: 750px) {
           #animatedModal .modal-content #nalac-modal #logo-compare {
-            width: 95%;
             margin: 200px auto 0; }
             #animatedModal .modal-content #nalac-modal #logo-compare .flex-item:nth-child(1) {
               order: 1; }
@@ -381,7 +380,7 @@
             #animatedModal .modal-content #nalac-modal #logo-compare .flex-item:nth-child(9) {
               order: 9; }
             #animatedModal .modal-content #nalac-modal #logo-compare .flex-item {
-              margin-bottom: 100px; }
+              margin-bottom: 60px; }
               #animatedModal .modal-content #nalac-modal #logo-compare .flex-item:last-child {
                 margin-bottom: 50px; } }
         #animatedModal .modal-content #nalac-modal #logo-compare p {
@@ -430,22 +429,33 @@
         #animatedModal .modal-content #nalac-modal #blue-gradient #homepage {
           width: 90%;
           padding-bottom: 45%;
-          margin: 0 auto 200px;
+          margin: 0 auto 130px;
           transform: translateY(-10%);
           position: relative; }
+          @media screen and (max-width: 1200px) {
+            #animatedModal .modal-content #nalac-modal #blue-gradient #homepage {
+              transform: translateY(0%); } }
+          @media screen and (max-width: 960px) {
+            #animatedModal .modal-content #nalac-modal #blue-gradient #homepage {
+              padding-bottom: 50%; } }
           @media screen and (max-width: 750px) {
             #animatedModal .modal-content #nalac-modal #blue-gradient #homepage {
               transform: translateY(0);
               padding-bottom: 0%; } }
           @media screen and (max-width: 550px) {
             #animatedModal .modal-content #nalac-modal #blue-gradient #homepage {
-              transform: translateY(10%); } }
+              padding-bottom: 25%;
+              transform: translateY(15%); } }
+          @media screen and (max-width: 375px) {
+            #animatedModal .modal-content #nalac-modal #blue-gradient #homepage {
+              transform: translateY(20%); } }
           #animatedModal .modal-content #nalac-modal #blue-gradient #homepage .image {
             width: 55%; }
             #animatedModal .modal-content #nalac-modal #blue-gradient #homepage .image:nth-child(1) {
               position: absolute;
               top: 15%;
-              left: 0; }
+              left: 0;
+              margin-bottom: 10%; }
               @media screen and (max-width: 960px) {
                 #animatedModal .modal-content #nalac-modal #blue-gradient #homepage .image:nth-child(1) {
                   top: 35%; } }
@@ -474,7 +484,7 @@
           #animatedModal .modal-content #nalac-modal #blue-gradient #store img {
             width: 100%; }
           #animatedModal .modal-content #nalac-modal #blue-gradient #store #store-desktop {
-            width: 80%;
+            width: 95%;
             margin: auto; }
             @media screen and (max-width: 1440px) {
               #animatedModal .modal-content #nalac-modal #blue-gradient #store #store-desktop {
@@ -509,8 +519,6 @@
             width: 100%; }
           #animatedModal .modal-content #nalac-modal #blue-gradient #get-involved #get-involved-tablet, #animatedModal .modal-content #nalac-modal #blue-gradient #get-involved #get-involved-mobile {
             display: none; }
-            #animatedModal .modal-content #nalac-modal #blue-gradient #get-involved #get-involved-tablet img:nth-child(2), #animatedModal .modal-content #nalac-modal #blue-gradient #get-involved #get-involved-mobile img:nth-child(2) {
-              margin-top: 10%; }
           @media screen and (max-width: 960px) {
             #animatedModal .modal-content #nalac-modal #blue-gradient #get-involved #get-involved-desktop, #animatedModal .modal-content #nalac-modal #blue-gradient #get-involved #get-involved-mobile {
               display: none; }
@@ -527,17 +535,20 @@
           background-repeat: no-repeat;
           width: 100%;
           margin: auto;
-          padding-bottom: 100px;
           display: flex;
-          align-items: center; }
+          align-items: center;
+          justify-content: flex-end; }
+          #animatedModal .modal-content #nalac-modal #blue-gradient #billboard #billboard-mobile {
+            margin-bottom: -1.1%; }
           #animatedModal .modal-content #nalac-modal #blue-gradient #billboard .image {
             width: 80%;
-            margin: auto; }
+            margin: 0 auto;
+            padding: 0; }
             @media screen and (max-width: 750px) {
               #animatedModal .modal-content #nalac-modal #blue-gradient #billboard .image {
                 width: 100%; } }
             #animatedModal .modal-content #nalac-modal #blue-gradient #billboard .image:nth-child(1) {
-              padding: 7%; }
+              padding: 5% 7% 2% 7%; }
             @media screen and (max-width: 750px) {
               #animatedModal .modal-content #nalac-modal #blue-gradient #billboard .image:nth-child(2) {
                 display: none; } }
@@ -579,6 +590,9 @@
             padding: 10px 0 100px 0; } }
     #animatedModal .modal-content #jcc-modal #jcc-top {
       padding-bottom: 10%; }
+      @media screen and (max-width: 750px) {
+        #animatedModal .modal-content #jcc-modal #jcc-top {
+          padding-bottom: 3%; } }
     #animatedModal .modal-content #jcc-modal #jcc-top, #animatedModal .modal-content #jcc-modal #middle-bottom {
       background: #d9d9d9;
       background: linear-gradient(180deg, #d9d9d9 0%, white 50%, #d9d9d9 100%); }
@@ -616,13 +630,15 @@
       #animatedModal .modal-content #jcc-modal #jcc-travel .jcc-image {
         height: 100%;
         flex-basis: 50%; }
+        #animatedModal .modal-content #jcc-modal #jcc-travel .jcc-image:nth-child(2) {
+          padding: 0 .55% .55% 0; }
       @media screen and (max-width: 750px) {
         #animatedModal .modal-content #jcc-modal #jcc-travel {
           display: block; } }
     #animatedModal .modal-content #jcc-modal #jcc-cocktail {
       width: 100%;
       margin: auto;
-      padding-bottom: 10%; }
+      padding-bottom: 65%; }
       #animatedModal .modal-content #jcc-modal #jcc-cocktail #cards {
         width: 80%;
         margin: auto;
@@ -639,35 +655,48 @@
         margin: auto;
         width: 80%; }
         #animatedModal .modal-content #jcc-modal #jcc-cocktail #raffle img {
-          padding-bottom: 10%; }
+          padding: 8%; }
       #animatedModal .modal-content #jcc-modal #jcc-cocktail #jcc-staggered {
         width: 80%;
-        margin: auto; }
+        padding-bottom: 43%;
+        margin: auto;
+        position: relative; }
+        #animatedModal .modal-content #jcc-modal #jcc-cocktail #jcc-staggered img {
+          position: absolute;
+          width: 52%; }
+          #animatedModal .modal-content #jcc-modal #jcc-cocktail #jcc-staggered img:nth-child(1) {
+            top: 0;
+            left: 0;
+            padding: 0 4% 8%; }
+          #animatedModal .modal-content #jcc-modal #jcc-cocktail #jcc-staggered img:nth-child(2) {
+            top: 38%;
+            right: 0;
+            padding-bottom: 9%; }
+          #animatedModal .modal-content #jcc-modal #jcc-cocktail #jcc-staggered img:nth-child(3) {
+            padding: 0 5% 5%;
+            top: 113%;
+            left: 0; }
+          #animatedModal .modal-content #jcc-modal #jcc-cocktail #jcc-staggered img:nth-child(4) {
+            padding: 0 5% 5%;
+            top: 148%;
+            right: 0; }
+          @media screen and (max-width: 750px) {
+            #animatedModal .modal-content #jcc-modal #jcc-cocktail #jcc-staggered img {
+              padding: 0;
+              position: static;
+              width: 100%; }
+              #animatedModal .modal-content #jcc-modal #jcc-cocktail #jcc-staggered img:nth-child(1) {
+                padding: 0 8% 8%; }
+              #animatedModal .modal-content #jcc-modal #jcc-cocktail #jcc-staggered img:nth-child(2) {
+                padding-bottom: 5%; }
+              #animatedModal .modal-content #jcc-modal #jcc-cocktail #jcc-staggered img:nth-child(3), #animatedModal .modal-content #jcc-modal #jcc-cocktail #jcc-staggered img:nth-child(4) {
+                padding: 0 8% 15%; } }
         @media screen and (max-width: 750px) {
           #animatedModal .modal-content #jcc-modal #jcc-cocktail #jcc-staggered {
-            width: 100%; } }
-        #animatedModal .modal-content #jcc-modal #jcc-cocktail #jcc-staggered #staggered-left {
-          width: 50%;
-          float: left; }
-          #animatedModal .modal-content #jcc-modal #jcc-cocktail #jcc-staggered #staggered-left img {
-            padding: 0 10% 10%; }
-          @media screen and (max-width: 750px) {
-            #animatedModal .modal-content #jcc-modal #jcc-cocktail #jcc-staggered #staggered-left {
-              float: none;
-              width: 100%;
-              margin: auto; } }
-        #animatedModal .modal-content #jcc-modal #jcc-cocktail #jcc-staggered #staggered-right {
-          padding-top: 25%;
-          width: 50%;
-          float: left; }
-          #animatedModal .modal-content #jcc-modal #jcc-cocktail #jcc-staggered #staggered-right img:last-child {
-            padding: 0 10% 10%; }
-          @media screen and (max-width: 750px) {
-            #animatedModal .modal-content #jcc-modal #jcc-cocktail #jcc-staggered #staggered-right {
-              float: none;
-              width: 100%;
-              margin: auto;
-              padding: 0; } }
+            padding: 0; } }
+      @media screen and (max-width: 750px) {
+        #animatedModal .modal-content #jcc-modal #jcc-cocktail {
+          padding: 0; } }
     #animatedModal .modal-content #jcc-modal #blue-section {
       padding: 10% 0 0;
       background: #38aae8;
@@ -768,7 +797,26 @@
         #animatedModal .modal-content #jcc-modal #advertising {
           display: block; } }
     #animatedModal .modal-content #jcc-modal #breast-health {
-      width: 80%; }
+      width: 100%;
+      margin: 10% auto 0; }
+      #animatedModal .modal-content #jcc-modal #breast-health div:last-child {
+        float: left;
+        width: 19%;
+        margin-left: 22%; }
+      #animatedModal .modal-content #jcc-modal #breast-health div:first-child {
+        float: right;
+        width: 42%;
+        margin-right: 8%; }
       @media screen and (max-width: 750px) {
         #animatedModal .modal-content #jcc-modal #breast-health {
-          width: 95%; } }
+          width: 80%; }
+          #animatedModal .modal-content #jcc-modal #breast-health div {
+            margin: 0; }
+            #animatedModal .modal-content #jcc-modal #breast-health div:last-child {
+              float: none;
+              width: 70%;
+              margin: auto; }
+            #animatedModal .modal-content #jcc-modal #breast-health div:first-child {
+              float: none;
+              width: 100%;
+              margin: 10% 0 0 5%; } }

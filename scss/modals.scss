@@ -428,7 +428,6 @@
           display: none;
         }
         @include mQ(750px) {
-          width: 95%;
           margin: 200px auto 0;
           .flex-item:nth-child(1) {order: 1};
           .flex-item:nth-child(2) {order: 3};
@@ -440,7 +439,7 @@
           .flex-item:nth-child(8) {order: 8};
           .flex-item:nth-child(9) {order: 9};
           .flex-item {
-            margin-bottom: 100px;
+            margin-bottom: 60px;
             &:last-child {
               margin-bottom: 50px;
             }
@@ -502,15 +501,25 @@
         #homepage {
           width: 90%;
           padding-bottom: 45%;
-          margin: 0 auto 200px;
+          margin: 0 auto 130px;
           transform: translateY(-10%);
           position: relative;
+          @include mQ(1200px) {
+            transform: translateY(0%);
+          }
+          @include mQ(960px) {
+            padding-bottom: 50%;
+          }
           @include mQ(750px) {
             transform: translateY(0);
             padding-bottom: 0%;
           }
           @include mQ(550px) {
-            transform: translateY(10%);
+            padding-bottom: 25%;
+            transform: translateY(15%);
+          }
+          @include mQ(375px) {
+            transform: translateY(20%);
           }
           .image {
             width: 55%;
@@ -518,6 +527,7 @@
               position: absolute;
               top: 15%;
               left: 0;
+              margin-bottom: 10%;
               @include mQ(960px) {
                 top: 35%;
               }
@@ -552,7 +562,7 @@
             width: 100%;
           }
           #store-desktop {
-            width: 80%;
+            width: 95%;
             margin: auto;
             @include mQ(1440px) {
               display: none;
@@ -594,11 +604,6 @@
           }
           #get-involved-tablet, #get-involved-mobile {
             display: none;
-            img {
-              &:nth-child(2) {
-                margin-top: 10%;
-              }
-            }
           }
           @include mQ(960px) {
             #get-involved-desktop, #get-involved-mobile {
@@ -623,17 +628,22 @@
           background-repeat: no-repeat;
           width: 100%;
           margin: auto;
-          padding-bottom: 100px;
           display: flex;
           align-items: center;
+          justify-content: flex-end;
+          #billboard-mobile {
+            margin-bottom: -1.1%
+          }
+
           .image {
             width: 80%;
-            margin: auto;
+            margin: 0 auto;
+            padding: 0;
             @include mQ(750px) {
               width: 100%;
             }
             &:nth-child(1) {
-              padding: 7%;
+              padding: 5% 7% 2% 7%;
             }
             &:nth-child(2) {
               @include mQ(750px) {
@@ -688,6 +698,9 @@
     #jcc-modal {
       #jcc-top {
         padding-bottom: 10%;
+        @include mQ(750px) {
+          padding-bottom: 3%;
+        }
       }
       #jcc-top, #middle-bottom {
         background: rgb(217,217,217);
@@ -736,6 +749,9 @@ background: linear-gradient(180deg, rgba(217,217,217,1) 0%, rgba(255,255,255,1) 
         .jcc-image {
           height: 100%;
           flex-basis: 50%;
+          &:nth-child(2) {
+            padding: 0 .55% .55% 0;
+          }
         }
         @include mQ(750px) {
           display: block;
@@ -744,7 +760,7 @@ background: linear-gradient(180deg, rgba(217,217,217,1) 0%, rgba(255,255,255,1) 
       #jcc-cocktail {
         width: 100%;
         margin: auto;
-        padding-bottom: 10%;
+        padding-bottom: 65%;
         #cards {
           width: 80%;
           margin: auto;
@@ -767,43 +783,58 @@ background: linear-gradient(180deg, rgba(217,217,217,1) 0%, rgba(255,255,255,1) 
           margin: auto;
           width: 80%;
           img {
-            padding-bottom: 10%;
+            padding: 8%;
           }
         }
         #jcc-staggered {
           width: 80%;
+          padding-bottom: 43%;
           margin: auto;
-          @include mQ(750px) {
-            width: 100%;
-          }
-          #staggered-left {
-            width: 50%;
-            float: left;
-            img {
-              padding: 0 10% 10%;
+          position: relative;
+          img {
+            position: absolute;
+            width: 52%;
+            &:nth-child(1) {
+              top: 0;
+              left: 0;
+              padding: 0 4% 8%;
+            }
+            &:nth-child(2) {
+              top: 38%;
+              right: 0;
+              padding-bottom: 9%;
+            }
+            &:nth-child(3) {
+              padding: 0 5% 5%;
+              top: 113%;
+              left: 0;
+            }
+            &:nth-child(4) {
+              padding: 0 5% 5%;
+              top: 148%;
+              right: 0;
             }
             @include mQ(750px) {
-              float: none;
+              padding: 0;
+              position: static;
               width: 100%;
-              margin: auto;
-            }
-          }
-          #staggered-right {
-            padding-top: 25%;
-            width: 50%;
-            float: left;
-            img {
-              &:last-child {
-                padding: 0 10% 10%;
+              &:nth-child(1) {
+                padding: 0 8% 8%;
+              }
+              &:nth-child(2) {
+                padding-bottom: 5%;
+              }
+              &:nth-child(3), &:nth-child(4) {
+                padding: 0 8% 15%;
               }
             }
-            @include mQ(750px) {
-              float: none;
-              width: 100%;
-              margin: auto;
-              padding: 0;
-            }
           }
+          @include mQ(750px) {
+            padding: 0;
+          }
+        }
+        @include mQ(750px) {
+          padding: 0;
         }
       }
       #blue-section {
@@ -932,9 +963,35 @@ background: linear-gradient(260deg, rgba(56,170,232,1) 0%, rgba(102,190,236,1) 1
         }
       }
       #breast-health {
-        width: 80%;
+        width: 100%;
+        margin: 10% auto 0;
+        div {
+          &:last-child {
+            float: left;
+            width: 19%;
+            margin-left: 22%;
+          }
+          &:first-child {
+            float: right;
+            width: 42%;
+            margin-right: 8%;
+          }
+        }
         @include mQ(750px) {
-          width: 95%;
+          width: 80%;
+          div {
+            margin: 0;
+            &:last-child {
+              float: none;
+              width: 70%;
+              margin: auto;
+            }
+            &:first-child {
+              float: none;
+              width: 100%;
+              margin: 10% 0 0 5%;
+            }
+          }
         }
       }
     }
