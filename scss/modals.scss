@@ -94,7 +94,7 @@
     }
     #asian-modal {
       text-align: center;
-      background: url("backgrounds/AsianMagBG.jpg");
+      background: url("backgrounds/AsianMagBg.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: bottom;
@@ -527,7 +527,7 @@
               position: absolute;
               top: 15%;
               left: 0;
-              margin-bottom: 10%;
+              margin-bottom: 15%;
               @include mQ(960px) {
                 top: 35%;
               }
@@ -597,7 +597,7 @@
           margin: 200px auto;
           @include mQ(750px) {
             width: 95%;
-            margin: 100px auto;
+            margin: 10% auto;
           }
           #get-involved-desktop {
             width: 100%;
@@ -844,7 +844,7 @@ background: linear-gradient(260deg, rgba(56,170,232,1) 0%, rgba(102,190,236,1) 1
         width: 100%;
         #camera, #cover-pen {
           width: 80%;
-          margin: auto;
+          margin: 0 auto 10%;
         }
         #happy-holidays, #amazon, #card-party {
           width: 80%;
@@ -904,7 +904,7 @@ background: linear-gradient(260deg, rgba(56,170,232,1) 0%, rgba(102,190,236,1) 1
           }
         }
       }
-      #amazon, #ohm, #party, #card-party {
+      #amazon, #party, #card-party {
         padding-top: 10%;
       }
       #amazon, #card-party   {
