@@ -35,7 +35,6 @@
 
               let clicked = document.querySelector(`#${clickedModal}-modal`);
               clicked.style.display = 'block';
-              console.log(`#${clickedModal}`);
               $(`#${clickedModal}-modal img`).lazyLoadXT({show: true});
             },
             beforeClose: function() {},

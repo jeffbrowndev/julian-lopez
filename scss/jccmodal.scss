@@ -2,6 +2,15 @@
 @import 'mixins';
 
 #jcc-modal {
+  background: rgb(195,195,195);
+  background: linear-gradient(0deg, 
+  rgba(195,195,195,1) 0%,
+  rgba(255,255,255,1) 18%,
+  rgba(195,195,195,1) 32%,
+  rgba(255,255,255,1) 46%,
+  rgba(195,195,195,1) 61%,
+  rgba(255,255,255,1) 83%,
+  rgba(195,195,195,1) 100%);
   .single {
     margin-bottom: 10%;
   }
@@ -116,7 +125,8 @@
     }
     #jcc-laptop, #raffle, #large-card, #house, #hanukkah, #amazon, #ohm {
       width: 70%;
-      margin: 0 auto 10%;
+      margin: auto;
+      padding-bottom: 10%;
       @include mQ(960px) {
         width: 90%;
       }
