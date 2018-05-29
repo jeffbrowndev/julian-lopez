@@ -1,16 +1,20 @@
+#jcc-modal .single {
+  margin-bottom: 10%; }
+
 #jcc-modal .jcc-wrapper {
   width: 90%;
   margin: auto; }
   #jcc-modal .jcc-wrapper img {
     width: 100%; }
   #jcc-modal .jcc-wrapper #jcc-header img {
-    width: 60%; }
+    width: 60%;
+    padding: 10% 0; }
     @media screen and (max-width: 960px) {
       #jcc-modal .jcc-wrapper #jcc-header img {
         width: 100%; } }
   #jcc-modal .jcc-wrapper #jcc-header #jcc-description {
     width: 80%;
-    margin: auto; }
+    margin: 0 auto 15%; }
     #jcc-modal .jcc-wrapper #jcc-header #jcc-description h3 {
       color: #313131;
       font-size: 48px;
@@ -29,24 +33,28 @@
       #jcc-modal .jcc-wrapper #jcc-header #jcc-description {
         width: 100%; }
         #jcc-modal .jcc-wrapper #jcc-header #jcc-description h3 {
-          font-size: 32px; }
+          font-size: 24px; }
         #jcc-modal .jcc-wrapper #jcc-header #jcc-description p {
           font-size: 18px; } }
   #jcc-modal .jcc-wrapper #africa-posters {
     display: flex;
     width: 100%; }
-    #jcc-modal .jcc-wrapper #africa-posters div:first-child {
-      flex-basis: 50.2%; }
-    #jcc-modal .jcc-wrapper #africa-posters div:last-child {
-      flex-basis: 49.8%;
-      transform: translateY(-2.2%); }
+    #jcc-modal .jcc-wrapper #africa-posters div {
+      margin-bottom: 10%; }
+      #jcc-modal .jcc-wrapper #africa-posters div:first-child {
+        flex-basis: 50.2%; }
+      #jcc-modal .jcc-wrapper #africa-posters div:last-child {
+        flex-basis: 49.8%;
+        transform: translateY(-2.2%); }
     @media screen and (max-width: 750px) {
       #jcc-modal .jcc-wrapper #africa-posters {
         display: block; } }
-  #jcc-modal .jcc-wrapper #devices div:nth-child(1) {
-    transform: translateX(-2%); }
-  #jcc-modal .jcc-wrapper #devices div:nth-child(2), #jcc-modal .jcc-wrapper #devices div:nth-child(3) {
-    display: none; }
+  #jcc-modal .jcc-wrapper #devices div {
+    margin-bottom: 10%; }
+    #jcc-modal .jcc-wrapper #devices div:nth-child(1) {
+      transform: translateX(-2%); }
+    #jcc-modal .jcc-wrapper #devices div:nth-child(2), #jcc-modal .jcc-wrapper #devices div:nth-child(3) {
+      display: none; }
   @media screen and (max-width: 750px) {
     #jcc-modal .jcc-wrapper #devices div:nth-child(1) {
       display: none; }
@@ -54,39 +62,44 @@
       display: block; } }
   #jcc-modal .jcc-wrapper #employment {
     display: flex; }
-    #jcc-modal .jcc-wrapper #employment div:first-child {
-      flex-basis: 51%; }
-    #jcc-modal .jcc-wrapper #employment div:nth-child(2) {
-      display: none; }
-      @media screen and (max-width: 750px) {
-        #jcc-modal .jcc-wrapper #employment div:nth-child(2) {
-          display: block; } }
-    #jcc-modal .jcc-wrapper #employment div:last-child {
-      flex-basis: 49%;
-      transform: translateY(4%); }
-      @media screen and (max-width: 750px) {
-        #jcc-modal .jcc-wrapper #employment div:last-child {
-          display: none; } }
+    #jcc-modal .jcc-wrapper #employment div {
+      margin-bottom: 10%; }
+      #jcc-modal .jcc-wrapper #employment div:first-child {
+        flex-basis: 51%; }
+      #jcc-modal .jcc-wrapper #employment div:nth-child(2) {
+        display: none; }
+        @media screen and (max-width: 750px) {
+          #jcc-modal .jcc-wrapper #employment div:nth-child(2) {
+            display: block; } }
+      #jcc-modal .jcc-wrapper #employment div:last-child {
+        flex-basis: 49%;
+        transform: translateY(4%); }
+        @media screen and (max-width: 750px) {
+          #jcc-modal .jcc-wrapper #employment div:last-child {
+            display: none; } }
     @media screen and (max-width: 750px) {
       #jcc-modal .jcc-wrapper #employment {
         display: block; } }
   #jcc-modal .jcc-wrapper #jcc-laptop, #jcc-modal .jcc-wrapper #raffle, #jcc-modal .jcc-wrapper #large-card, #jcc-modal .jcc-wrapper #house, #jcc-modal .jcc-wrapper #hanukkah, #jcc-modal .jcc-wrapper #amazon, #jcc-modal .jcc-wrapper #ohm {
     width: 70%;
-    margin: auto; }
+    margin: 0 auto 10%; }
     @media screen and (max-width: 960px) {
       #jcc-modal .jcc-wrapper #jcc-laptop, #jcc-modal .jcc-wrapper #raffle, #jcc-modal .jcc-wrapper #large-card, #jcc-modal .jcc-wrapper #house, #jcc-modal .jcc-wrapper #hanukkah, #jcc-modal .jcc-wrapper #amazon, #jcc-modal .jcc-wrapper #ohm {
         width: 90%; } }
-  @media screen and (max-width: 750px) {
-    #jcc-modal .jcc-wrapper #jcc-cards img:first-child {
-      display: none; } }
-  #jcc-modal .jcc-wrapper #jcc-cards img:last-child {
-    display: none; }
+  #jcc-modal .jcc-wrapper #jcc-cards {
+    margin-bottom: 10%; }
     @media screen and (max-width: 750px) {
-      #jcc-modal .jcc-wrapper #jcc-cards img:last-child {
-        display: block; } }
+      #jcc-modal .jcc-wrapper #jcc-cards img:first-child {
+        display: none; } }
+    #jcc-modal .jcc-wrapper #jcc-cards img:last-child {
+      display: none; }
+      @media screen and (max-width: 750px) {
+        #jcc-modal .jcc-wrapper #jcc-cards img:last-child {
+          display: block; } }
   #jcc-modal .jcc-wrapper #cocktail-party {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin-bottom: 33%; }
     #jcc-modal .jcc-wrapper #cocktail-party div {
       flex-basis: 50%; }
       #jcc-modal .jcc-wrapper #cocktail-party div:nth-child(1), #jcc-modal .jcc-wrapper #cocktail-party div:nth-child(3), #jcc-modal .jcc-wrapper #cocktail-party div:nth-child(4) {
@@ -97,11 +110,18 @@
         transform: translateY(47%); }
     @media screen and (max-width: 750px) {
       #jcc-modal .jcc-wrapper #cocktail-party {
-        display: block; }
+        display: block;
+        margin-bottom: 10%; }
         #jcc-modal .jcc-wrapper #cocktail-party div {
-          transform: translateY(0) !important; } }
+          transform: translateY(0) !important; }
+          #jcc-modal .jcc-wrapper #cocktail-party div:nth-child(1) {
+            margin-bottom: 5%;
+            transform: translateY(47%); }
+          #jcc-modal .jcc-wrapper #cocktail-party div:nth-child(3) {
+            margin-bottom: 9%; } }
   #jcc-modal .jcc-wrapper #card-party {
-    display: flex; }
+    display: flex;
+    margin-bottom: 20%; }
     #jcc-modal .jcc-wrapper #card-party div {
       flex-basis: 50%; }
       @media screen and (max-width: 750px) {
@@ -118,27 +138,32 @@
             display: block; } }
     @media screen and (max-width: 750px) {
       #jcc-modal .jcc-wrapper #card-party {
-        display: block; } }
+        display: block;
+        margin-bottom: 10%; } }
   #jcc-modal .jcc-wrapper #breast-health {
     display: flex; }
-    #jcc-modal .jcc-wrapper #breast-health div:nth-child(1) {
-      padding: 0 11%;
-      flex-basis: 45%;
-      transform: translateY(2%); }
-    #jcc-modal .jcc-wrapper #breast-health div:nth-child(2) {
-      flex-basis: 55%; }
+    #jcc-modal .jcc-wrapper #breast-health div {
+      margin-bottom: 10%; }
+      #jcc-modal .jcc-wrapper #breast-health div:nth-child(2) {
+        transform: translate(0, 3%) rotate(-4deg) !important;
+        order: 1;
+        padding: 0 11%;
+        flex-basis: 45%; }
+      #jcc-modal .jcc-wrapper #breast-health div:nth-child(1) {
+        order: 2;
+        flex-basis: 55%; }
     @media screen and (max-width: 750px) {
       #jcc-modal .jcc-wrapper #breast-health {
         display: block; }
         #jcc-modal .jcc-wrapper #breast-health div {
           transform: translateY(0) !important; }
-          #jcc-modal .jcc-wrapper #breast-health div:nth-child(1) {
-            padding: 0 20%; }
           #jcc-modal .jcc-wrapper #breast-health div:nth-child(2) {
+            padding: 0 25%; }
+          #jcc-modal .jcc-wrapper #breast-health div:nth-child(1) {
             transform: translateX(5%) !important; } }
   #jcc-modal .jcc-wrapper #annual-meeting {
     width: 70%;
-    margin: auto;
+    margin: 0 auto 20%;
     display: flex; }
     #jcc-modal .jcc-wrapper #annual-meeting div {
       flex-basis: 50%; }
@@ -149,7 +174,8 @@
     @media screen and (max-width: 750px) {
       #jcc-modal .jcc-wrapper #annual-meeting {
         display: block;
-        width: 100%; }
+        width: 100%;
+        margin-bottom: 10%; }
         #jcc-modal .jcc-wrapper #annual-meeting div:nth-child(1), #jcc-modal .jcc-wrapper #annual-meeting div:nth-child(2) {
           display: none; }
         #jcc-modal .jcc-wrapper #annual-meeting div:nth-child(3) {
@@ -157,7 +183,8 @@
   #jcc-modal .jcc-wrapper #hanukkah {
     transform: translateX(4%); }
   #jcc-modal .jcc-wrapper #brochure {
-    display: flex; }
+    display: flex;
+    margin-bottom: 10%; }
     #jcc-modal .jcc-wrapper #brochure div {
       flex-basis: 50%; }
       #jcc-modal .jcc-wrapper #brochure div:nth-child(1) {
@@ -167,7 +194,9 @@
         transform: translateX(9%); }
     @media screen and (max-width: 750px) {
       #jcc-modal .jcc-wrapper #brochure {
-        display: block; } }
+        display: block; }
+        #jcc-modal .jcc-wrapper #brochure div:nth-child(1) {
+          margin-bottom: 5%; } }
 
 #jcc-modal #road-rules-top, #jcc-modal #road-rules-bottom {
   width: 100%;
