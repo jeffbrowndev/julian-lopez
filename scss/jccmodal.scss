@@ -1,0 +1,281 @@
+@import 'variables';
+@import 'mixins';
+
+#jcc-modal {
+  .jcc-wrapper {
+    width: 90%;
+    margin: auto;
+    img {
+      width: 100%;
+    }
+    #jcc-header {
+      img {
+        width: 60%;
+        @include mQ(960px) {
+          width: 100%;
+        }
+      }
+      #jcc-description {
+        width: 80%;
+        margin: auto;
+        h3 {
+          color: #313131;
+          font-size: 48px;
+          font-weight: bold;
+        }
+        p {
+          color: #505050;
+          font-size: 36px;
+        }
+        @include mQ(1200px) {
+          width: 100%;
+          h3 {
+            font-size: 36px;
+          }
+          p {
+            font-size: 24px;
+          }
+        }
+        @include mQ(960px) {
+          width: 100%;
+          h3 {
+            font-size: 32px;
+          }
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    #africa-posters {
+      display: flex;
+      width: 100%;
+      div {
+        &:first-child {
+          flex-basis: 50.2%;
+        }
+        &:last-child {
+          flex-basis: 49.8%;
+          transform: translateY(-2.2%);
+        }
+      }
+      @include mQ(750px) {
+        display: block;
+      }
+    }
+    #devices {
+      div {
+        &:nth-child(1) {
+          transform: translateX(-2%);
+        }
+        &:nth-child(2), &:nth-child(3) {
+          display: none;
+        }
+      }
+      @include mQ(750px) {
+        div {
+          &:nth-child(1) {
+            display: none;
+          }
+          &:nth-child(2), &:nth-child(3) {
+            display: block;
+          }
+        }
+      }
+    }
+    #employment {
+      display: flex;
+      div {
+        &:first-child {
+          flex-basis: 51%;
+        }
+        &:nth-child(2) {
+          display: none;
+          @include mQ(750px) {
+            display: block;
+          }
+        }
+        &:last-child {
+          flex-basis: 49%;
+          transform: translateY(4%);
+          @include mQ(750px) {
+            display: none;
+          }
+        }
+      }
+      @include mQ(750px) {
+        display: block;
+      }
+    }
+    #jcc-laptop, #raffle, #large-card, #house, #hanukkah, #amazon, #ohm {
+      width: 70%;
+      margin: auto;
+      @include mQ(960px) {
+        width: 90%;
+      }
+    }
+    #jcc-cards {
+      img {
+        &:first-child {
+          @include mQ(750px) {
+            display: none;
+          }
+        }
+        &:last-child {
+          display: none;
+          @include mQ(750px) {
+            display: block;
+          }
+        }
+      }
+    }
+    #cocktail-party {
+      display: flex;
+      flex-wrap: wrap;
+      div {
+        flex-basis: 50%;
+        &:nth-child(1), &:nth-child(3), &:nth-child(4) {
+          padding: (0 5%);
+        }
+        &:nth-child(2) {
+          transform: translateY(40%);
+        }
+        &:nth-child(4) {
+          transform: translateY(47%);
+        }
+      }
+      @include mQ(750px) {
+        display: block;
+        div {
+          transform: translateY(0) !important;
+        }
+      }
+    }
+    #card-party {
+      display: flex;
+      div {
+        flex-basis: 50%;
+        &:nth-child(1), &:nth-child(2) {
+          @include mQ(750px) {
+            display: none;
+          }
+        }
+        &:nth-child(1) {
+          padding: 0 3%;
+        }
+        &:nth-child(2) {
+          transform: translateY(18%);
+        }
+        &:last-child {
+          display: none;
+          @include mQ(750px) {
+            display: block;
+          }
+        }
+      }
+      @include mQ(750px) {
+        display: block;
+      }
+    }
+    #breast-health {
+      display: flex;
+      div {
+        &:nth-child(1) {
+          padding:  0 11%;
+          flex-basis: 45%;
+          transform: translateY(2%);
+        }
+        &:nth-child(2) {
+          flex-basis: 55%;
+        }
+      }
+      @include mQ(750px) {
+        display: block;
+        div {
+          transform: translateY(0) !important;
+          &:nth-child(1) {
+            padding: 0 20%;
+          }
+          &:nth-child(2) {
+            transform: translateX(5%) !important;
+          }
+        }
+      }
+    }
+    #annual-meeting {
+      width: 70%;
+      margin: auto;
+      display: flex;
+      div {
+        flex-basis: 50%;
+        &:nth-child(3) {
+          display: none;
+        }
+        &:nth-child(2) {
+          transform: translateY(22%);
+        }
+      }
+      @include mQ(750px) {
+        display: block;
+        width: 100%;
+        div {
+           &:nth-child(1), &:nth-child(2) {
+             display: none;
+           }
+           &:nth-child(3) {
+             display: block;
+           }
+        }
+      }
+    }
+    #hanukkah {
+      transform: translateX(4%);
+    }
+    #brochure {
+      display: flex;
+      div {
+        flex-basis: 50%;
+        &:nth-child(1) {
+          transform: translateX(5%);
+          padding: 0 2%;
+        }
+        &:nth-child(2) {
+          transform: translateX(9%);
+        }
+      }
+      @include mQ(750px) {
+        display: block;
+      }
+    }
+  }
+  #road-rules-top, #road-rules-bottom {
+    width: 100%;
+    margin: auto;
+    img {
+      width: 75%;
+    }
+    @include mQ(750px) {
+      width: 90%;
+      img {
+        float: none;
+        width: 100%;
+      }
+    }
+  }
+  #road-rules-top {
+    img {
+      float: left;
+    }
+  }
+  #road-rules-bottom {
+    img {
+      float: right;
+    }
+  }
+  #jfs-angled {
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+}
