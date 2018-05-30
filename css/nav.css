@@ -1,0 +1,51 @@
+nav {
+  box-shadow: 0 0 3px black;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  background-color: #195996;
+  text-align: center;
+  position: fixed;
+  height: 76px; }
+  @media screen and (max-width: 500px) {
+    nav {
+      height: 60px; } }
+  nav .nav-links {
+    animation-duration: 0.3s; }
+    @media screen and (max-width: 500px) {
+      nav .nav-links {
+        display: none;
+        height: 100vh; } }
+  nav p {
+    transition: 0.4s;
+    text-align: center;
+    padding: 25px 25px;
+    font-size: 21px;
+    color: #FFFFFF;
+    display: inline-block; }
+    @media screen and (max-width: 500px) {
+      nav p {
+        display: block; } }
+    nav p:hover {
+      color: #3498D1 !important; }
+  nav .nav-links.display {
+    display: block;
+    background-color: rgba(25, 89, 150, 0.98);
+    position: relative; }
+    nav .nav-links.display .links {
+      animation-duration: 0.1s; }
+      @media screen and (max-width: 500px) {
+        nav .nav-links.display .links {
+          position: absolute;
+          top: calc(50% - 152px);
+          left: calc(50% - 70.55px); } }
+      nav .nav-links.display .links .link {
+        animation-duration: 0.4s; }
+      nav .nav-links.display .links .home-link {
+        animation-delay: 0.25s; }
+      nav .nav-links.display .links .work-link {
+        animation-delay: 0.3s; }
+      nav .nav-links.display .links .bio-link {
+        animation-delay: 0.35s; }
+      nav .nav-links.display .links .contact-link {
+        animation-delay: 0.4s; }

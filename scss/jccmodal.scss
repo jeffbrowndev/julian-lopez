@@ -2,8 +2,8 @@
 @import 'mixins';
 
 #jcc-modal {
-  background: rgb(195,195,195);
-  background: linear-gradient(0deg, 
+  background: rgb(85,85,85);
+  background: linear-gradient(0deg,
   rgba(195,195,195,1) 0%,
   rgba(255,255,255,1) 18%,
   rgba(195,195,195,1) 32%,
@@ -123,8 +123,16 @@
         display: block;
       }
     }
-    #jcc-laptop, #raffle, #large-card, #house, #hanukkah, #amazon, #ohm {
+    #raffle, #large-card, #house, #hanukkah, #amazon, #ohm {
       width: 70%;
+      margin: auto;
+      padding-bottom: 10%;
+      @include mQ(960px) {
+        width: 90%;
+      }
+    }
+    #jcc-laptop {
+      width: 80%;
       margin: auto;
       padding-bottom: 10%;
       @include mQ(960px) {
