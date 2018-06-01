@@ -13,6 +13,7 @@
       #work #the-work {
         width: 100%; } }
   #work .projects {
+    overflow: hidden;
     user-select: none;
     box-sizing: border-box;
     width: 70%;
@@ -25,6 +26,7 @@
       #work .projects {
         width: 100%; } }
     #work .projects .project {
+      height: 100%;
       position: relative;
       flex-basis: 25%;
       box-sizing: border-box; }

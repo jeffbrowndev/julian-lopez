@@ -801,6 +801,7 @@ header #header-psudo-banner {
       #work #the-work {
         width: 100%; } }
   #work .projects {
+    overflow: hidden;
     user-select: none;
     box-sizing: border-box;
     width: 70%;
@@ -813,6 +814,7 @@ header #header-psudo-banner {
       #work .projects {
         width: 100%; } }
     #work .projects .project {
+      height: 100%;
       position: relative;
       flex-basis: 25%;
       box-sizing: border-box; }
@@ -1117,7 +1119,7 @@ header #header-psudo-banner {
         #jcc-modal .jcc-wrapper #raffle, #jcc-modal .jcc-wrapper #large-card, #jcc-modal .jcc-wrapper #house, #jcc-modal .jcc-wrapper #hanukkah, #jcc-modal .jcc-wrapper #amazon, #jcc-modal .jcc-wrapper #ohm {
           width: 90%; } }
     #jcc-modal .jcc-wrapper #jcc-laptop {
-      width: 80%;
+      width: 85%;
       margin: auto;
       padding-bottom: 10%; }
       @media screen and (max-width: 960px) {
@@ -1228,7 +1230,7 @@ header #header-psudo-banner {
           transform: translateX(5%);
           padding: 0 2%; }
         #jcc-modal .jcc-wrapper #brochure div:nth-child(2) {
-          transform: translateX(9%); }
+          transform: translate(9%, 4%); }
       @media screen and (max-width: 750px) {
         #jcc-modal .jcc-wrapper #brochure {
           display: block; }
@@ -1245,17 +1247,32 @@ header #header-psudo-banner {
         #jcc-modal #road-rules-top img, #jcc-modal #road-rules-bottom img {
           float: none;
           width: 100%; } }
-  #jcc-modal #road-rules-top img {
-    float: left; }
+  #jcc-modal #road-rules-top {
+    padding: 1%; }
+    #jcc-modal #road-rules-top img {
+      float: left; }
   #jcc-modal #road-rules-bottom img {
     float: right; }
   #jcc-modal #jfs-angled {
     overflow: hidden; }
     #jcc-modal #jfs-angled img {
       width: 100%; }
+      #jcc-modal #jfs-angled img:nth-child(2) {
+        width: 90%;
+        margin: auto;
+        display: none; }
+    @media screen and (max-width: 750px) {
+      #jcc-modal #jfs-angled img:nth-child(1) {
+        display: none; }
+      #jcc-modal #jfs-angled img:nth-child(2) {
+        display: block;
+        padding: 5% 0; } }
 
 * {
   box-sizing: border-box; }
+
+html, body {
+  overflow-x: hidden; }
 
 html, body, h1, h2, h3, p, a, img {
   margin: 0;

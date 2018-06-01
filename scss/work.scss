@@ -17,6 +17,7 @@
     }
   }
   .projects {
+    overflow: hidden;
     user-select: none;
     box-sizing: border-box;
     width: 70%;
@@ -29,6 +30,7 @@
       width: 100%;
     }
     .project {
+      height: 100%;
       position: relative;
       flex-basis: 25%;
       box-sizing: border-box;

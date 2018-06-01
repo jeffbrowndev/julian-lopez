@@ -132,7 +132,7 @@
       }
     }
     #jcc-laptop {
-      width: 80%;
+      width: 85%;
       margin: auto;
       padding-bottom: 10%;
       @include mQ(960px) {
@@ -282,7 +282,7 @@
           padding: 0 2%;
         }
         &:nth-child(2) {
-          transform: translateX(9%);
+          transform: translate(9%, 4%);
         }
       }
       @include mQ(750px) {
@@ -310,6 +310,7 @@
     }
   }
   #road-rules-top {
+    padding: 1%;
     img {
       float: left;
     }
@@ -323,6 +324,22 @@
     overflow: hidden;
     img {
       width: 100%;
+      &:nth-child(2) {
+        width: 90%;
+        margin: auto;
+        display: none;
+      }
+    }
+    @include mQ(750px) {
+      img {
+        &:nth-child(1) {
+          display: none;
+        }
+        &:nth-child(2) {
+          display: block;
+          padding: 5% 0;
+        }
+      }
     }
   }
 }
