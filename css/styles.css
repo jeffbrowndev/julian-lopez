@@ -10,6 +10,7 @@
   opacity: 0; }
 
 .menu-button {
+  cursor: pointer;
   display: none;
   z-index: 9999;
   float: right;
@@ -851,11 +852,11 @@ header #header-psudo-banner {
         left: 0;
         width: 100.5%;
         height: 100.5%;
-        position: absolute;
-        display: table; }
+        position: absolute; }
         #work .projects .project .overlay .text {
-          display: table-cell;
-          vertical-align: middle; }
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%); }
           #work .projects .project .overlay .text h3 {
             font-size: 20px;
             font-weight: bold;
@@ -1119,12 +1120,12 @@ header #header-psudo-banner {
         #jcc-modal .jcc-wrapper #raffle, #jcc-modal .jcc-wrapper #large-card, #jcc-modal .jcc-wrapper #house, #jcc-modal .jcc-wrapper #hanukkah, #jcc-modal .jcc-wrapper #amazon, #jcc-modal .jcc-wrapper #ohm {
           width: 90%; } }
     #jcc-modal .jcc-wrapper #jcc-laptop {
-      width: 85%;
+      width: 90%;
       margin: auto;
       padding-bottom: 10%; }
       @media screen and (max-width: 960px) {
         #jcc-modal .jcc-wrapper #jcc-laptop {
-          width: 90%; } }
+          width: 100%; } }
     #jcc-modal .jcc-wrapper #jcc-cards {
       margin-bottom: 10%; }
       @media screen and (max-width: 750px) {

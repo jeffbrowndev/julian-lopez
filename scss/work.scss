@@ -70,10 +70,10 @@
         width: 100.5%;
         height: 100.5%;
         position: absolute;
-        display: table;
         .text {
-          display: table-cell;
-          vertical-align: middle;
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
           h3 {
             font-size: 20px;
             font-weight: bold;

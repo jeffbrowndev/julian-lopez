@@ -132,11 +132,11 @@
       }
     }
     #jcc-laptop {
-      width: 85%;
+      width: 90%;
       margin: auto;
       padding-bottom: 10%;
       @include mQ(960px) {
-        width: 90%;
+        width: 100%;
       }
     }
     #jcc-cards {

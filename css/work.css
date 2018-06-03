@@ -63,11 +63,11 @@
         left: 0;
         width: 100.5%;
         height: 100.5%;
-        position: absolute;
-        display: table; }
+        position: absolute; }
         #work .projects .project .overlay .text {
-          display: table-cell;
-          vertical-align: middle; }
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%); }
           #work .projects .project .overlay .text h3 {
             font-size: 20px;
             font-weight: bold;

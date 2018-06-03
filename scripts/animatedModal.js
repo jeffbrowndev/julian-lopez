@@ -32,7 +32,6 @@
             // Callbacks
             beforeOpen: function() {},
             afterOpen: function() {
-
               let clicked = document.querySelector(`#${clickedModal}-modal`);
               clicked.style.display = 'block';
               $(`#${clickedModal}-modal img`).lazyLoadXT({show: true});
