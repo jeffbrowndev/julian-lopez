@@ -70,11 +70,10 @@
         width: 100%;
       }
       #hawaiian-logo {
-        margin-top: 100px;
+        margin-top: 10%;
         width: 50%;
         @include mQ(960px) {
           width: 95%;
-          margin-top: 100px;
         }
       }
       #hawaiian-business-cards {
@@ -249,7 +248,7 @@
       }
       #logos-grid {
         width: 80%;
-        margin: 200px auto;
+        margin: 10% auto 0;
         text-align: center;
         img {
           display: block;
@@ -279,7 +278,7 @@
           flex-wrap: wrap;
           justify-content: space-between;
           align-items: center;
-          margin: 100px auto;
+          margin: 100px auto 0;
         }
         @include mQ(750px) {
           margin: 100px auto 0;

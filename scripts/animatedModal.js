@@ -31,30 +31,9 @@
             overflow:'auto',
             // Callbacks
             beforeOpen: function() {},
-            afterOpen: function() {
-              let clicked = document.querySelector(`#${clickedModal}-modal`);
-              clicked.style.display = 'block';
-              $(`#${clickedModal}-modal img`).lazyLoadXT({show: true});
-            },
+            afterOpen: function() {},
             beforeClose: function() {},
-            afterClose: function() {
-              document.querySelectorAll('.lazy-loaded').forEach(image => {
-                image.classList.add('fade-up');
-                if (image.classList.contains('fade-in-only'))
-                  image.classList.add('bottom-image');
-              })
-              const currentModal = modals.find((modal) => {
-                return modal.style.display === 'block';
-              })
-              //set current modal to invisible
-              if(currentModal !== undefined) {
-                $(`#${currentModal.getAttribute('id')} img`).removeClass('lazy-loaded');
-                currentModal.style.display = 'none';
-              }
-            }
-
-
-
+            afterClose: function() {}
         }, options);
 
         var closeBt = $('.close-'+settings.modalTarget);
